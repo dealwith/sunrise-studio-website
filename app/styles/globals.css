@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Unbounded-Light";
+  src: url("../fonts//Unbounded-Light.ttf") format("truetype");
+}
+
+:root {
+  --black: #111111;
+	--bgGray: #2E2F39;
+	--textWhite: #FFFFFF;
+  --red: #E95848;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: var(--textWhite);
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}

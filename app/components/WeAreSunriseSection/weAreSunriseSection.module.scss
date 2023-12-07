@@ -1,0 +1,13 @@
+.title {
+  background: -webkit-linear-gradient(104deg, #E95848 5.33%, #F71919 51.64%, #FF0000 98.91%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  gap: 16px;
+  margin: 40px 0 30px 0;
+}
