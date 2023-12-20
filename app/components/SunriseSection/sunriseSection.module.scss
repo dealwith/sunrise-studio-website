@@ -29,20 +29,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
-}
-
-.text {
-  position: relative;
+  gap: 10px;
 }
 
 .textBg {
-  position: absolute;
   background-color: var(--red);
-  width: 339px;
-  height: 120px;
   border-radius: 67px;
-  z-index: -1;
-  top: -20px;
-  left: -30px;
+  padding: 24px 28px;
 }

@@ -7,7 +7,13 @@
 .textWrapper {
   display: flex;
   flex-direction: column;
-  width: 42%;
+  width: 43%;
   gap: 16px;
   margin: 40px 0 30px 0;
+}
+
+.image {
+  position: absolute;
+  top: -120px;
+  left: 70px;
 }

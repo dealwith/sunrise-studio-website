@@ -12,16 +12,14 @@ export const SunriseSectionContent = () => {
 			<section className={styles.component}>
 				<h1 className="text-7xl font-light flex flex-col gap-8 w-full">
 					<span className="text-black font-unbounded">Shaping Futures</span>
-					<span className={styles.textWrapper}>
-						<span className={styles.text}>
-							Through<div className={styles.textBg}></div>
-						</span>
+					<div className={styles.textWrapper}>
+						<div className={styles.textBg}>Through</div>
 						<Image src={cloverSrc} alt="clover" width={160} height={160} />
-					</span>
-					<span className="font-unbounded flex justify-end">
+					</div>
+					<div className="font-unbounded flex justify-end gap-6">
 						<Image src={starSrc} alt="star" width={116} height={78} />
 						Digital Innovation
-					</span>
+					</div>
 				</h1>
 			</section>
 		</MainContainer>

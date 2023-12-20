@@ -7,3 +7,8 @@ export * from "./SunriseSection";
 export * from "./WeAreSunriseSection";
 export * from "./H2";
 export * from "./P";
+export * from "./OurTeamsExperienceSection";
+export * from "./WhatWeDo";
+export * from "./WhatWeDoCard";
+export * from "./OurProjectsSection";
+export * from "./ImagesWrapper";

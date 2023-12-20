@@ -1,26 +1,29 @@
 import classNames from "classnames";
-import Image from "next/image";
 import { FunctionComponent } from "react";
 import { Button } from "./Button";
 
 import styles from "./button.module.scss";
 
-import arrowSrc from "./img/arrow.svg";
+import { ButtonArrow } from "./img/ButtonArrow";
 
 type TProps = {
-	children: String;
+	children: string;
 	className?: string;
+	width: string;
+	height: string;
 };
 
 export const ArrowButton: FunctionComponent<TProps> = ({
 	children,
-	className: propsClassName
+	className: propsClassName,
+	width,
+	height
 }) => {
 	const buttonClassName = classNames(styles.arrowBtn, propsClassName);
 
 	return (
 		<Button className={buttonClassName}>
-			{children} <Image src={arrowSrc} alt="arrow" />
+			{children} <ButtonArrow width={width} height={height} />
 		</Button>
 	);
 };

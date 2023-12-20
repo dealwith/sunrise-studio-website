@@ -1,8 +1,11 @@
 import {
 	Header,
+	OurProjectsSection,
+	OurTeamsExperienceSection,
 	SunriseSectionBackground,
 	SunriseSectionContent,
-	WeAreSunriseSection
+	WeAreSunriseSection,
+	WhatWeDo
 } from "components";
 
 export default function Home() {
@@ -12,6 +15,9 @@ export default function Home() {
 			<SunriseSectionBackground />
 			<SunriseSectionContent />
 			<WeAreSunriseSection />
+			<OurTeamsExperienceSection />
+			<WhatWeDo />
+			<OurProjectsSection />
 		</main>
 	);
 }
