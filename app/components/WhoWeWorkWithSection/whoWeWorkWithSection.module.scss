@@ -1,0 +1,11 @@
+.btn {
+  border: 1px solid var(--red);
+}
+
+.btn:hover {
+  background-color: var(--red);
+}
+
+.btn:first-child {
+  transform: rotate(180deg);
+}

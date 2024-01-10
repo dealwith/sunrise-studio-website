@@ -8,6 +8,7 @@
 .sizeM {
   border-radius: 16px;
   padding: 12px 44px;
+  width: fit-content;
 }
 
 .arrowBtn {
@@ -15,4 +16,11 @@
   padding: 12px 28px;
   width: fit-content;
   gap: 11px;
+}
+
+.scrollBtn {
+  border-radius: 8px;
+  padding: 12px;
+  transition: 0.2s ease-in-out;
+  height: fit-content;
 }

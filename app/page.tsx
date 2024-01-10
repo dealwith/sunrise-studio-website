@@ -1,11 +1,16 @@
+"use client";
+
 import {
+	ContactUsSection,
+	Footer,
 	Header,
 	OurProjectsSection,
 	OurTeamsExperienceSection,
 	SunriseSectionBackground,
 	SunriseSectionContent,
 	WeAreSunriseSection,
-	WhatWeDo
+	WhatWeDoSection,
+	WhoWeWorkWithSection
 } from "components";
 
 export default function Home() {
@@ -16,8 +21,11 @@ export default function Home() {
 			<SunriseSectionContent />
 			<WeAreSunriseSection />
 			<OurTeamsExperienceSection />
-			<WhatWeDo />
+			<WhatWeDoSection />
 			<OurProjectsSection />
+			<WhoWeWorkWithSection />
+			<ContactUsSection />
+			<Footer />
 		</main>
 	);
 }

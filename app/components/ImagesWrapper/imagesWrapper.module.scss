@@ -9,7 +9,7 @@
 .imagesContainer {
   display: grid;
   width: 100%;
-  grid-template-rows: 57.5% 10.3% 29.5%;
+  grid-template-rows: 56% 9.5% 29.2%;
   grid-template-columns: 57.7% 40.2%;
   gap: 24px;
 }
@@ -43,6 +43,12 @@
   padding-top: calc(256 / 458 * 100%);
   background-color: var(--black);
   border-radius: 16px;
+  gap: 16px;
+  font-size: 24px;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .image {

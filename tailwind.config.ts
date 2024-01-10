@@ -14,7 +14,8 @@ const config: Config = {
 			},
 			backgroundColor: {
 				primary: "#1C1C1E",
-				secondary: "#E95848"
+				secondary: "#E95848",
+				accent: "#E95848"
 			},
 			fontFamily: {
 				unbounded: "Unbounded-Light"

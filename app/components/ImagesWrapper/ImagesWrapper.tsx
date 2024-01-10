@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArrowButton } from "components";
 
 import styles from "./imagesWrapper.module.scss";
 import firstImageSrc from "./img/FirstImage.jpg";
@@ -33,7 +34,9 @@ export const ImagesWrapper = () => {
 						fill
 					/>
 				</div>
-				<div className={styles.btnWrapper}></div>
+				<ArrowButton width="14px" height="14px" className={styles.btnWrapper}>
+					View all
+				</ArrowButton>
 			</div>
 		</div>
 	);

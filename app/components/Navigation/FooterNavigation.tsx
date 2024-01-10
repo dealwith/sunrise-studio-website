@@ -2,10 +2,10 @@ import Link from "next/link";
 
 import styles from "./navigation.module.scss";
 
-export const Navigation = () => {
+export const FooterNavigation = () => {
 	return (
-		<nav className="flex flex-col w-5/12 justify-center">
-			<ul className={styles.list}>
+		<nav>
+			<ul className={styles.footerList}>
 				<li>
 					<Link href="#">Home</Link>
 				</li>
@@ -16,7 +16,7 @@ export const Navigation = () => {
 					<Link href="#">Services</Link>
 				</li>
 				<li>
-					<Link href="#">Projects</Link>
+					<Link href="#">Blog</Link>
 				</li>
 			</ul>
 		</nav>
