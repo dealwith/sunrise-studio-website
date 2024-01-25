@@ -1,0 +1,14 @@
+.card {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--red) !important;
+  padding: 0 !important;
+}
+
+.btn {
+  gap: 24px;
+  color: var(--textWhite);
+  font-size: 24px;
+  padding: 0;
+  height: 100%;
+}

@@ -1,0 +1,13 @@
+@use "styles/mixin";
+
+.component {
+  @include mixin.maxWidth(267px);
+  height: 267px;
+  background-color: var(--textWhite);
+  border-radius: 16px;
+  padding: 24px;
+  color: var(--red);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

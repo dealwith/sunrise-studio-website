@@ -1,0 +1,17 @@
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  gap: 24px;
+  font-size: 24px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+.footerList {
+  display: flex;
+  font-size: 24px;
+  flex-direction: column;
+  gap: 41px;
+}
