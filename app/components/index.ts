@@ -19,3 +19,4 @@ export * from "./ContactUsSection";
 export * from "./Input";
 export * from "./Span";
 export * from "./Footer";
+export * from "./Logo";

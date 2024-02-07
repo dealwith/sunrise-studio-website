@@ -11,6 +11,14 @@
   width: fit-content;
 }
 
+.sizeFull {
+  border-radius: 16px;
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+}
+
 .arrowBtn {
   border-radius: 16px;
   padding: 12px 28px;
