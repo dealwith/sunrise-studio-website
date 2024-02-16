@@ -16,8 +16,8 @@ export const SunriseSectionContent = () => {
 	return (
 		<section className={styles.component}>
 			{!activeBurger && (
-				<div>
-					<h1 className="text-[32px] md:text-[52px] lg:text-7xl xl:text-[90px] font-light flex flex-col md:gap-8 gap-5 w-full">
+				<div className="w-full flex flex-col items-center gap-40 justify-between">
+					<h1 className="text-[32px] sm:text-[44px] md:text-[52px] lg:text-7xl xl:text-[90px] font-light flex flex-col md:gap-8 gap-5 w-full">
 						<span className="text-black font-unbounded">Shaping Futures</span>
 						<div className={styles.textWrapper}>
 							<div className={styles.textBg}>Through</div>
@@ -33,7 +33,7 @@ export const SunriseSectionContent = () => {
 						</div>
 					</h1>
 					{isLaptopS && (
-						<Button className="bg-primary mt-[203px]" size="full">
+						<Button className="bg-primary" size="l">
 							Contact us
 						</Button>
 					)}

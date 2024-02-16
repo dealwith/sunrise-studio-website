@@ -15,14 +15,14 @@ type HTMLButtonProps = DetailedHTMLProps<
 
 type Props = {
 	children?: ReactNode;
-	size?: "full" | "m" | "none";
+	size?: "l" | "m" | "none";
 	className?: string;
 } & HTMLButtonProps;
 
 export const Button = forwardRef<HTMLButtonElement, Props>(
 	({ children, size, className: propsClassName, ...props }, ref) => {
 		const buttonSize = classNames({
-			[styles.sizeFull]: size === "full",
+			[styles.sizeL]: size === "l",
 			[styles.sizeM]: size === "m",
 			[styles.sizeNone]: size === "none"
 		});
