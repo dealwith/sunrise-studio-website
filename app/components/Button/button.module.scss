@@ -1,3 +1,5 @@
+@use "styles/mixin";
+
 .component {
   display: flex;
   align-items: center;
@@ -9,6 +11,14 @@
   border-radius: 16px;
   padding: 12px 44px;
   width: fit-content;
+}
+
+.sizeL {
+  border-radius: 16px;
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+  @include mixin.maxWidth(400px);
 }
 
 .arrowBtn {

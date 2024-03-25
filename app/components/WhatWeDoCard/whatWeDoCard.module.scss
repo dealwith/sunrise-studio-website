@@ -1,8 +1,8 @@
 @use "styles/mixin";
 
 .component {
-  @include mixin.maxWidth(267px);
-  height: 267px;
+  @include mixin.maxWidth(322px);
+  height: 322px;
   background-color: var(--textWhite);
   border-radius: 16px;
   padding: 24px;

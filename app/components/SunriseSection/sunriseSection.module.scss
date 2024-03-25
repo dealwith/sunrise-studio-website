@@ -1,9 +1,13 @@
+@use "styles/mixin";
+@use "styles/breakpoints";
+
 .component {
   display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 108px);
   width: 100%;
+  position: relative;
 }
 
 .background {
@@ -36,5 +40,61 @@
 .textBg {
   background-color: var(--red);
   border-radius: 67px;
-  padding: 24px 28px;
+  padding: 26px 30px;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    padding: 10px 33px;
+  }
+
+  @include mixin.media-w(breakpoints.$mobile) {
+    padding: 10px 29px;
+  }
+}
+
+.cloverImg {
+  width: 230px;
+  height: 230px;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    width: 130px;
+    height: 130px;
+  }
+
+  @include mixin.media-w(breakpoints.$mobile) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.starImg {
+  width: 134px;
+  height: 87px;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    width: 104px;
+    height: 78px;
+  }
+
+  @include mixin.media-w(breakpoints.$mobile) {
+    height: 68px;
+  }
+}
+
+.activeBurgerMenu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 4;
+  width: 100%;
+  height: calc(100vh - 108px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inactiveBurgerMenu {
+  position: absolute;
+  right: -100vw;
+  transition: 0.3s ease-in-out;
 }

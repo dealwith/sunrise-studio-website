@@ -2,3 +2,9 @@
   max-width: $width;
   width: 100%;
 }
+
+@mixin media-w($width) {
+  @media only screen and (max-width: #{$width + px} ) {
+    @content;
+  }
+}
