@@ -14,6 +14,7 @@ export * from "./WhatWeDoCard";
 export * from "./OurProjectsSection";
 export * from "./ImagesWrapper";
 export * from "./WhoWeWorkWithSection";
+export * from "./WeAreSunriseSectionText"
 export * from "./WhoWeWorkWithCard";
 export * from "./ContactUsSection";
 export * from "./Input";

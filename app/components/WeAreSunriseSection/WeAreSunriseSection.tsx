@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowButton, H2, P } from "components";
+import { ArrowButton, H2, P, WeAreSunriseSectionText } from "components";
 
 import styles from "./weAreSunriseSection.module.scss";
 
@@ -15,17 +15,17 @@ export const WeAreSunriseSection = () => {
 			</div>
 			<div className="flex">
 				<div className={styles.textWrapper}>
-					<P>
+					<WeAreSunriseSectionText>
 						Our team of experienced designers and marketing professionals work
 						closely with each client to understand their unique vision and
 						develop tailored solutions that align with their goals.
-					</P>
-					<P>
+					</WeAreSunriseSectionText>
+					<WeAreSunriseSectionText>
 						From designing eye-catching logos and brand identities, to building
 						custom websites that engage and convert visitors, to crafting
 						effective influencer marketing campaigns, we are dedicated to
 						helping our clients succeed in the digital space.
-					</P>
+					</WeAreSunriseSectionText>
 					<ArrowButton className="bg-primary mt-3.5" width="10px" height="10px">
 						Learn more
 					</ArrowButton>
