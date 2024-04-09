@@ -5,24 +5,24 @@ import { unbounded } from "../../fonts/unbounded";
 import styles from "./span.module.scss";
 
 type TProps = {
-	children: string;
-	className?: string;
+  children: string;
+  className?: string;
 };
 
 export const Span: FunctionComponent<TProps> = ({
-	children,
-	className: propsClassName,
-	...props
+  children,
+  className: propsClassName,
+  ...props
 }) => {
-	const componentClassName = classNames(
-		styles.component,
-		propsClassName,
-		unbounded.className
-	);
+  const componentClassName = classNames(
+    styles.component,
+    propsClassName,
+    unbounded.className,
+  );
 
-	return (
-		<span className={componentClassName} {...props}>
-			{children}
-		</span>
-	);
+  return (
+    <span className={componentClassName} {...props}>
+      {children}
+    </span>
+  );
 };

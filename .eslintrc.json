@@ -1,20 +1,18 @@
 {
-  "extends": [
-    "next",
-    "next/core-web-vitals",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["next", "next/core-web-vitals", "plugin:prettier/recommended"],
   "plugins": ["unused-imports"],
   "rules": {
     "no-unused-vars": "off",
-		"unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
-			"warn",
-			{ "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
-		],
-    "comma-dangle": ["error", {
-      "imports": "never"
-    }],
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "no-empty": "error",
     "quotes": ["error", "double"],
     "semi": "error",
