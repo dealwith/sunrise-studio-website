@@ -8,30 +8,30 @@ import classNames from "classnames";
 import styles from "./button.module.scss";
 
 type Props = {
-	defaultColor: string;
-	hoverColor: string;
-	className?: string;
+  defaultColor: string;
+  hoverColor: string;
+  className?: string;
 };
 
 export const ScrollButton = ({
-	defaultColor,
-	hoverColor,
-	className: propsClassName
+  defaultColor,
+  hoverColor,
+  className: propsClassName,
 }: Props) => {
-	const buttonClassName = classNames(styles.scrollBtn, propsClassName);
-	const [isHovered, setHovered] = useToggle();
+  const buttonClassName = classNames(styles.scrollBtn, propsClassName);
+  const [isHovered, setHovered] = useToggle();
 
-	return (
-		<Button
-			onMouseEnter={setHovered as MouseEventHandler<HTMLButtonElement>}
-			onMouseLeave={setHovered as MouseEventHandler<HTMLButtonElement>}
-			className={buttonClassName}
-		>
-			<ScrollIcon
-				isHovered={isHovered}
-				defaultColor={defaultColor}
-				hoverColor={hoverColor}
-			/>
-		</Button>
-	);
+  return (
+    <Button
+      onMouseEnter={setHovered as MouseEventHandler<HTMLButtonElement>}
+      onMouseLeave={setHovered as MouseEventHandler<HTMLButtonElement>}
+      className={buttonClassName}
+    >
+      <ScrollIcon
+        isHovered={isHovered}
+        defaultColor={defaultColor}
+        hoverColor={hoverColor}
+      />
+    </Button>
+  );
 };

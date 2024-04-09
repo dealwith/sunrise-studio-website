@@ -9,13 +9,15 @@
 
 :root {
   --black: #111111;
-	--bgGray: #2E2F39;
-	--textWhite: #FFFFFF;
-  --red: #E95848;
-  --bgBlack: #1C1C1E;
+  --bgGray: #2e2f39;
+  --textWhite: #ffffff;
+  --red: #e95848;
+  --bgBlack: #1c1c1e;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -27,7 +29,15 @@ body {
   color: var(--textWhite);
 }
 
-h1, h2, h3, h4, h5, h6, ul, li, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
   margin: 0;
   padding: 0;
 }
