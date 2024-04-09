@@ -16,15 +16,10 @@ export const WeAreSunriseSection = () => {
       <div className="flex">
         <div className={styles.textWrapper}>
           <P>
-            Our team of experienced designers and marketing professionals work
-            closely with each client to understand their unique vision and
-            develop tailored solutions that align with their goals.
-          </P>
-          <P>
-            From designing eye-catching logos and brand identities, to building
-            custom websites that engage and convert visitors, to crafting
-            effective influencer marketing campaigns, we are dedicated to
-            helping our clients succeed in the digital space.
+          Our role is to facilitate the creation of eye-catching and functional solutions, for
+          the fraction of the rate. 
+          Collaboration with our clients lies at the heart of our process, 
+          and we help bring visions to life. 
           </P>
           <ArrowButton className="bg-primary mt-3.5" width="10px" height="10px">
             Learn more
