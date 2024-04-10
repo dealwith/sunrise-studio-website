@@ -4,7 +4,7 @@ import styles from "./navigation.module.scss";
 
 export const Navigation = () => {
   return (
-    <nav className="flex flex-col w-5/12 justify-center">
+    <nav className="flex flex-col w-full justify-center items-center">
       <ul className={styles.list}>
         <li>
           <Link href="#">Home</Link>
