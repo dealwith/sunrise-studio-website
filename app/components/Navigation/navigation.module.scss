@@ -1,12 +1,19 @@
+@use "styles/mixin";
+@use "styles/breakpoints";
+
 .list {
-  width: 100%;
+  @include mixin.maxWidth(646px);
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
-  gap: 24px;
+  gap: 12px;
   font-size: 24px;
   color: var(--black);
   font-weight: 400;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    font-size: 16px;
+  }
 }
 
 .mobileList {

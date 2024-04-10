@@ -16,18 +16,19 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex justify-between py-30 w-full">
+    <header className="flex justify-between py-30 w-full gap-16">
       {isLaptopS ? (
         <>
-          <Logo />
+          <Logo width={32} height={32} />
           <Button onClick={handleBurgerClick}>
             <Image src={activeBurger ? crossSrc : burgerSrc} alt="Burger" />
           </Button>
         </>
       ) : (
         <>
+          <Logo width={48} height={48} />
           <Navigation />
-          <Button className="bg-primary" size="m">
+          <Button className="bg-primary whitespace-nowrap" size="m">
             Contact us
           </Button>
         </>
