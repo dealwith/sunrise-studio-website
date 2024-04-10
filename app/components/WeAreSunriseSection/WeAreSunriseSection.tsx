@@ -16,10 +16,10 @@ export const WeAreSunriseSection = () => {
       <div className="flex">
         <div className={styles.textWrapper}>
           <P>
-          Our role is to facilitate the creation of eye-catching and functional solutions, for
-          the fraction of the rate. 
-          Collaboration with our clients lies at the heart of our process, 
-          and we help bring visions to life. 
+            Our role is to facilitate the creation of eye-catching and
+            functional solutions, for the fraction of the rate. Collaboration
+            with our clients lies at the heart of our process, and we help bring
+            visions to life.
           </P>
           <ArrowButton className="bg-primary mt-3.5" width="10px" height="10px">
             Learn more
