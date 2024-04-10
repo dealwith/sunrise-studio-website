@@ -9,20 +9,20 @@ export const WhatWeDoSection = () => {
       <div className="flex gap-6">
         <WhatWeDoCard title={"Web3"}>
           <P className="text-black">
-            Decentralized finance Blockchain-based lending Tokenization of
-            assets
+            Decentralized blockchain-based lending, and support for tokenization
+            of assets
           </P>
         </WhatWeDoCard>
         <WhatWeDoCard title={"Finance"}>
           <P className="text-black">
-            Decentralized finance Blockchain-based lending Tokenization of
-            assets
+            Real-time financial data and visual tools for trading a variety of
+            asset classes
           </P>
         </WhatWeDoCard>
         <WhatWeDoCard title={"E-commerse"}>
           <P className="text-black">
-            Decentralized finance Blockchain-based lending Tokenization of
-            assets
+            Digital storefronts with integrated content management systems and
+            payment processing solutions
           </P>
         </WhatWeDoCard>
         <WhatWeDoCard className={styles.card}>
