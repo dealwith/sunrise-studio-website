@@ -19,7 +19,7 @@ export const WhatWeDoSection = () => {
             asset classes
           </P>
         </WhatWeDoCard>
-        <WhatWeDoCard title={"E-commerse"}>
+        <WhatWeDoCard title="E-commerce">
           <P className="text-black">
             Digital storefronts with integrated content management systems and
             payment processing solutions
