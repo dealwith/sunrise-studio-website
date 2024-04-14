@@ -8,7 +8,7 @@ import bubbleSrc from "./img/bubble.png";
 
 export const WeAreSunriseSection = () => {
   return (
-    <section className="pt-[70px] h-[674px]">
+    <section id="aboutUs" className="pt-[70px] h-[674px]">
       <div className="w-fit">
         <H2 className={styles.title}>We are sunrise studio</H2>
         <Image src={underlineSrc} alt="underline" />

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { BurgerContext } from "context";
 import { useContext } from "react";
 import { Button, MobileNavigation } from "components";
@@ -14,7 +15,7 @@ export const SunriseSectionContent = () => {
   const { isLaptopS } = useWindowSize();
 
   return (
-    <section className={styles.component}>
+    <section id="home" className={styles.component}>
       {!activeBurger && (
         <div className="w-full flex flex-col items-center gap-40 justify-between">
           <h1 className="text-[32px] sm:text-[44px] md:text-[52px] lg:text-7xl xl:text-[90px] font-light flex flex-col md:gap-8 gap-5 w-full">
@@ -33,9 +34,11 @@ export const SunriseSectionContent = () => {
             </div>
           </h1>
           {isLaptopS && (
-            <Button className="bg-primary" size="l">
-              Contact us
-            </Button>
+            <Link className={styles.link} href="#contactUs">
+              <Button className="bg-primary" size="l">
+                Contact us
+              </Button>
+            </Link>
           )}
         </div>
       )}

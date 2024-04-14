@@ -27,14 +27,18 @@ export const WhoWeWorkWithSection = () => {
       <div className="flex gap-8">
         <WhoWeWorkWithCard
           image={firstImageSrc}
-          title="Ava Reynolds"
-          subtitle="Ceo of bnnjbkl"
-          url={"https://sunrise-studio-website.vercel.app/"}
+          title="Alexey Lukyanchik"
+          subtitle="Marketing & PR Director"
+          url={"https://leaderboard.paragonevents.gg/"}
         >
-          Incredible Creativity, Seamless Process: [Digital Agency Name] excels
-          in creativity and professionalism. They effortlessly translated our
-          vision into a visually stunning website. Seamless communication and a
-          receptive approach to feedback made the process a breeze.
+          We had a productive collaboration with Sunrise studio on the landing
+          page and its mechanics for one of our products. We attracted over
+          50,000 users to the product. It was pleasant that despite this being
+          our first joint project, communication between us flowed as if we had
+          been working together for quite some time. Sunrise studio always
+          strived and consistently met all our deadlines, even when we faced
+          extraordinary, unforeseen circumstances, making it almost an
+          impossible mission.
         </WhoWeWorkWithCard>
         <WhoWeWorkWithCard
           image={secondImageSrc}

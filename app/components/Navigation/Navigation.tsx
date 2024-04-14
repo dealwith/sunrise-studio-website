@@ -7,16 +7,16 @@ export const Navigation = () => {
     <nav className="flex flex-col w-full justify-center items-center">
       <ul className={styles.list}>
         <li>
-          <Link href="#">Home</Link>
+          <Link href="#home">Home</Link>
         </li>
         <li>
-          <Link href="#">About us</Link>
+          <Link href="#aboutUs">About us</Link>
         </li>
         <li>
-          <Link href="#">Services</Link>
+          <Link href="#services">Services</Link>
         </li>
         <li>
-          <Link href="#">Projects</Link>
+          <Link href="#projects">Projects</Link>
         </li>
       </ul>
     </nav>

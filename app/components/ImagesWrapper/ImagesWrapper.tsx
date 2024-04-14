@@ -11,12 +11,14 @@ export const ImagesWrapper = () => {
     <div className={styles.component}>
       <div className={styles.imagesContainer}>
         <div className={styles.imageWrapper}>
-          <Image
-            className={styles.image}
-            src={firstImageSrc}
-            alt="Image"
-            fill
-          />
+          <a href="https://www.ag-exchange.org/" target="_blank">
+            <Image
+              className={styles.image}
+              src={firstImageSrc}
+              alt="Image"
+              fill
+            />
+          </a>
         </div>
         <div className={styles.imageWrapper}>
           <Image
@@ -27,12 +29,14 @@ export const ImagesWrapper = () => {
           />
         </div>
         <div className={styles.imageWrapper}>
-          <Image
-            className={styles.image}
-            src={thirdImageSrc}
-            alt="Image"
-            fill
-          />
+          <a href="https://leaderboard.paragonevents.gg/" target="_blank">
+            <Image
+              className={styles.image}
+              src={thirdImageSrc}
+              alt="Image"
+              fill
+            />
+          </a>
         </div>
         <ArrowButton width="14px" height="14px" className={styles.btnWrapper}>
           View all

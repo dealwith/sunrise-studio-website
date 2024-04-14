@@ -10,7 +10,7 @@ export const ContactUsSection = () => {
 
   return (
     <Section>
-      <div className={styles.component}>
+      <div id="contactUs" className={styles.component}>
         <H2>Contact us</H2>
         <form method="POST" className={styles.form}>
           <div className="flex gap-6">
