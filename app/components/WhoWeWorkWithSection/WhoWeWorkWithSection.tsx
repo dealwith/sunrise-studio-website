@@ -2,9 +2,6 @@ import { H2, ScrollButton, Section, WhoWeWorkWithCard } from "components";
 import { COLORS } from "constants/index";
 
 import styles from "./whoWeWorkWithSection.module.scss";
-import firstImageSrc from "./img/firstImage.jpg";
-import secondImageSrc from "./img/SecondImage.jpg";
-import thirdImageSrc from "./img/thirdImage.jpg";
 
 export const WhoWeWorkWithSection = () => {
   return (
@@ -26,37 +23,20 @@ export const WhoWeWorkWithSection = () => {
       </div>
       <div className="flex gap-8">
         <WhoWeWorkWithCard
-          image={firstImageSrc}
-          title="Ava Reynolds"
-          subtitle="Ceo of bnnjbkl"
-          url={"https://sunrise-studio-website.vercel.app/"}
+          image="https://media.licdn.com/dms/image/C4D03AQG9sizcSlGPrA/profile-displayphoto-shrink_400_400/0/1607362460916?e=1718841600&v=beta&t=_aZ1P2QrcVqQxt7qSA-kvgrPFoTm_3KaU9WLXlQCWQ4"
+          title="Alexey Lukyanchik"
+          subtitle="Marketing & PR Director"
+          projectUrl="https://leaderboard.paragonevents.gg/?o=6516c8527df610c311ee705a&c=65d8b870b69baa8bbf9295d9&r=paragon-dls22&p=twitch"
+          feedbackGiverUrl="https://www.linkedin.com/in/alexeilukianchik"
         >
-          Incredible Creativity, Seamless Process: [Digital Agency Name] excels
-          in creativity and professionalism. They effortlessly translated our
-          vision into a visually stunning website. Seamless communication and a
-          receptive approach to feedback made the process a breeze.
-        </WhoWeWorkWithCard>
-        <WhoWeWorkWithCard
-          image={secondImageSrc}
-          title="Ava Reynolds"
-          subtitle="Ceo of bnnjbkl"
-          url={"https://sunrise-studio-website.vercel.app/"}
-        >
-          Incredible Creativity, Seamless Process: [Digital Agency Name] excels
-          in creativity and professionalism. They effortlessly translated our
-          vision into a visually stunning website. Seamless communication and a
-          receptive approach to feedback made the process a breeze.
-        </WhoWeWorkWithCard>
-        <WhoWeWorkWithCard
-          image={thirdImageSrc}
-          title="Ava Reynolds"
-          subtitle="Ceo of bnnjbkl"
-          url={"https://sunrise-studio-website.vercel.app/"}
-        >
-          Incredible Creativity, Seamless Process: [Digital Agency Name] excels
-          in creativity and professionalism. They effortlessly translated our
-          vision into a visually stunning website. Seamless communication and a
-          receptive approach to feedback made the process a breeze.
+          We had a productive collaboration with Sunrise studio on the landing
+          page and its mechanics for one of our products. We attracted over
+          50,000 users to the product. It was pleasant that despite this being
+          our first joint project, communication between us flowed as if we had
+          been working together for quite some time. Sunrise studio always
+          strived and consistently met all our deadlines, even when we faced
+          extraordinary, unforeseen circumstances, making it almost an
+          impossible mission.
         </WhoWeWorkWithCard>
       </div>
     </Section>

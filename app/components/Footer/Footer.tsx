@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button, FooterNavigation, H4, ScrollButton } from "components";
 import { COLORS } from "constants/index";
 
@@ -14,9 +15,11 @@ export const Footer = () => {
             about sunrise studio
           </H4>
           <div className="flex justify-between">
-            <Button className="bg-primary" size="m">
-              Contact us
-            </Button>
+            <Link href="#contactUs">
+              <Button className="bg-primary" size="m">
+                Contact us
+              </Button>
+            </Link>
             <ScrollButton
               className={styles.btn}
               defaultColor={COLORS.WHITE}

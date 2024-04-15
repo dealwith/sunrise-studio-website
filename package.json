@@ -16,7 +16,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.49.3",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "sharp": "^0.33.3"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -41,5 +42,5 @@
   "prettier": {
     "printWidth": 80
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.1.1"
 }

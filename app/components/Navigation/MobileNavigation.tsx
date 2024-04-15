@@ -1,25 +1,33 @@
 import Link from "next/link";
+import { useContext } from "react";
+import { BurgerContext } from "@/context";
 
 import styles from "./navigation.module.scss";
 
 export const MobileNavigation = () => {
+  const { activeBurger, setActiveBurger } = useContext(BurgerContext);
+
+  const handleBurgerClick = () => {
+    setActiveBurger(!activeBurger);
+  };
+
   return (
     <nav className="flex flex-col justify-center">
-      <ul className={styles.mobileList}>
+      <ul className={styles.mobileList} onClick={handleBurgerClick}>
         <li>
-          <Link href="#">Home</Link>
+          <Link href="#home">Home</Link>
         </li>
         <li>
-          <Link href="#">About us</Link>
+          <Link href="#aboutUs">About us</Link>
         </li>
         <li>
-          <Link href="#">Services</Link>
+          <Link href="#services">Services</Link>
         </li>
         <li>
-          <Link href="#">Projects</Link>
+          <Link href="#projects">Projects</Link>
         </li>
         <li>
-          <Link href="#">Contact us</Link>
+          <Link href="#contactUs">Contact us</Link>
         </li>
       </ul>
     </nav>

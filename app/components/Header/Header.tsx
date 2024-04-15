@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useContext } from "react";
 import { Button, Logo, Navigation } from "components";
 import { BurgerContext } from "context";
@@ -28,9 +29,11 @@ export const Header = () => {
         <>
           <Logo width={48} height={48} />
           <Navigation />
-          <Button className="bg-primary whitespace-nowrap" size="m">
-            Contact us
-          </Button>
+          <Link href="#contactUs">
+            <Button className="bg-primary whitespace-nowrap" size="m">
+              Contact us
+            </Button>
+          </Link>
         </>
       )}
     </header>

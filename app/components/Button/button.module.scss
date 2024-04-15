@@ -18,7 +18,7 @@
   padding: 12px 0;
   display: flex;
   justify-content: center;
-  @include mixin.maxWidth(400px);
+  width: 100%;
 }
 
 .arrowBtn {
