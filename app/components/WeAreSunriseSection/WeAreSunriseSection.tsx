@@ -15,7 +15,7 @@ export const WeAreSunriseSection = () => {
       </div>
       <div className="flex">
         <div className={styles.textWrapper}>
-          <P>
+          <P className="!text-xl">
             Our role is to facilitate the creation of eye-catching and
             functional solutions, for the fraction of the rate. Collaboration
             with our clients lies at the heart of our process, and we help bring
