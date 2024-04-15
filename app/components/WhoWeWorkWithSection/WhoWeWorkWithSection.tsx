@@ -2,7 +2,6 @@ import { H2, ScrollButton, Section, WhoWeWorkWithCard } from "components";
 import { COLORS } from "constants/index";
 
 import styles from "./whoWeWorkWithSection.module.scss";
-import firstImageSrc from "./img/firstImage.jpg";
 
 export const WhoWeWorkWithSection = () => {
   return (
