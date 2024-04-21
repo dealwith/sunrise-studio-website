@@ -21,9 +21,9 @@ export const WeAreSunriseSection = () => {
             with our clients lies at the heart of our process, and we help bring
             visions to life.
           </P>
-          <ArrowButton className="bg-primary mt-3.5" width="10px" height="10px">
+          {/* <ArrowButton className="bg-primary mt-3.5" width="10px" height="10px">
             Learn more
-          </ArrowButton>
+          </ArrowButton> */}
         </div>
         <div className="relative w-3/5">
           <Image src={bubbleSrc} alt="bubble" className={styles.image} />

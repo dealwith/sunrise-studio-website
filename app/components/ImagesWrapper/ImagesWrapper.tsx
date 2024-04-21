@@ -38,9 +38,9 @@ export const ImagesWrapper = () => {
             />
           </a>
         </div>
-        <ArrowButton width="14px" height="14px" className={styles.btnWrapper}>
+        {/* <ArrowButton width="14px" height="14px" className={styles.btnWrapper}>
           View all
-        </ArrowButton>
+        </ArrowButton> */}
       </div>
     </div>
   );

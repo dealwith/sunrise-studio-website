@@ -8,7 +8,7 @@ export const WhoWeWorkWithSection = () => {
     <Section>
       <div className="flex justify-between items-center">
         <H2>Who we work with</H2>
-        <div className="flex gap-2.5">
+        {/* <div className="flex gap-2.5">
           <ScrollButton
             className={styles.btn}
             defaultColor={COLORS.RED}
@@ -19,7 +19,7 @@ export const WhoWeWorkWithSection = () => {
             defaultColor={COLORS.RED}
             hoverColor={COLORS.WHITE}
           />
-        </div>
+        </div> */}
       </div>
       <div className="flex gap-8">
         <WhoWeWorkWithCard
