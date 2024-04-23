@@ -1,8 +1,10 @@
 import classNames from "classnames";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import "@radix-ui/themes/styles.css";
+
 import { onest } from "./fonts/onest";
 import "./styles/globals.css";
-import "@radix-ui/themes/styles.css";
 
 import styles from "./layout.module.scss";
 
@@ -40,6 +42,7 @@ export default function RootLayout({
       </head>
       <body className={classNames(styles.component, onest.className)}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
