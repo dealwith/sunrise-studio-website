@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { HTMLProps, useContext } from "react";
 import { cn } from "@utils/cn";
 
@@ -34,14 +33,14 @@ export const Header = ({ className, ...rest }: HTMLProps<HTMLDivElement>) => {
         <>
           <Logo width={48} height={48} />
           <Navigation />
-          <Link href="#contactUs">
+          <a href="#contactUs">
             <Button
               className="bg-primary whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
               size="m"
             >
               Contact us
             </Button>
-          </Link>
+          </a>
         </>
       )}
     </header>
