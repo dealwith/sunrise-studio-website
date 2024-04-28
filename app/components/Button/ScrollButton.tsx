@@ -3,7 +3,7 @@ import useToggle from "hooks/useToggle";
 import { Button } from "./Button";
 import { ScrollIcon } from "./img/ScrollIcon";
 import { MouseEventHandler } from "react";
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 
 import styles from "./button.module.scss";
 
@@ -18,7 +18,7 @@ export const ScrollButton = ({
   hoverColor,
   className: propsClassName,
 }: Props) => {
-  const buttonClassName = classNames(styles.scrollBtn, propsClassName);
+  const buttonClassName = cn(styles.scrollBtn, propsClassName);
   const [isHovered, setHovered] = useToggle();
 
   return (

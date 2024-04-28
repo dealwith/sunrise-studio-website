@@ -1,8 +1,9 @@
-import classNames from "classnames";
 import type { Metadata } from "next";
+import { cn } from "@utils/cn";
+
+import "@radix-ui/themes/styles.css";
 import { onest } from "./fonts/onest";
 import "./styles/globals.css";
-import "@radix-ui/themes/styles.css";
 
 import styles from "./layout.module.scss";
 
@@ -38,9 +39,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={classNames(styles.component, onest.className)}>
-        {children}
-      </body>
+      <body className={cn(styles.component, onest.className)}>{children}</body>
     </html>
   );
 }

@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 import { FunctionComponent } from "react";
 
 import styles from "./h4.module.scss";
@@ -15,7 +15,7 @@ export const H4: FunctionComponent<TProps> = ({
   className: propsClassName,
   ...props
 }) => {
-  const componentClassName = classNames(styles.component, propsClassName);
+  const componentClassName = cn(styles.component, propsClassName);
 
   return isText ? (
     <span className={componentClassName} {...props}>
