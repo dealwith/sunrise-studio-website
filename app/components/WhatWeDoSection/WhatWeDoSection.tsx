@@ -26,11 +26,13 @@ export const WhatWeDoSection = () => {
               payment processing solutions
             </P>
           </WhatWeDoCard>
-          {/* <WhatWeDoCard className={styles.card}>
-            <ArrowButton width="14px" height="14px" className={styles.btn}>
-              Landing Pages
-            </ArrowButton>
-          </WhatWeDoCard> */}
+          <WhatWeDoCard className={styles.card}>
+            <a href="#contactUs">
+              <ArrowButton width="14px" height="14px" className={styles.btn}>
+                Much More
+              </ArrowButton>
+            </a>
+          </WhatWeDoCard>
         </div>
       </div>
     </Section>
