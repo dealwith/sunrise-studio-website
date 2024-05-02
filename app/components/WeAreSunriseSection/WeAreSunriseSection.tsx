@@ -11,7 +11,11 @@ export const WeAreSunriseSection = () => {
     <section id="aboutUs" className="pt-[70px] h-[674px]">
       <div className="w-fit">
         <H2 className={styles.title}>We are sunrise studio</H2>
-        <Image src={underlineSrc} alt="underline" />
+        <Image
+          src={underlineSrc}
+          alt="underline"
+          className={styles.underline}
+        />
       </div>
       <div className="flex">
         <div className={styles.textWrapper}>
