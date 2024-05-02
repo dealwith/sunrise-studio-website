@@ -38,9 +38,11 @@ export const ImagesWrapper = () => {
             />
           </a>
         </div>
-        <ArrowButton width="14px" height="14px" className={styles.btnWrapper}>
-          View all
-        </ArrowButton>
+        <a href="#contactUs" className={styles.btnWrapper}>
+          <ArrowButton width="14px" height="14px" className={styles.btnWrapper}>
+            Let&apos;s work together
+          </ArrowButton>
+        </a>
       </div>
     </div>
   );

@@ -5,8 +5,17 @@ import logoSrc from "./img/Logo.svg";
 type Props = {
   width?: number;
   height?: number;
+  className?: string;
 };
 
-export const Logo = ({ width, height }: Props) => {
-  return <Image src={logoSrc} alt="logo" width={width} height={height} />;
+export const Logo = ({ width, height, className }: Props) => {
+  return (
+    <Image
+      className={className}
+      src={logoSrc}
+      alt="logo"
+      width={width}
+      height={height}
+    />
+  );
 };

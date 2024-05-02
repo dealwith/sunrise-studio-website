@@ -7,20 +7,21 @@ import {
   Header,
   OurProjectsSection,
   OurTeamsExperienceSection,
-  SunriseSectionBackground,
   SunriseSectionContent,
   WeAreSunriseSection,
   WhatWeDoSection,
   WhoWeWorkWithSection,
 } from "components";
 import { BurgerContext } from "context";
+import { AuroraBackground } from "./components/Background/AuroraBackground";
+import { SunriseContainer } from "./components/Container/SunriseContainer";
 
 export default function Home() {
   const [activeBurger, setActiveBurger] = useState(false);
 
   return (
     <BurgerContext.Provider value={{ activeBurger, setActiveBurger }}>
-      <main className="flex min-h-screen flex-col items-center justify-between">
+      <main className="flex min-h-screen flex-col items-center justify-between w-full">
         {activeBurger ? (
           <style jsx global>{`
             body {
@@ -34,16 +35,21 @@ export default function Home() {
             }
           `}</style>
         )}
-        <Header />
-        <SunriseSectionBackground />
-        <SunriseSectionContent />
-        <WeAreSunriseSection />
-        <OurTeamsExperienceSection />
-        <WhatWeDoSection />
-        <OurProjectsSection />
-        <WhoWeWorkWithSection />
-        <ContactUsSection />
-        <Footer />
+        <AuroraBackground>
+          <SunriseContainer className="z-10">
+            <Header />
+            <SunriseSectionContent />
+          </SunriseContainer>
+        </AuroraBackground>
+        <SunriseContainer>
+          <WeAreSunriseSection />
+          <OurTeamsExperienceSection />
+          <WhatWeDoSection />
+          <OurProjectsSection />
+          <WhoWeWorkWithSection />
+          <ContactUsSection />
+          <Footer />
+        </SunriseContainer>
       </main>
     </BurgerContext.Provider>
   );

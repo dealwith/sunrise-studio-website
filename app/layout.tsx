@@ -1,7 +1,8 @@
-import classNames from "classnames";
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
+import { cn } from "@utils/cn";
+
 import "@radix-ui/themes/styles.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import { onest } from "./fonts/onest";
 import "./styles/globals.css";
@@ -40,7 +41,7 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={classNames(styles.component, onest.className)}>
+      <body className={cn(styles.component, onest.className)}>
         {children}
         <Analytics />
       </body>

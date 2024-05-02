@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 import { FunctionComponent, ReactNode } from "react";
 
 import styles from "./whatWeDoCard.module.scss";
@@ -14,7 +14,7 @@ export const WhatWeDoCard: FunctionComponent<TProps> = ({
   children,
   className: propsClassName,
 }) => {
-  const componentClassName = classNames(styles.component, propsClassName);
+  const componentClassName = cn(styles.component, propsClassName);
 
   return (
     <div className={componentClassName}>

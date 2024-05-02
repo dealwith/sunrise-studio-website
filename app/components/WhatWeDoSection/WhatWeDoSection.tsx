@@ -27,9 +27,11 @@ export const WhatWeDoSection = () => {
             </P>
           </WhatWeDoCard>
           <WhatWeDoCard className={styles.card}>
-            <ArrowButton width="14px" height="14px" className={styles.btn}>
-              Learn more
-            </ArrowButton>
+            <a href="#contactUs">
+              <ArrowButton width="14px" height="14px" className={styles.btn}>
+                Much More
+              </ArrowButton>
+            </a>
           </WhatWeDoCard>
         </div>
       </div>

@@ -3,7 +3,6 @@ import Link from "next/link";
 import { BurgerContext } from "context";
 import { useContext } from "react";
 import { Button, MobileNavigation } from "components";
-import { useWindowSize } from "hooks";
 
 import starSrc from "./img/star.svg";
 import cloverSrc from "./img/clover.png";
@@ -12,7 +11,6 @@ import styles from "./sunriseSection.module.scss";
 
 export const SunriseSectionContent = () => {
   const { activeBurger } = useContext(BurgerContext);
-  const { isLaptopS } = useWindowSize();
 
   return (
     <section id="home" className={styles.component}>
@@ -33,13 +31,11 @@ export const SunriseSectionContent = () => {
               Digital Innovation
             </div>
           </h1>
-          {isLaptopS && (
-            <Link className={styles.link} href="#contactUs">
-              <Button className="bg-primary" size="l">
-                Contact us
-              </Button>
-            </Link>
-          )}
+          <Link className={`${styles.link} md:hidden block`} href="#contactUs">
+            <Button className="bg-primary" size="l">
+              Contact us
+            </Button>
+          </Link>
         </div>
       )}
       <div

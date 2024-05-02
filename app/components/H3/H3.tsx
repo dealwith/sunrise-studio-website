@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 import { FunctionComponent } from "react";
 import { unbounded } from "../../fonts/unbounded";
 
@@ -16,7 +16,7 @@ export const H3: FunctionComponent<TProps> = ({
   className: propsClassName,
   ...props
 }) => {
-  const componentClassName = classNames(
+  const componentClassName = cn(
     styles.component,
     propsClassName,
     unbounded.className,

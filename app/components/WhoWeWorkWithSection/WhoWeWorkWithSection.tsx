@@ -1,14 +1,11 @@
-import { H2, ScrollButton, Section, WhoWeWorkWithCard } from "components";
-import { COLORS } from "constants/index";
-
-import styles from "./whoWeWorkWithSection.module.scss";
+import { H2, Section, WhoWeWorkWithCard } from "components";
 
 export const WhoWeWorkWithSection = () => {
   return (
     <Section>
       <div className="flex justify-between items-center">
         <H2>Who we work with</H2>
-        <div className="flex gap-2.5">
+        {/* <div className="flex gap-2.5">
           <ScrollButton
             className={styles.btn}
             defaultColor={COLORS.RED}
@@ -19,7 +16,7 @@ export const WhoWeWorkWithSection = () => {
             defaultColor={COLORS.RED}
             hoverColor={COLORS.WHITE}
           />
-        </div>
+        </div> */}
       </div>
       <div className="flex gap-8">
         <WhoWeWorkWithCard

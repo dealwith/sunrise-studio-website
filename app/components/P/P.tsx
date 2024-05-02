@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 import { FunctionComponent, ReactNode } from "react";
 
 import styles from "./p.module.scss";
@@ -15,7 +15,7 @@ export const P: FunctionComponent<TProps> = ({
   className: propsClassName,
   ...props
 }) => {
-  const componentClassName = classNames(styles.component, propsClassName);
+  const componentClassName = cn(styles.component, propsClassName);
 
   return isText ? (
     <span className={componentClassName} {...props}>
