@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowButton, H2, P } from "components";
+import { H2, P } from "components";
 
 import styles from "./weAreSunriseSection.module.scss";
 

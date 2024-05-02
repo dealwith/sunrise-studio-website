@@ -1,7 +1,4 @@
-import { H2, ScrollButton, Section, WhoWeWorkWithCard } from "components";
-import { COLORS } from "constants/index";
-
-import styles from "./whoWeWorkWithSection.module.scss";
+import { H2, Section, WhoWeWorkWithCard } from "components";
 
 export const WhoWeWorkWithSection = () => {
   return (

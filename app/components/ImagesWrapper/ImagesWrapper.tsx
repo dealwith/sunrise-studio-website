@@ -40,7 +40,7 @@ export const ImagesWrapper = () => {
         </div>
         <a href="#contactUs" className={styles.btnWrapper}>
           <ArrowButton width="14px" height="14px" className={styles.btnWrapper}>
-            Let's work together
+            Let&apos;s work together
           </ArrowButton>
         </a>
       </div>
