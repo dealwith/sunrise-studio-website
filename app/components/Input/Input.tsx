@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 import { ChangeHandler } from "react-hook-form";
 import { onest } from "../../fonts/onest";
 
@@ -27,7 +27,7 @@ export const Input = forwardRef<HTMLInputElement, TProps>(
     },
     ref,
   ) => {
-    const inputClassName = classNames(
+    const inputClassName = cn(
       styles.component,
       propsClassName,
       onest.className,

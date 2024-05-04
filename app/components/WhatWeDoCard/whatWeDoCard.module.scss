@@ -3,7 +3,7 @@
 .component {
   @include mixin.maxWidth(322px);
   height: 322px;
-  background-color: var(--textWhite);
+  background-color: white;
   border-radius: 16px;
   padding: 24px;
   color: var(--red);

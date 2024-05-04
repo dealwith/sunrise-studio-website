@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 import { FunctionComponent } from "react";
 import { Button } from "./Button";
 
@@ -19,7 +19,7 @@ export const ArrowButton: FunctionComponent<TProps> = ({
   width,
   height,
 }) => {
-  const buttonClassName = classNames(styles.arrowBtn, propsClassName);
+  const buttonClassName = cn(styles.arrowBtn, propsClassName);
 
   return (
     <Button className={buttonClassName}>

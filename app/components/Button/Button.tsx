@@ -1,10 +1,11 @@
-import classNames from "classnames";
 import {
   ReactNode,
   ButtonHTMLAttributes,
   DetailedHTMLProps,
   forwardRef,
 } from "react";
+
+import { cn } from "@utils/cn";
 
 import styles from "./button.module.scss";
 
@@ -21,17 +22,13 @@ type Props = {
 
 export const Button = forwardRef<HTMLButtonElement, Props>(
   ({ children, size, className: propsClassName, ...props }, ref) => {
-    const buttonSize = classNames({
+    const buttonSize = cn({
       [styles.sizeL]: size === "l",
       [styles.sizeM]: size === "m",
       [styles.sizeNone]: size === "none",
     });
 
-    const buttonClassName = classNames(
-      styles.component,
-      buttonSize,
-      propsClassName,
-    );
+    const buttonClassName = cn(styles.component, buttonSize, propsClassName);
 
     return (
       <button className={buttonClassName} {...props} {...ref}>

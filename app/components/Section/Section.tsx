@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { cn } from "@utils/cn";
 import { FunctionComponent, ReactNode } from "react";
 
 import styles from "./section.module.scss";
@@ -12,7 +12,7 @@ export const Section: FunctionComponent<TProps> = ({
   children,
   className: propsClassName,
 }) => {
-  const sectionClassName = classNames(styles.component, propsClassName);
+  const sectionClassName = cn(styles.component, propsClassName);
 
   return <section className={sectionClassName}>{children}</section>;
 };
