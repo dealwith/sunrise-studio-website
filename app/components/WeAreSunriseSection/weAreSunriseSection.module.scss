@@ -18,6 +18,16 @@
   width: 43%;
   gap: 16px;
   margin: 40px 0 30px 0;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    margin: 40px 0 24px 0;
+    width: 50%;
+  }
+
+  @include mixin.media-w(breakpoints.$mobile) {
+    margin: 24px 0 0 0;
+    width: 100%;
+  }
 }
 
 .underline {
@@ -35,4 +45,9 @@
   top: -120px;
   left: 70px;
   z-index: -1;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    top: -20%;
+    left: 0;
+  }
 }
