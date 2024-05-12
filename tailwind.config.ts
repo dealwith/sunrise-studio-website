@@ -17,6 +17,7 @@ const config: Config = {
         primary: "#1C1C1E",
         secondary: "#E95848",
         accent: "#E95848",
+        black: "#1c1c1e",
       },
       fontFamily: {
         unbounded: "Unbounded-Light",
@@ -28,7 +29,6 @@ const config: Config = {
         "soft-blush": "#d1abb5",
         "greyish-mauve": "#967f85",
         "deep-slate-grey": "#464451",
-
       },
       animation: {
         aurora: "aurora 60s linear infinite",
