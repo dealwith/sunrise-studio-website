@@ -1,6 +1,6 @@
 import Image from "next/image";
-
 import logoSrc from "./img/Logo.svg";
+import styles from "./logo.module.scss";
 
 type Props = {
   width?: number;
@@ -11,7 +11,7 @@ type Props = {
 export const Logo = ({ width, height, className }: Props) => {
   return (
     <Image
-      className={className}
+      className={styles.component}
       src={logoSrc}
       alt="logo"
       width={width}

@@ -11,7 +11,7 @@ import styles from "./layout.module.scss";
 
 export const metadata: Metadata = {
   title: "Sunrise studio",
-  description: "Shaping future through digital innovation",
+  description: "Shaping the future with digital innovation",
 };
 
 export default function RootLayout({

@@ -28,7 +28,6 @@ const config: Config = {
         "soft-blush": "#d1abb5",
         "greyish-mauve": "#967f85",
         "deep-slate-grey": "#464451",
-
       },
       animation: {
         aurora: "aurora 60s linear infinite",
