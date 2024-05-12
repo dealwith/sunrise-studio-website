@@ -1,6 +1,8 @@
 import Image from "next/image";
+
+import { cn } from "@utils/cn";
+
 import logoSrc from "./img/Logo.svg";
-import styles from "./logo.module.scss";
 
 type Props = {
   width?: number;
@@ -8,10 +10,10 @@ type Props = {
   className?: string;
 };
 
-export const Logo = ({ width, height, className }: Props) => {
+export const Logo = ({ width, height, className: propsClassName }: Props) => {
   return (
     <Image
-      className={styles.component}
+      className={cn("bg-black rounded-full p-0.5", propsClassName)}
       src={logoSrc}
       alt="logo"
       width={width}
