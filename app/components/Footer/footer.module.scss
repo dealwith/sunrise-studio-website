@@ -1,24 +1,11 @@
 @use "styles/mixin";
 
-.component {
-  margin-top: 174px;
-  background-color: var(--red);
-  width: 100vw;
-}
-
 .contentWrapper {
   padding: 60px 80px;
   margin: 0 auto;
   @include mixin.maxWidth(1300px);
   display: flex;
   justify-content: space-between;
-}
-
-.content {
-  width: 66%;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
 
 .text {
