@@ -6,10 +6,10 @@ import styles from "./footer.module.scss";
 
 export const Footer = () => {
   return (
-    <footer className={styles.component}>
+    <footer className="mt-44 bg-secondary w-screen absolute left-0">
       <div className={styles.contentWrapper}>
         <FooterNavigation />
-        <div className={styles.content}>
+        <div className="w-2/3 flex-col flex gap-8">
           <H4 className={styles.text}>
             Write us to schedule a call to discuss your project and learn more
             about sunrise studio
