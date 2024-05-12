@@ -4,7 +4,7 @@ export const WhoWeWorkWithSection = () => {
   return (
     <Section>
       <div className="flex justify-between items-center">
-        <H2>Who we work with</H2>
+        <H2>Testimonials</H2>
         {/* <div className="flex gap-2.5">
           <ScrollButton
             className={styles.btn}
