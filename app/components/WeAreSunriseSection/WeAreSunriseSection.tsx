@@ -8,14 +8,21 @@ import bubbleSrc from "./img/bubble.png";
 
 export const WeAreSunriseSection = () => {
   return (
-    <section id="aboutUs" className="pt-[70px] h-[674px]">
+    <section
+      id="aboutUs"
+      className="pt-[60px] md:pt-[100px] lg:pt-[70px] h-fit md:h-[400px] lg:h-[674px]"
+    >
       <div className="w-fit">
         <H2 className={styles.title}>We are sunrise studio</H2>
-        <Image src={underlineSrc} alt="underline" />
+        <Image
+          src={underlineSrc}
+          alt="underline"
+          className={styles.underline}
+        />
       </div>
-      <div className="flex">
+      <div className="flex justify-between">
         <div className={styles.textWrapper}>
-          <P className="!text-xl">
+          <P className="md:!text-xl">
             Our role is to facilitate the creation of eye-catching and
             functional solutions, for the fraction of the rate. Collaboration
             with our clients lies at the heart of our process, and we help bring
@@ -25,7 +32,7 @@ export const WeAreSunriseSection = () => {
             Learn more
           </ArrowButton> */}
         </div>
-        <div className="relative w-3/5">
+        <div className="relative lg:w-3/5 md:w-[45%]">
           <Image src={bubbleSrc} alt="bubble" className={styles.image} />
         </div>
       </div>

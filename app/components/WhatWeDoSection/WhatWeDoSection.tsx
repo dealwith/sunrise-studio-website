@@ -7,7 +7,7 @@ export const WhatWeDoSection = () => {
     <Section>
       <div id="services" className="flex flex-col gap-[60px]">
         <H2>What we do</H2>
-        <div className="flex gap-6">
+        <div className="grid grid-cols-1 min-[484px]:grid-cols-2 min-[940px]:grid-cols-4 gap-3 lg:gap-6">
           <WhatWeDoCard title={"Web3"}>
             <P className="text-black">
               Decentralized, blockchain-based financial lending and support for

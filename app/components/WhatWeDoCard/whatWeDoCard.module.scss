@@ -1,7 +1,8 @@
 @use "styles/mixin";
+@use "styles/breakpoints";
 
 .component {
-  @include mixin.maxWidth(322px);
+  width: 100%;
   height: 322px;
   background-color: white;
   border-radius: 16px;
@@ -10,4 +11,12 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    height: 274px;
+  }
+
+  @include mixin.media-w(breakpoints.$mobile) {
+    height: 254px;
+  }
 }

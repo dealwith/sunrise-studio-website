@@ -1,4 +1,15 @@
+@use "styles/mixin";
+@use "styles/breakpoints";
+
 .component {
   font-size: 52px;
   font-weight: 300;
+
+  @include mixin.media-w(breakpoints.$laptop) {
+    font-size: 42px;
+  }
+
+  @include mixin.media-w(breakpoints.$mobile) {
+    font-size: 26px;
+  }
 }
