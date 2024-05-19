@@ -18,7 +18,7 @@ $border-radius: 16px;
   @include mixin.media-w(breakpoints.$mobile) {
     grid-template-rows: repeat(
       4,
-      auto
+      269px
     ); // Create four rows for each child element
     grid-template-columns: 1fr; // Single column
   }
@@ -26,9 +26,6 @@ $border-radius: 16px;
 
 .imageWrapper {
   position: relative;
-  @include mixin.media-w(breakpoints.$mobile) {
-    height: 254px;
-  }
 }
 
 .imageWrapperText {
@@ -107,8 +104,8 @@ $border-radius: 16px;
   @include mixin.media-w(breakpoints.$mobile) {
     grid-row: auto;
     grid-column: auto;
-    order: 4; // Fourth item
-    padding: 20px;
+    order: 4;
+    height: 2;
   }
 }
 
