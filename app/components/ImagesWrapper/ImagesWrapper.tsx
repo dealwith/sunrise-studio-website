@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { ArrowButton } from "components";
 
-import styles from "./imagesWrapper.module.scss";
 import firstImageSrc from "./img/FirstImage.jpg";
 import thirdImageSrc from "./img/ThirdImage.jpg";
+
+import styles from "./imagesWrapper.module.scss";
 
 export const ImagesWrapper = () => {
   return (
