@@ -59,6 +59,7 @@ $border-radius: 16px;
   @include mixin.media-w(breakpoints.$mobile) {
     grid-row: auto; // Allow it to flow naturally in the single column layout
     grid-column: auto;
+    padding-top: 0;
     order: 1; // First item
   }
 }
@@ -70,6 +71,7 @@ $border-radius: 16px;
   @include mixin.media-w(breakpoints.$mobile) {
     grid-row: auto;
     grid-column: auto;
+    padding-top: 0;
     order: 3; // Make this the third item
     font-size: 24px;
   }
@@ -83,6 +85,7 @@ $border-radius: 16px;
   @include mixin.media-w(breakpoints.$mobile) {
     grid-row: auto;
     grid-column: auto;
+    padding-top: 0;
     order: 2; // Second item
   }
 }
