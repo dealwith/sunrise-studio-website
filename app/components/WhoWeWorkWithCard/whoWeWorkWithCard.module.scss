@@ -12,7 +12,7 @@
 }
 
 @include mixin.media-w(breakpoints.$laptop) {
-  .full_width_mobile {
+  .styles.full_width_breakpoint {
     width: 100%;
   }
 }
