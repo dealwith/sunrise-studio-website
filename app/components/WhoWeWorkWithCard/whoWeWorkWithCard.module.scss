@@ -1,10 +1,18 @@
-.text {
-  font-weight: 300;
-}
+@use "styles/mixin";
+@use "styles/breakpoints";
 
 .link {
   display: flex;
   align-items: center;
   font-weight: 700;
   gap: 11px;
+}
+.text {
+  font-weight: 0;
+}
+
+@include mixin.media-w(breakpoints.$laptop) {
+  .full_width_mobile {
+    width: 100%;
+  }
 }

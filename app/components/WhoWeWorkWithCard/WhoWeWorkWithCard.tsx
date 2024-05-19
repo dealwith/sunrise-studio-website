@@ -24,7 +24,7 @@ export const WhoWeWorkWithCard: FunctionComponent<TProps> = ({
   projectUrl,
 }) => {
   return (
-    <div className="w-4/12">
+    <div className={`${styles.full_width_mobile} w-6/12`}>
       <a href={feedbackGiverUrl} target="_blank" className={styles.link}>
         <div className="flex gap-3.5 mb-4">
           {typeof image === "string" ? (
