@@ -48,7 +48,7 @@ export const ContactUsSection = () => {
               <Input
                 id="name"
                 type="text"
-                placeholder="Julia"
+                placeholder="Name"
                 {...register("name")}
               />
             </div>
@@ -59,7 +59,7 @@ export const ContactUsSection = () => {
               <Input
                 id="email"
                 type="text"
-                placeholder="juliades53@gmail.com"
+                placeholder="example@gmail.com"
                 {...register("email")}
               />
             </div>
