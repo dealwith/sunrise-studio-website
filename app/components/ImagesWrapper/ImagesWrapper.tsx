@@ -22,7 +22,7 @@ export const ImagesWrapper = () => {
           </a>
         </div>
         <div className={styles.imageWrapper}>
-          <a href="https://www.emeraldcoastrealestatetips.com/" target="_blank">
+          <a href="https://www.ag-exchange.org/" target="_blank">
             <Image
               className={styles.image}
               src={firstImageSrc}
