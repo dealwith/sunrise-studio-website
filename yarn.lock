@@ -5884,6 +5884,7 @@ __metadata:
   resolution: "sunrise-studio-website@workspace:."
   dependencies:
     "@hookform/resolvers": "npm:^3.3.4"
+    "@radix-ui/react-avatar": "npm:^1.0.4"
     "@radix-ui/themes": "npm:^2.0.1"
     "@types/node": "npm:^20"
     "@types/react": "npm:^18"
