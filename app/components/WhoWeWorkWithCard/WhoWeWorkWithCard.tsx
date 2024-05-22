@@ -1,5 +1,5 @@
-import Image, { StaticImageData } from "next/image";
 import { FunctionComponent } from "react";
+import * as Avatar from "@radix-ui/react-avatar";
 import { H3, P } from "components";
 
 import styles from "./whoWeWorkWithCard.module.scss";
@@ -7,7 +7,7 @@ import styles from "./whoWeWorkWithCard.module.scss";
 import { ButtonArrow } from "../Button/img/ButtonArrow";
 
 type TProps = {
-  image: StaticImageData | string;
+  image: string;
   title: string;
   subtitle: string;
   children: string;
@@ -24,26 +24,18 @@ export const WhoWeWorkWithCard: FunctionComponent<TProps> = ({
   projectUrl,
 }) => {
   return (
-    <div className={`${styles.full_width_breakpoint} w-6/12`}>
+    <div className={styles.full_width_breakpoint}>
       <a href={feedbackGiverUrl} target="_blank" className={styles.link}>
         <div className="flex gap-3.5 mb-4">
-          {typeof image === "string" ? (
-            <img
+          <Avatar.Root>
+            <Avatar.Image
               src={image}
               alt="Logo"
               width={46}
               height={46}
               className="rounded-full"
             />
-          ) : (
-            <Image
-              src={image}
-              alt="Logo"
-              width={46}
-              height={46}
-              className="rounded-full"
-            />
-          )}
+          </Avatar.Root>
           <div>
             <H3>{title}</H3>
             <P className={styles.text}>{subtitle}</P>
