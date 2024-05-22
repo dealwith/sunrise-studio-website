@@ -10,9 +10,3 @@
 .text {
   font-weight: 0;
 }
-
-@include mixin.media-w(breakpoints.$laptop) {
-  .styles.full_width_breakpoint {
-    width: 100%;
-  }
-}

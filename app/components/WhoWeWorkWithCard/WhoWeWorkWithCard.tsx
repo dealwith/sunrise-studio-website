@@ -2,9 +2,9 @@ import { FunctionComponent } from "react";
 import * as Avatar from "@radix-ui/react-avatar";
 import { H3, P } from "components";
 
-import styles from "./whoWeWorkWithCard.module.scss";
-
 import { ButtonArrow } from "../Button/img/ButtonArrow";
+
+import styles from "./whoWeWorkWithCard.module.scss";
 
 type TProps = {
   image: string;
@@ -24,7 +24,7 @@ export const WhoWeWorkWithCard: FunctionComponent<TProps> = ({
   projectUrl,
 }) => {
   return (
-    <div className={styles.full_width_breakpoint}>
+    <div>
       <a href={feedbackGiverUrl} target="_blank" className={styles.link}>
         <div className="flex gap-3.5 mb-4">
           <Avatar.Root>

@@ -18,7 +18,7 @@ export const WhoWeWorkWithSection = () => {
           />
         </div> */}
       </div>
-      <div className="flex gap-8">
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <WhoWeWorkWithCard
           image="https://media.licdn.com/dms/image/C4D03AQG9sizcSlGPrA/profile-displayphoto-shrink_400_400/0/1607362460916?e=1718841600&v=beta&t=_aZ1P2QrcVqQxt7qSA-kvgrPFoTm_3KaU9WLXlQCWQ4"
           title="Alexey Lukyanchik"
