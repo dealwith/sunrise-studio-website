@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowButton } from "components";
 
 import firstImageSrc from "./img/FirstImage.jpg";
+import secondImageSrc from "./img/SecondImage.jpg";
 import thirdImageSrc from "./img/ThirdImage.jpg";
 
 import styles from "./imagesWrapper.module.scss";
@@ -11,6 +12,16 @@ export const ImagesWrapper = () => {
     <div className={styles.component}>
       <div className={styles.imagesContainer}>
         <div className={styles.imageWrapper}>
+          <a href="https://www.emeraldcoastrealestatetips.com/" target="_blank">
+            <Image
+              className={styles.image}
+              src={secondImageSrc}
+              alt="Image"
+              fill
+            />
+          </a>
+        </div>
+        <div className={styles.imageWrapper}>
           <a href="https://www.ag-exchange.org/" target="_blank">
             <Image
               className={styles.image}
@@ -19,12 +30,6 @@ export const ImagesWrapper = () => {
               fill
             />
           </a>
-        </div>
-        <div className={`${styles.imageWrapper} ${styles.imageWrapperText}`}>
-          <p>
-            Here can be your next <br />
-            <strong>idea.</strong>
-          </p>
         </div>
         <div className={styles.imageWrapper}>
           <a
