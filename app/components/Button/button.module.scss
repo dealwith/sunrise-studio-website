@@ -8,18 +8,6 @@
   line-height: 24px;
 }
 
-.sizeM {
-  border-radius: 16px;
-  padding: 12px 44px;
-  width: fit-content;
-  display: flex;
-  justify-content: center;
-
-  @include mixin.media-w(breakpoints.$mobileM) {
-    width: 100%;
-  }
-}
-
 .sizeL {
   border-radius: 16px;
   padding: 12px 0;

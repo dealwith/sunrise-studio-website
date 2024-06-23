@@ -43,6 +43,9 @@ const config: Config = {
           },
         },
       },
+      screens: {
+        mobileM: "425px",
+      },
     },
   },
   plugins: [addVariablesForColors],

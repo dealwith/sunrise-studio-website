@@ -15,7 +15,7 @@ export const Footer: FunctionComponent<TProps> = ({ handleClick }) => {
 
   return (
     <footer className="mt-44 bg-secondary w-full absolute left-0">
-      <div className={styles.contentWrapper}>
+      <div className="flex flex-col gap-8 sm:flex-row justify-between max-w-[1440px] mx-auto py-[60px] px-4 md:px-10">
         <FooterNavigation />
         <div className="w-full sm:w-2/3 flex-col flex gap-4 sm:gap-8">
           <H4 className={styles.text}>
