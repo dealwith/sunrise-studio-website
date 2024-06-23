@@ -1,16 +1,11 @@
 @use "styles/mixin";
+@use "styles/breakpoints";
 
 .component {
   display: flex;
   align-items: center;
   font-weight: 700;
   line-height: 24px;
-}
-
-.sizeM {
-  border-radius: 16px;
-  padding: 12px 44px;
-  width: fit-content;
 }
 
 .sizeL {

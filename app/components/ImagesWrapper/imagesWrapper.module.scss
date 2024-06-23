@@ -42,7 +42,7 @@ $border-radius: 16px;
   }
 }
 
-@include mixin.media-w(breakpoints.$mobileL) {
+@include mixin.media-w(breakpoints.$mobileM) {
   .imageWrapperText {
     font-size: 16px;
   }

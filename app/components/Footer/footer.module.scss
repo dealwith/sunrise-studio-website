@@ -1,18 +1,6 @@
 @use "styles/mixin";
 @use "styles/breakpoints";
 
-.contentWrapper {
-  padding: 60px 80px;
-  margin: 0 auto;
-  @include mixin.maxWidth(1300px);
-  display: flex;
-  justify-content: space-between;
-
-  @include mixin.media-w(breakpoints.$mobile) {
-    padding: 20px;
-  }
-}
-
 .text {
   @include mixin.maxWidth(560px);
 
