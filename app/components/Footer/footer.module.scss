@@ -11,6 +11,11 @@
   @include mixin.media-w(breakpoints.$mobile) {
     padding: 20px;
   }
+
+  @include mixin.media-w(breakpoints.$mobileL) {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 
 .text {

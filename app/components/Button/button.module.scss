@@ -1,4 +1,5 @@
 @use "styles/mixin";
+@use "styles/breakpoints";
 
 .component {
   display: flex;
@@ -11,6 +12,12 @@
   border-radius: 16px;
   padding: 12px 44px;
   width: fit-content;
+  display: flex;
+  justify-content: center;
+
+  @include mixin.media-w(breakpoints.$mobileM) {
+    width: 100%;
+  }
 }
 
 .sizeL {

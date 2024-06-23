@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
   ContactUsSection,
   Footer,
@@ -18,10 +18,20 @@ import { SunriseContainer } from "./components/Container/SunriseContainer";
 
 export default function Home() {
   const [activeBurger, setActiveBurger] = useState(false);
+  const mainRef = useRef<HTMLDivElement>(null);
+
+  const handleClick = () => {
+    if (mainRef.current) {
+      mainRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <BurgerContext.Provider value={{ activeBurger, setActiveBurger }}>
-      <main className="flex min-h-screen flex-col items-center justify-between w-full">
+      <main
+        ref={mainRef}
+        className="flex min-h-screen flex-col items-center justify-between w-full"
+      >
         {activeBurger ? (
           <style jsx global>{`
             body {
@@ -48,7 +58,7 @@ export default function Home() {
           <OurProjectsSection />
           <WhoWeWorkWithSection />
           <ContactUsSection />
-          <Footer />
+          <Footer handleClick={handleClick} />
         </SunriseContainer>
       </main>
     </BurgerContext.Provider>

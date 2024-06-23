@@ -11,12 +11,14 @@ type Props = {
   defaultColor: string;
   hoverColor: string;
   className?: string;
+  handleClick: () => void;
 };
 
 export const ScrollButton = ({
   defaultColor,
   hoverColor,
   className: propsClassName,
+  handleClick,
 }: Props) => {
   const buttonClassName = cn(styles.scrollBtn, propsClassName);
   const [isHovered, setHovered] = useToggle();
@@ -26,6 +28,7 @@ export const ScrollButton = ({
       onMouseEnter={setHovered as MouseEventHandler<HTMLButtonElement>}
       onMouseLeave={setHovered as MouseEventHandler<HTMLButtonElement>}
       className={buttonClassName}
+      onClick={handleClick}
     >
       <ScrollIcon
         isHovered={isHovered}
