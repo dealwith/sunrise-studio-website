@@ -35,6 +35,20 @@ export const WhoWeWorkWithSection = () => {
           extraordinary, unforeseen circumstances, making it almost an
           impossible mission.
         </WhoWeWorkWithCard>
+        <WhoWeWorkWithCard
+          image="/images/secondReview.jpeg"
+          title="Illia Osetskyi"
+          subtitle="Operation Director of IsaevWorkshop"
+          projectUrl="https://isaevworkshop.com"
+          feedbackGiverUrl="https://www.linkedin.com/school/isaevworkshop"
+        >
+          During our work with the company Sunrise, we developed an excellent
+          working relationship while working on our project. We engaged them to
+          conduct an audit of the development of our educational application,
+          which was carried out twice over six months. We are satisfied with our
+          collaboration with Sunrise and received excellent results, delivered
+          on time. In the future, we will definitely collaborate more.
+        </WhoWeWorkWithCard>
       </div>
     </Section>
   );
