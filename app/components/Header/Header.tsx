@@ -19,7 +19,10 @@ export const Header = ({ className, ...rest }: HTMLProps<HTMLDivElement>) => {
 
   return (
     <header
-      className={cn("flex justify-between py-30 w-full gap-16", className)}
+      className={cn(
+        "flex justify-between py-30 w-full gap-16 absolute left-0 right-0 z-20 max-w-[1440px] px-4 md:px-10 my-0 mx-auto",
+        className,
+      )}
       {...rest}
     >
       {isLaptopS ? (

@@ -1,5 +1,10 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState } from "react";
 import { cn } from "@utils/cn";
+import { globalMetadata } from "data";
+import { Header } from "components";
+import { BurgerContext } from "context";
 
 import "@radix-ui/themes/styles.css";
 import { Analytics } from "@vercel/analytics/react";
@@ -9,19 +14,19 @@ import "./styles/globals.css";
 
 import styles from "./layout.module.scss";
 
-export const metadata: Metadata = {
-  title: "Sunrise studio",
-  description: "Shaping the future with digital innovation",
-};
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [activeBurger, setActiveBurger] = useState(false);
+  const metadata = globalMetadata;
+
   return (
     <html lang="en">
       <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -41,8 +46,17 @@ export default function RootLayout({
         />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={cn(styles.component, onest.className)}>
-        {children}
+      <body
+        className={cn(
+          styles.component,
+          onest.className,
+          activeBurger && "overflow-hidden",
+        )}
+      >
+        <BurgerContext.Provider value={{ activeBurger, setActiveBurger }}>
+          <Header />
+          {children}
+        </BurgerContext.Provider>
         <Analytics />
       </body>
     </html>
