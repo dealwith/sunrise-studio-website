@@ -7,6 +7,16 @@
   src: url("../fonts//Unbounded-Light.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Unbounded-Bold";
+  src: url("../fonts//Unbounded-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Unbounded-Medium";
+  src: url("../fonts//Unbounded-Medium.ttf") format("truetype");
+}
+
 :root {
   --black: #111111;
   --bgGray: #2e2f39;

@@ -21,6 +21,8 @@ const config: Config = {
       },
       fontFamily: {
         unbounded: "Unbounded-Light",
+        unboundedMedium: "Unbounded-Medium",
+        unboundedBold: "Unbounded-Bold",
       },
       colors: {
         accent: "#E95848",
