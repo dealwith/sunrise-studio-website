@@ -1,4 +1,4 @@
-import { TagChip } from "components";
+import { Chip } from "components";
 import { ServicesCard } from "./ServicesCard";
 
 export const ServicesSectionContent = () => {
@@ -16,16 +16,16 @@ export const ServicesSectionContent = () => {
             you gotta show some personality and dare to be different.
           </ServicesCard>
           <div className="flex flex-wrap lg:w-1/2 md:w-[53%] w-full lg:gap-3.5 sm:gap-2.5 gap-1.5 h-fit">
-            <TagChip>User experience design</TagChip>
-            <TagChip>User interface</TagChip>
-            <TagChip>Web design</TagChip>
-            <TagChip>App</TagChip>
-            <TagChip>Web design</TagChip>
-            <TagChip>Web design</TagChip>
-            <TagChip>Web design</TagChip>
-            <TagChip>User experience design</TagChip>
-            <TagChip>User interface</TagChip>
-            <TagChip>Web design</TagChip>
+            <Chip>User experience design</Chip>
+            <Chip>User interface</Chip>
+            <Chip>Web design</Chip>
+            <Chip>App</Chip>
+            <Chip>Web design</Chip>
+            <Chip>Web design</Chip>
+            <Chip>Web design</Chip>
+            <Chip>User experience design</Chip>
+            <Chip>User interface</Chip>
+            <Chip>Web design</Chip>
           </div>
         </div>
         <div className="flex lg:gap-20 gap-6 md:flex-row flex-col">
@@ -36,14 +36,14 @@ export const ServicesSectionContent = () => {
             you gotta show some personality and dare to be different.
           </ServicesCard>
           <div className="flex flex-wrap lg:w-1/2 md:w-[53%] w-full lg:gap-3.5 sm:gap-2.5 gap-1.5 h-fit">
-            <TagChip>Business</TagChip>
-            <TagChip>Content marketing</TagChip>
-            <TagChip>Content strategy</TagChip>
-            <TagChip>Posting</TagChip>
-            <TagChip>Posting</TagChip>
-            <TagChip>Content marketing</TagChip>
-            <TagChip>Business</TagChip>
-            <TagChip>Posting</TagChip>
+            <Chip>Business</Chip>
+            <Chip>Content marketing</Chip>
+            <Chip>Content strategy</Chip>
+            <Chip>Posting</Chip>
+            <Chip>Posting</Chip>
+            <Chip>Content marketing</Chip>
+            <Chip>Business</Chip>
+            <Chip>Posting</Chip>
           </div>
         </div>
         <div className="flex lg:gap-20 gap-6 md:flex-row flex-col">
@@ -54,10 +54,10 @@ export const ServicesSectionContent = () => {
             you gotta show some personality and dare to be different.
           </ServicesCard>
           <div className="flex flex-wrap lg:w-1/2 md:w-[53%] w-full lg:gap-3.5 sm:gap-2.5 gap-1.5 h-fit">
-            <TagChip>HTML & CSS</TagChip>
-            <TagChip>Javascript</TagChip>
-            <TagChip>Three JS</TagChip>
-            <TagChip>Webflow</TagChip>
+            <Chip>HTML & CSS</Chip>
+            <Chip>Javascript</Chip>
+            <Chip>Three JS</Chip>
+            <Chip>Webflow</Chip>
           </div>
         </div>
       </div>

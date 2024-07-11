@@ -25,4 +25,4 @@ export * from "./Container";
 export * from "./LiWithActiveLink";
 export * from "./Background";
 export * from "./ServicesSectionContent";
-export * from "./TagChip";
+export * from "./Chip";
