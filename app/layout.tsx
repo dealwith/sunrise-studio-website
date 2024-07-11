@@ -20,13 +20,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [activeBurger, setActiveBurger] = useState(false);
-  const metadata = globalMetadata;
 
   return (
     <html lang="en">
       <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <title>{globalMetadata.title}</title>
+        <meta name="description" content={globalMetadata.description} />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
