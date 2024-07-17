@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  InnovationsSection,
   OurDomainsSection,
   ServicesBackground,
   ServicesSectionContent,
@@ -17,6 +18,7 @@ export default function Services() {
       </ServicesBackground>
       <SunriseContainer>
         <OurDomainsSection />
+        <InnovationsSection />
       </SunriseContainer>
     </main>
   );

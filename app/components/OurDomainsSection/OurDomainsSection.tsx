@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import { ArrowButton, BorderedContainer, Button, H2, H5 } from "components";
+import { ArrowButton, BorderedContainer, Button, H5 } from "components";
 import { cn } from "utils/cn";
 import { useWindowSize } from "hooks";
 
@@ -24,7 +24,9 @@ export const OurDomainsSection = () => {
   return (
     <section className="flex flex-col items-center lg:my-[120px] sm:my-[100px] my-[60px]">
       <div className="flex justify-between w-full items-end sm:items-center gap-4 sm:flex-row flex-col sm:mb-[60px] mb-6">
-        <H2 className="sm:w-fit w-full">Our domains</H2>
+        <h2 className="sm:w-fit w-full lg:text-[52px] md:text-[42px] text-[26px] font-unbounded">
+          Our domains
+        </h2>
         <div className="flex">
           <Button
             onClick={() => handleClickFilter("all")}

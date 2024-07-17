@@ -27,3 +27,4 @@ export * from "./Background";
 export * from "./ServicesSectionContent";
 export * from "./Chip";
 export * from "./OurDomainsSection";
+export * from "./InnovationsSection";
