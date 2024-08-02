@@ -20,7 +20,7 @@ export const WhoWeWorkWithSection = () => {
       </div>
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <WhoWeWorkWithCard
-          image="https://media.licdn.com/dms/image/C4D03AQG9sizcSlGPrA/profile-displayphoto-shrink_200_200/0/1607362460916?e=1724889600&v=beta&t=iWSNaqNJuu4uhXE1MEXmUMB7IqTgcbMdstj_aqsvlQc"
+          image="https://media.licdn.com/dms/image/D4D03AQHgzrOC4sTonw/profile-displayphoto-shrink_200_200/0/1721678637873?e=1727913600&v=beta&t=ymK6R5omIVeL8Hy-TYzLfxA2fxkzqbWYGBFz5Rp5LLE"
           title="Alexey Lukyanchik"
           subtitle="Marketing & PR Director"
           projectUrl="https://leaderboard.paragonevents.gg/?o=6516c8527df610c311ee705a&c=65d8b870b69baa8bbf9295d9&r=paragon-dls22&p=twitch"

@@ -26,3 +26,4 @@ export * from "./LiWithActiveLink";
 export * from "./Background";
 export * from "./ServicesSectionContent";
 export * from "./Chip";
+export * from "./OurDomainsSection";
