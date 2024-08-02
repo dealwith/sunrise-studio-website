@@ -6,16 +6,16 @@ import { FunctionComponent } from "react";
 type TProps = {
   title: string;
   description: string;
-  mainImage: StaticImageData;
-  primaryImage?: StaticImageData;
-  mainImagePosition: "left" | "right";
+  primaryImage: StaticImageData;
+  secondaryImage?: StaticImageData;
+  mainImagePosition: string;
 };
 
 export const Domain: FunctionComponent<TProps> = ({
   title,
   description,
-  mainImage,
   primaryImage,
+  secondaryImage,
   mainImagePosition,
 }) => {
   const { isLaptopS } = useWindowSize();
@@ -26,7 +26,7 @@ export const Domain: FunctionComponent<TProps> = ({
     <BorderedContainer>
       {!isLaptopS && isLeftPositing && (
         <Image
-          src={mainImage}
+          src={primaryImage}
           alt={title}
           object-fit={"contain"}
           className="lg:w-[55%] md:w-80 w-full"
@@ -36,7 +36,7 @@ export const Domain: FunctionComponent<TProps> = ({
         <H5 className="font-medium text-start w-full">{title}</H5>
         {isLaptopS && (
           <Image
-            src={mainImage}
+            src={primaryImage}
             alt={title}
             object-fit={"contain"}
             className="lg:w-[55%] md:w-80 w-full"
@@ -46,9 +46,9 @@ export const Domain: FunctionComponent<TProps> = ({
         <ArrowButton className="bg-accent md:mt-2 mt-0" width="10" height="10">
           Learn more
         </ArrowButton>
-        {!isLaptopS && primaryImage && (
+        {!isLaptopS && secondaryImage && (
           <Image
-            src={primaryImage}
+            src={secondaryImage}
             alt="image"
             className="bottom-[-40px] right-0 absolute w-1/5 z-0"
           />
@@ -56,7 +56,7 @@ export const Domain: FunctionComponent<TProps> = ({
       </div>
       {!isLaptopS && isRightPositing && (
         <Image
-          src={mainImage}
+          src={primaryImage}
           alt={title}
           object-fit={"contain"}
           className="lg:w-[55%] md:w-80 w-full"

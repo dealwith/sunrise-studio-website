@@ -15,6 +15,35 @@ export const OurDomainsSection = () => {
   const isFinance = activeFilter === "finance";
   const isEcommerce = activeFilter === "e-commerce";
 
+  const domains = [
+    {
+      title: "Web3",
+      description:
+        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+      primaryImage: web3DomainSrc,
+      mainImagePosition: "right",
+    },
+    {
+      title: "Finance",
+      description:
+        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+      primaryImage: corporateDomainSrc,
+      secondaryImage: bitcoinsDomainSrc,
+      mainImagePosition: "left",
+    },
+    {
+      title: "E-commerce",
+      description:
+        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+      primaryImage: ecommerceDomainSrc,
+      mainImagePosition: "right",
+    },
+  ];
+
+  const filteredDomains = domains.filter(
+    (domain) => isAll || domain.title.toLowerCase() === activeFilter,
+  );
+
   const handleClickFilter = (filter: string) => {
     setActiveFilter(filter);
   };
@@ -63,43 +92,16 @@ export const OurDomainsSection = () => {
         </div>
       </div>
       <div className="flex flex-col gap-9">
-        {isAll || isWeb3 ? (
+        {filteredDomains.map((domain) => (
           <Domain
-            title="Web3"
-            description="t’s all about creativity and originality. That’s the key to
-                making a splash in any field. Being too stuffy and serious just
-                won’t cut it anymore. If you want your brand to be aspirational
-                and exclusive, you gotta show some personality and dare to be
-                different."
-            mainImage={web3DomainSrc}
-            mainImagePosition="right"
+            key={domain.title}
+            title={domain.title}
+            description={domain.description}
+            primaryImage={domain.primaryImage}
+            secondaryImage={domain.secondaryImage}
+            mainImagePosition={domain.mainImagePosition}
           />
-        ) : null}
-        {isAll || isFinance ? (
-          <Domain
-            title="Finance"
-            description="t’s all about creativity and originality. That’s the key to
-                making a splash in any field. Being too stuffy and serious just
-                won’t cut it anymore. If you want your brand to be aspirational
-                and exclusive, you gotta show some personality and dare to be
-                different."
-            mainImage={corporateDomainSrc}
-            mainImagePosition="left"
-            primaryImage={bitcoinsDomainSrc}
-          />
-        ) : null}
-        {isAll || isEcommerce ? (
-          <Domain
-            title="E-commerce"
-            description="t’s all about creativity and originality. That’s the key to
-              making a splash in any field. Being too stuffy and serious just
-              won’t cut it anymore. If you want your brand to be aspirational
-              and exclusive, you gotta show some personality and dare to be
-              different."
-            mainImage={ecommerceDomainSrc}
-            mainImagePosition="right"
-          />
-        ) : null}
+        ))}
       </div>
     </section>
   );
