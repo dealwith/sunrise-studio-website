@@ -13,7 +13,7 @@ export const H5: FunctionComponent<TProps> = ({
   className: propsClassName,
   ...props
 }) => {
-  const componentClassName = cn("md:text-4xl text-[26px]", propsClassName);
+  const componentClassName = cn("sm:text-4xl text-2xl", propsClassName);
 
   return isText ? (
     <span className={componentClassName} {...props}>

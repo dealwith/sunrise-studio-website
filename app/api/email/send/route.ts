@@ -12,10 +12,18 @@ export async function POST(request: Request) {
       const { email, name, message } = result.data;
 
       const data = await resend.emails.send({
-        from: email,
+        from: "Sunrise Studio <office@sunrisestd.com>",
         to: "office@sunrisestd.com",
-        subject: `Message from: ${name}`,
-        text: message || "",
+        subject: `New Message from ${name}`,
+        html: `
+          <html>
+              <body>
+                  <h1>You have received a new message from ${name}</h1>
+                  <p><strong>Email:</strong> ${email}</p>
+                  <p><strong>Message:</strong> ${message || "No message provided."}</p>
+              </body>
+          </html>
+          `,
       });
 
       return Response.json({
