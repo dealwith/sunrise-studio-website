@@ -19,14 +19,14 @@ export const OurDomainsSection = () => {
     {
       title: "Web3",
       description:
-        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+        "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
       primaryImage: web3DomainSrc,
       mainImagePosition: "right",
     },
     {
       title: "Finance",
       description:
-        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+        "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
       primaryImage: corporateDomainSrc,
       secondaryImage: bitcoinsDomainSrc,
       mainImagePosition: "left",
@@ -34,7 +34,7 @@ export const OurDomainsSection = () => {
     {
       title: "E-commerce",
       description:
-        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+        "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
       primaryImage: ecommerceDomainSrc,
       mainImagePosition: "right",
     },
