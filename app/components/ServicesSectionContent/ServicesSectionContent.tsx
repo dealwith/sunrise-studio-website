@@ -10,9 +10,9 @@ export const ServicesSectionContent = () => {
       <div className="flex flex-col lg:gap-16 gap-[42px]">
         <div className="flex lg:gap-20 gap-6 md:flex-row flex-col">
           <ServicesCard title="Design">
-            t’s all about creativity and originality. That’s the key to making a
-            splash in any field. Being too stuffy and serious just won’t cut it
-            anymore. If you want your brand to be aspirational and exclusive,
+            It’s all about creativity and originality.. That’s the key to making
+            a splash in any field. Being too stuffy and serious just won’t cut
+            it anymore. If you want your brand to be aspirational and exclusive,
             you gotta show some personality and dare to be different.
           </ServicesCard>
           <div className="flex flex-wrap lg:w-1/2 md:w-[53%] w-full lg:gap-3.5 sm:gap-2.5 gap-1.5 h-fit">
@@ -30,9 +30,9 @@ export const ServicesSectionContent = () => {
         </div>
         <div className="flex lg:gap-20 gap-6 md:flex-row flex-col">
           <ServicesCard title="Strategy">
-            t’s all about creativity and originality. That’s the key to making a
-            splash in any field. Being too stuffy and serious just won’t cut it
-            anymore. If you want your brand to be aspirational and exclusive,
+            It’s all about creativity and originality.. That’s the key to making
+            a splash in any field. Being too stuffy and serious just won’t cut
+            it anymore. If you want your brand to be aspirational and exclusive,
             you gotta show some personality and dare to be different.
           </ServicesCard>
           <div className="flex flex-wrap lg:w-1/2 md:w-[53%] w-full lg:gap-3.5 sm:gap-2.5 gap-1.5 h-fit">
@@ -48,9 +48,9 @@ export const ServicesSectionContent = () => {
         </div>
         <div className="flex lg:gap-20 gap-6 md:flex-row flex-col">
           <ServicesCard title="Development">
-            t’s all about creativity and originality. That’s the key to making a
-            splash in any field. Being too stuffy and serious just won’t cut it
-            anymore. If you want your brand to be aspirational and exclusive,
+            It’s all about creativity and originality.. That’s the key to making
+            a splash in any field. Being too stuffy and serious just won’t cut
+            it anymore. If you want your brand to be aspirational and exclusive,
             you gotta show some personality and dare to be different.
           </ServicesCard>
           <div className="flex flex-wrap lg:w-1/2 md:w-[53%] w-full lg:gap-3.5 sm:gap-2.5 gap-1.5 h-fit">

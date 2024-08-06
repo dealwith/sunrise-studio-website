@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, H2 } from "components";
+import { Button } from "components";
 import { cn } from "utils/cn";
 import { Domain } from "./Domain";
 
@@ -19,14 +19,14 @@ export const OurDomainsSection = () => {
     {
       title: "Web3",
       description:
-        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+        "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
       primaryImage: web3DomainSrc,
       mainImagePosition: "right",
     },
     {
       title: "Finance",
       description:
-        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+        "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
       primaryImage: corporateDomainSrc,
       secondaryImage: bitcoinsDomainSrc,
       mainImagePosition: "left",
@@ -34,7 +34,7 @@ export const OurDomainsSection = () => {
     {
       title: "E-commerce",
       description:
-        "t’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+        "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
       primaryImage: ecommerceDomainSrc,
       mainImagePosition: "right",
     },
@@ -51,7 +51,9 @@ export const OurDomainsSection = () => {
   return (
     <section className="flex flex-col items-center lg:my-[120px] sm:my-[100px] my-[60px]">
       <div className="flex justify-between w-full items-end sm:items-center gap-4 sm:flex-row flex-col sm:mb-[60px] mb-6">
-        <H2 className="sm:w-fit w-full">Our domains</H2>
+        <h2 className="sm:w-fit w-full lg:text-[52px] md:text-[42px] text-[26px] font-unbounded">
+          Our domains
+        </h2>
         <div className="flex">
           <Button
             onClick={() => handleClickFilter("all")}
