@@ -1,6 +1,6 @@
 "use client";
 
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { ButtonWithLoading, H2, Input, Section, Span } from "components";
 import { IContactUsForm } from "./interfaces/IContactUsForm";
@@ -15,13 +15,7 @@ type TProps = {
 };
 
 export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
-  const buttonBgColor = isMainPage ? "bg-accent" : "bg-black";
-  const containerBgColor = isMainPage ? "bg-black" : "bg-accent";
-  const containerClassName = cn(
-    "py-[60px] px-4 flex flex-col items-center gap-[60px] rounded-2xl",
-    containerBgColor,
-  );
-  const [isLoading, setIsLoading] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   const { register, handleSubmit: validateBeforeSubmit } =
     useForm<IContactUsForm>({
@@ -29,21 +23,27 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
     });
 
   const handleSubmit = async (data: IContactUsForm) => {
-    try {
-      setIsLoading(true);
-      const sendEmailResult = await sendEmailService.sendEmail(data);
+    startTransition(async () => {
+      try {
+        const sendEmailResult = await sendEmailService.sendEmail(data);
 
-      if (sendEmailResult.status === "success") {
-        toast("Email sent successfully!", { type: "success" });
-      } else {
-        toast("Email sending failed", { type: "error" });
+        if (sendEmailResult.status === "success") {
+          toast("Email sent successfully!", { type: "success" });
+        } else {
+          toast("Email sending failed", { type: "error" });
+        }
+      } catch (error) {
+        console.error(error);
       }
-    } catch (error) {
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
+    });
   };
+
+  const buttonBgColor = isMainPage ? "bg-accent" : "bg-black";
+  const containerBgColor = isMainPage ? "bg-black" : "bg-accent";
+  const containerClassName = cn(
+    "py-[60px] px-4 flex flex-col items-center gap-[60px] rounded-2xl",
+    containerBgColor,
+  );
 
   return (
     <Section>
@@ -51,7 +51,7 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
         <H2>Contact us</H2>
         <form
           action="POST"
-          className={"max-w-xl w-full flex flex-col gap-10"}
+          className="max-w-xl w-full flex flex-col gap-10"
           onSubmit={validateBeforeSubmit(handleSubmit)}
         >
           <div className="flex gap-6">
@@ -92,7 +92,7 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
           <div className="flex justify-end mt-3.5">
             <ButtonWithLoading
               className={buttonBgColor}
-              isLoading={isLoading}
+              isLoading={isPending}
               text="Contact us"
             />
           </div>
