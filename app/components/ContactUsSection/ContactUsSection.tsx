@@ -1,43 +1,57 @@
 "use client";
 
+import { FunctionComponent, useTransition } from "react";
 import { useForm } from "react-hook-form";
-import { Button, H2, Input, Section, Span } from "components";
+import { ButtonWithLoading, H2, Input, Section, Span } from "components";
 import { IContactUsForm } from "./interfaces/IContactUsForm";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { cn } from "utils/cn";
 import { ContactUsSchema } from "../utils/validation/ContactUsSchema";
 import sendEmailService from "services/SendEmailService";
+import { toast } from "react-toastify";
 
-import styles from "./contactUsSection.module.scss";
+type TProps = {
+  isMainPage?: boolean;
+};
 
-export const ContactUsSection = () => {
+export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
+  const [isPending, startTransition] = useTransition();
+
   const { register, handleSubmit: validateBeforeSubmit } =
     useForm<IContactUsForm>({
       resolver: zodResolver(ContactUsSchema),
     });
 
   const handleSubmit = async (data: IContactUsForm) => {
-    try {
-      const sendEmailResult = await sendEmailService.sendEmail(data);
+    startTransition(async () => {
+      try {
+        const sendEmailResult = await sendEmailService.sendEmail(data);
 
-      if (sendEmailResult.status === "success") {
-        console.log("Email sent successfully!");
-      } else {
-        throw new Error("Email sending failed");
+        if (sendEmailResult.status === "success") {
+          toast("Email sent successfully!", { type: "success" });
+        } else {
+          toast("Email sending failed", { type: "error" });
+        }
+      } catch (error) {
+        console.error(error);
       }
-    } catch (error) {
-      console.error(error);
-
-      return;
-    }
+    });
   };
+
+  const buttonBgColor = isMainPage ? "bg-accent" : "bg-black";
+  const containerBgColor = isMainPage ? "bg-black" : "bg-accent";
+  const containerClassName = cn(
+    "py-[60px] px-4 flex flex-col items-center gap-[60px] rounded-2xl",
+    containerBgColor,
+  );
 
   return (
     <Section>
-      <div id="contactUs" className={styles.component}>
+      <div id="contactUs" className={containerClassName}>
         <H2>Contact us</H2>
         <form
           action="POST"
-          className={styles.form}
+          className="max-w-xl w-full flex flex-col gap-10"
           onSubmit={validateBeforeSubmit(handleSubmit)}
         >
           <div className="flex gap-6">
@@ -75,10 +89,12 @@ export const ContactUsSection = () => {
               {...register("message")}
             />
           </div>
-          <div className="flex justify-end">
-            <Button className="bg-accent" size="m">
-              Contact us
-            </Button>
+          <div className="flex justify-end mt-3.5">
+            <ButtonWithLoading
+              className={buttonBgColor}
+              isLoading={isPending}
+              text="Contact us"
+            />
           </div>
         </form>
       </div>

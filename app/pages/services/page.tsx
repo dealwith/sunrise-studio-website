@@ -1,11 +1,13 @@
 "use client";
 
 import {
+  ContactUsSection,
   InnovationsSection,
   OurDomainsSection,
   ServicesBackground,
   ServicesSectionContent,
   SunriseContainer,
+  WhoWeWorkWithSection,
 } from "components";
 
 export default function Services() {
@@ -19,6 +21,8 @@ export default function Services() {
       <SunriseContainer>
         <OurDomainsSection />
         <InnovationsSection />
+        <WhoWeWorkWithSection />
+        <ContactUsSection />
       </SunriseContainer>
     </main>
   );

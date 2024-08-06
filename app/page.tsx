@@ -39,7 +39,7 @@ export default function Home() {
         <WhatWeDoSection />
         <OurProjectsSection />
         <WhoWeWorkWithSection />
-        <ContactUsSection />
+        <ContactUsSection isMainPage={true} />
         <Footer handleClick={handleClick} />
       </SunriseContainer>
     </main>

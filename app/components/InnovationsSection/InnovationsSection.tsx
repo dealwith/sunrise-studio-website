@@ -26,7 +26,7 @@ const innovations = [
 
 export const InnovationsSection = () => {
   return (
-    <section className="flex flex-col items-center lg:my-[120px] sm:my-[100px] my-[60px] md:gap-[60px] gap-6">
+    <section className="flex flex-col items-center lg:mt-[120px] sm:mt-[100px] mt-[60px] md:gap-[60px] gap-6">
       <h2 className="sm:w-fit w-full lg:text-[52px] sm:text-[42px] text-[26px] font-unbounded">
         How we work
       </h2>
