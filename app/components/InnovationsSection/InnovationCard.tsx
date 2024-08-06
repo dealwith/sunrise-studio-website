@@ -16,7 +16,7 @@ export const InnovationCard: FunctionComponent<TProps> = ({
   className: propsClassName,
 }) => {
   const containerClassName = cn(
-    "lg:w-[659px] md:w-[59%] w-full grid grid-cols-[auto,1fr] items-center md:gap-x-6 gap-x-4 gap-y-4",
+    "lg:w-[659px] md:w-[59%] w-full grid grid-cols-[auto,1fr] items-center md:gap-x-6 gap-4",
     propsClassName,
   );
 
