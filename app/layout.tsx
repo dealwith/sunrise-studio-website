@@ -1,16 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { cn } from "@utils/cn";
+import { cn } from "utils/cn";
 import { globalMetadata } from "data";
 import { Header } from "components";
 import { BurgerContext } from "context";
+import { ToastContainer } from "react-toastify";
 
 import "@radix-ui/themes/styles.css";
 import { Analytics } from "@vercel/analytics/react";
 
 import { onest } from "./fonts/onest";
 import "./styles/globals.css";
+import "react-toastify/dist/ReactToastify.css";
 
 import styles from "./layout.module.scss";
 
@@ -57,6 +59,17 @@ export default function RootLayout({
           {children}
         </BurgerContext.Provider>
         <Analytics />
+        <ToastContainer
+          position="bottom-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          theme="light"
+        />
       </body>
     </html>
   );
