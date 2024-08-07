@@ -44,6 +44,10 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
     "py-[60px] px-4 flex flex-col items-center gap-[60px] rounded-2xl",
     containerBgColor,
   );
+  const buttonClassName = cn(
+    buttonBgColor,
+    "hover:bg-white hover:text-accent transition-all",
+  );
 
   return (
     <Section>
@@ -91,7 +95,7 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
           </div>
           <div className="flex justify-end mt-3.5">
             <ButtonWithLoading
-              className={buttonBgColor}
+              className={buttonClassName}
               isLoading={isPending}
               text="Contact us"
             />

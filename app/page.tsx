@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef } from "react";
 import {
   ContactUsSection,
   Footer,
@@ -13,19 +12,14 @@ import {
 } from "components";
 import { AuroraBackground } from "./components/Background/AuroraBackground";
 import { SunriseContainer } from "./components/Container/SunriseContainer";
+import { useSmoothScroll } from "hooks";
 
 export default function Home() {
-  const mainRef = useRef<HTMLDivElement>(null);
-
-  const handleClick = () => {
-    if (mainRef.current) {
-      mainRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const { elementRef, scrollToRef } = useSmoothScroll();
 
   return (
     <main
-      ref={mainRef}
+      ref={elementRef}
       className="flex min-h-screen flex-col items-center justify-between w-full"
     >
       <AuroraBackground>
@@ -40,7 +34,7 @@ export default function Home() {
         <OurProjectsSection />
         <WhoWeWorkWithSection />
         <ContactUsSection isMainPage={true} />
-        <Footer handleClick={handleClick} />
+        <Footer isMainPage={true} handleClick={scrollToRef} />
       </SunriseContainer>
     </main>
   );

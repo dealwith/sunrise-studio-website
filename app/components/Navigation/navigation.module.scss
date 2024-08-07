@@ -25,14 +25,3 @@
   color: var(--black);
   font-weight: 400;
 }
-
-.footerList {
-  display: flex;
-  font-size: 24px;
-  flex-direction: column;
-  gap: 41px;
-
-  @include mixin.media-w(breakpoints.$mobile) {
-    gap: 20px !important;
-  }
-}
