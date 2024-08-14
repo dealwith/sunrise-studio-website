@@ -18,28 +18,25 @@ export const Footer: FunctionComponent<TProps> = ({
 }) => {
   const { isMobileM } = useWindowSize();
 
-  const buttonBgColor = isMainPage ? "bg-black" : "bg-accent";
-  const containerBgColor = isMainPage ? "bg-secondary" : "bg-black";
-  const hoverListItemColor = isMainPage
-    ? "hover:text-black"
-    : "hover:text-accent";
   const containerClassName = cn(
     "mt-44 w-full absolute left-0",
-    containerBgColor,
+    isMainPage ? "bg-secondary" : "bg-black",
   );
   const buttonClassName = cn(
-    buttonBgColor,
+    isMainPage ? "bg-black" : "bg-accent",
     "hover:bg-white hover:text-accent transition-all",
   );
   const scrollButtonClassName = cn(
-    buttonBgColor,
+    isMainPage ? "bg-black" : "bg-accent",
     "hover:bg-white border border-black -rotate-90 transition-all",
   );
 
   return (
     <footer className={containerClassName}>
       <div className="flex flex-col gap-8 sm:flex-row justify-between max-w-[1440px] mx-auto py-[60px] px-4 md:px-10">
-        <FooterNavigation className={hoverListItemColor} />
+        <FooterNavigation
+          className={isMainPage ? "hover:text-black" : "hover:text-accent"}
+        />
         <div className="w-full sm:w-2/3 flex-col flex gap-4 sm:gap-8">
           <H4 className={styles.text}>
             Write us to schedule a call to discuss your project and learn more
