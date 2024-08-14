@@ -2,6 +2,7 @@
 
 import {
   ContactUsSection,
+  Footer,
   InnovationsSection,
   OurDomainsSection,
   ServicesBackground,
@@ -9,10 +10,16 @@ import {
   SunriseContainer,
   WhoWeWorkWithSection,
 } from "components";
+import { useSmoothScroll } from "hooks";
 
 export default function Services() {
+  const { elementRef, scrollToRef } = useSmoothScroll();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between w-full">
+    <main
+      ref={elementRef}
+      className="flex min-h-screen flex-col items-center justify-between w-full"
+    >
       <ServicesBackground>
         <SunriseContainer>
           <ServicesSectionContent />
@@ -23,6 +30,7 @@ export default function Services() {
         <InnovationsSection />
         <WhoWeWorkWithSection />
         <ContactUsSection />
+        <Footer handleClick={scrollToRef} />
       </SunriseContainer>
     </main>
   );
