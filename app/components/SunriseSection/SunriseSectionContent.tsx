@@ -40,13 +40,7 @@ export const SunriseSectionContent = () => {
           </Link>
         </div>
       )}
-      <div
-        className={
-          activeBurger ? styles.activeBurgerMenu : styles.inactiveBurgerMenu
-        }
-      >
-        <MobileNavigation />
-      </div>
+      <MobileNavigation />
     </section>
   );
 };

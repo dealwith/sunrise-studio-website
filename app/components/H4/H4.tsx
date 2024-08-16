@@ -22,8 +22,8 @@ export const H4: FunctionComponent<TProps> = ({
       {children}
     </span>
   ) : (
-    <h3 className={componentClassName} {...props}>
+    <h4 className={componentClassName} {...props}>
       {children}
-    </h3>
+    </h4>
   );
 };

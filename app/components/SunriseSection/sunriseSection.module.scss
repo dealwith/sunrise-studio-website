@@ -80,25 +80,6 @@
   }
 }
 
-.activeBurgerMenu {
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.3s ease-in-out;
-  z-index: 4;
-  width: 100%;
-  height: calc(100vh - 108px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inactiveBurgerMenu {
-  position: absolute;
-  right: -100vw;
-  transition: 0.3s ease-in-out;
-}
-
 .link {
   @include mixin.maxWidth(400px);
 }
