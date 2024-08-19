@@ -10,11 +10,11 @@ import burgerSrc from "./img/BurgerIcon.svg";
 import crossSrc from "./img/CrossIcon.svg";
 
 export const Header = ({ className, ...rest }: HTMLProps<HTMLDivElement>) => {
-  const { activeBurger, setActiveBurger } = useContext(BurgerContext);
+  const { isActiveBurger, setIsActiveBurger } = useContext(BurgerContext);
   const { isLaptopS } = useWindowSize();
 
   const handleBurgerClick = () => {
-    setActiveBurger(!activeBurger);
+    setIsActiveBurger(!isActiveBurger);
   };
 
   return (
@@ -29,7 +29,7 @@ export const Header = ({ className, ...rest }: HTMLProps<HTMLDivElement>) => {
         <>
           <Logo width={32} height={32} />
           <Button onClick={handleBurgerClick}>
-            <Image src={activeBurger ? crossSrc : burgerSrc} alt="Burger" />
+            <Image src={isActiveBurger ? crossSrc : burgerSrc} alt="Burger" />
           </Button>
         </>
       ) : (

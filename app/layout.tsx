@@ -21,7 +21,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [activeBurger, setActiveBurger] = useState(false);
+  const [isActiveBurger, setIsActiveBurger] = useState(false);
 
   return (
     <html lang="en">
@@ -51,10 +51,10 @@ export default function RootLayout({
         className={cn(
           styles.component,
           onest.className,
-          activeBurger && "overflow-hidden",
+          isActiveBurger && "overflow-hidden",
         )}
       >
-        <BurgerContext.Provider value={{ activeBurger, setActiveBurger }}>
+        <BurgerContext.Provider value={{ isActiveBurger, setIsActiveBurger }}>
           <Header />
           {children}
         </BurgerContext.Provider>

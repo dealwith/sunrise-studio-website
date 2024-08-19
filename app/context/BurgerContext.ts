@@ -1,11 +1,11 @@
 import { Dispatch, SetStateAction, createContext } from "react";
 
 type TProps = {
-  activeBurger: boolean;
-  setActiveBurger: Dispatch<SetStateAction<boolean>>;
+  isActiveBurger: boolean;
+  setIsActiveBurger: Dispatch<SetStateAction<boolean>>;
 };
 
 export const BurgerContext = createContext<TProps>({
-  activeBurger: false,
-  setActiveBurger: () => {},
+  isActiveBurger: false,
+  setIsActiveBurger: () => {},
 });

@@ -5,21 +5,21 @@ const innovations = [
     number: "1",
     title: "Research",
     description:
-      "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+      "It’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
     className: "md:self-start",
   },
   {
     number: "2",
     title: "Design",
     description:
-      "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+      "It’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
     className: "md:self-center",
   },
   {
     number: "3",
     title: "Develop",
     description:
-      "It’s all about creativity and originality.. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
+      "It’s all about creativity and originality. That’s the key to making a splash in any field. Being too stuffy and serious just won’t cut it anymore. If you want your brand to be aspirational and exclusive, you gotta show some personality and dare to be different.",
     className: "md:self-end",
   },
 ];
