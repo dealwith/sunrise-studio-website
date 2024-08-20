@@ -10,11 +10,11 @@ import cloverSrc from "./img/clover.png";
 import styles from "./sunriseSection.module.scss";
 
 export const SunriseSectionContent = () => {
-  const { activeBurger } = useContext(BurgerContext);
+  const { isActiveBurger } = useContext(BurgerContext);
 
   return (
     <section id="home" className={styles.component}>
-      {!activeBurger && (
+      {!isActiveBurger && (
         <div className="w-full flex flex-col items-center gap-40 justify-between">
           <h1 className="text-[32px] sm:text-[44px] md:text-[52px] lg:text-7xl xl:text-[90px] font-light flex flex-col md:gap-8 gap-5 w-full">
             <span className="text-black font-unbounded">
@@ -40,13 +40,7 @@ export const SunriseSectionContent = () => {
           </Link>
         </div>
       )}
-      <div
-        className={
-          activeBurger ? styles.activeBurgerMenu : styles.inactiveBurgerMenu
-        }
-      >
-        <MobileNavigation />
-      </div>
+      <MobileNavigation />
     </section>
   );
 };
