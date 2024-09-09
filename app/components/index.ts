@@ -30,3 +30,4 @@ export * from "./OurDomainsSection";
 export * from "./InnovationsSection";
 export * from "./LoadingSpinner";
 export * from "./PricingSection";
+export * from "./AboutUsSectionContent";

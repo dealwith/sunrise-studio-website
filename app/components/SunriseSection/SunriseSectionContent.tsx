@@ -4,8 +4,8 @@ import { BurgerContext } from "context";
 import { useContext } from "react";
 import { Button, MobileNavigation } from "components";
 
-import starSrc from "./img/star.svg";
-import cloverSrc from "./img/clover.png";
+import cloverSrc from "/public/images/clover.png";
+import starSrc from "/public/images/star.svg";
 
 import styles from "./sunriseSection.module.scss";
 
