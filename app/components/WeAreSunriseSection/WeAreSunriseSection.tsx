@@ -4,7 +4,7 @@ import { H2, P } from "components";
 import styles from "./weAreSunriseSection.module.scss";
 
 import underlineSrc from "./img/underline.svg";
-import bubbleSrc from "./img/bubble.png";
+import bubbleSrc from "/public/images/bubble.png";
 
 export const WeAreSunriseSection = () => {
   return (
