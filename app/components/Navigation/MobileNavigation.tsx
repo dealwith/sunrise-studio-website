@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useContext } from "react";
-import { BurgerContext } from "@/context";
+import { BurgerContext } from "context";
 import { cn } from "utils/cn";
+import { ROUTES } from "constants/index";
 
 import styles from "./navigation.module.scss";
 
@@ -23,13 +24,13 @@ export const MobileNavigation = () => {
       <nav className="flex flex-col justify-center">
         <ul className={styles.mobileList} onClick={handleBurgerClick}>
           <li>
-            <Link href="#home">Home</Link>
+            <Link href={ROUTES.HOME}>Home</Link>
           </li>
           <li>
-            <Link href="#aboutUs">About us</Link>
+            <Link href={ROUTES.ABOUT_US}>About us</Link>
           </li>
           <li>
-            <Link href="#services">Services</Link>
+            <Link href={ROUTES.SERVICES}>Services</Link>
           </li>
           <li>
             <Link href="#projects">Projects</Link>
