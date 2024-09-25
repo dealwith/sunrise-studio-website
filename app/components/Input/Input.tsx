@@ -31,6 +31,7 @@ export const Input = forwardRef<HTMLInputElement, TProps>(
       styles.component,
       propsClassName,
       onest.className,
+      "placeholder-gray-400",
     );
 
     return (

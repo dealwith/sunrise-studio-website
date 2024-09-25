@@ -13,7 +13,7 @@ export const WeAreSunriseSection = () => {
       className="pt-[60px] md:pt-[100px] lg:pt-[70px] h-fit md:h-[400px] lg:h-[674px]"
     >
       <div className="w-fit">
-        <H2 className={styles.title}>We are sunrise studio</H2>
+        <H2 className="text-accent">We are sunrise studio</H2>
         <Image
           src={underlineSrc}
           alt="underline"
@@ -23,10 +23,10 @@ export const WeAreSunriseSection = () => {
       <div className="flex justify-between">
         <div className={styles.textWrapper}>
           <P className="md:!text-xl">
-            Our role is to facilitate the creation of eye-catching and
-            functional solutions, for the fraction of the rate. Collaboration
-            with our clients lies at the heart of our process, and we help bring
-            visions to life.
+            Based in Poland, Sunrise Studio is your gateway to digital and
+            staffing solutions. Our studio is comprised of software engineers,
+            designers, and industry experts ready to take your project to the
+            next level.
           </P>
           {/* <ArrowButton className="bg-primary mt-3.5" width="10px" height="10px">
             Learn more

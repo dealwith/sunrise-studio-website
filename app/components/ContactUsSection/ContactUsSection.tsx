@@ -2,11 +2,11 @@
 
 import { FunctionComponent, useTransition } from "react";
 import { useForm } from "react-hook-form";
-import { ButtonWithLoading, H2, Input, Section, Span } from "components";
+import { ButtonWithLoading, H2, H3, Input, Section, Span } from "components";
 import { IContactUsForm } from "./interfaces/IContactUsForm";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { cn } from "utils/cn";
-import { ContactUsSchema } from "../utils/validation/ContactUsSchema";
+import { ContactUsSchema } from "utils/validation/ContactUsSchema";
 import sendEmailService from "services/SendEmailService";
 import { toast } from "react-toastify";
 
@@ -52,34 +52,63 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
   return (
     <Section>
       <div id="contactUs" className={containerClassName}>
-        <H2>Contact us</H2>
+        <div className="flex flex-col gap-7 items-center">
+          <H2>Contact us</H2>
+          <H3>Get a free quote</H3>
+        </div>
         <form
           action="POST"
           className="max-w-xl w-full flex flex-col gap-10"
           onSubmit={validateBeforeSubmit(handleSubmit)}
         >
           <div className="flex gap-6">
-            <div className="w-1/2">
-              <label htmlFor="name" className="label">
-                <Span className="label-text">Name</Span>
-              </label>
-              <Input
-                id="name"
-                type="text"
-                placeholder="Name"
-                {...register("name")}
-              />
+            <div className="w-1/2 flex flex-col gap-3">
+              <div>
+                <label htmlFor="name" className="label">
+                  <Span className="label-text">Name</Span>
+                </label>
+                <Input
+                  id="name"
+                  type="text"
+                  placeholder="Name"
+                  {...register("name")}
+                />
+              </div>
+              <div>
+                <label htmlFor="company" className="label">
+                  <Span className="label-text">Company</Span>
+                </label>
+                <Input
+                  id="company"
+                  type="text"
+                  placeholder="My Company Name"
+                  {...register("company")}
+                />
+              </div>
             </div>
-            <div className="w-1/2">
-              <label htmlFor="email" className="label">
-                <Span className="label-text">Email</Span>
-              </label>
-              <Input
-                id="email"
-                type="text"
-                placeholder="example@gmail.com"
-                {...register("email")}
-              />
+            <div className="w-1/2 flex flex-col gap-3">
+              <div>
+                <label htmlFor="email" className="label">
+                  <Span className="label-text">Email</Span>
+                </label>
+                <Input
+                  id="email"
+                  type="text"
+                  placeholder="example@gmail.com"
+                  {...register("email")}
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="label">
+                  <Span className="label-text">Telephone</Span>
+                </label>
+                <Input
+                  id="phone"
+                  type="tel"
+                  placeholder="+9 999 9999"
+                  {...register("phone")}
+                />
+              </div>
             </div>
           </div>
           <div>
@@ -97,7 +126,7 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
             <ButtonWithLoading
               className={buttonClassName}
               isLoading={isPending}
-              text="Contact us"
+              text="Send a Message"
             />
           </div>
         </form>

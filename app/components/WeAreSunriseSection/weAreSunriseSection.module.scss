@@ -1,17 +1,6 @@
 @use "styles/mixin";
 @use "styles/breakpoints";
 
-.title {
-  background: -webkit-linear-gradient(
-    104deg,
-    #e95848 5.33%,
-    #f71919 51.64%,
-    #ff0000 98.91%
-  );
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .textWrapper {
   display: flex;
   flex-direction: column;
