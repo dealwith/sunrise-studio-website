@@ -71,7 +71,9 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
                   id="name"
                   type="text"
                   placeholder="Name"
-                  {...register("name")}
+                  {...register("name", {
+                    required: true,
+                  })}
                 />
               </div>
               <div>
@@ -82,7 +84,9 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
                   id="company"
                   type="text"
                   placeholder="My Company Name"
-                  {...register("company")}
+                  {...register("company", {
+                    required: true,
+                  })}
                 />
               </div>
             </div>
@@ -95,7 +99,9 @@ export const ContactUsSection: FunctionComponent<TProps> = ({ isMainPage }) => {
                   id="email"
                   type="text"
                   placeholder="example@gmail.com"
-                  {...register("email")}
+                  {...register("email", {
+                    required: true,
+                  })}
                 />
               </div>
               <div>
