@@ -2,6 +2,7 @@ import { cn } from "utils/cn";
 import Link from "next/link";
 import { FunctionComponent } from "react";
 import { usePathname } from "next/navigation";
+import { ROUTES } from "constants/index";
 
 type TProps = {
   children: string;
@@ -14,11 +15,13 @@ export const LiWithActiveLink: FunctionComponent<TProps> = ({
   ...rest
 }) => {
   const pathname = usePathname();
+  const activeLinkColor =
+    href === ROUTES.SERVICES ? "text-black" : "text-accent";
 
   return (
     <li
       className={cn("text-white hover:text-black transition-colors", {
-        "text-accent": href === pathname,
+        [activeLinkColor]: href === pathname,
       })}
       {...rest}
     >
