@@ -12,6 +12,8 @@ export * from "./P";
 export * from "./OurTeamsExperienceSection";
 export * from "./WhatWeDoSection";
 export * from "./WhatWeDoCard";
+export * from "./WhatWeBuildSection";
+export * from "./WhatWeBuildCard";
 export * from "./OurProjectsSection";
 export * from "./ImagesWrapper";
 export * from "./WhoWeWorkWithSection";
