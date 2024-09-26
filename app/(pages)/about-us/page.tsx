@@ -1,6 +1,12 @@
 "use client";
 
-import { AboutUsSectionContent, Footer, SunriseContainer } from "components";
+import {
+  AboutUsSectionContent,
+  DigitalStudioAndTeamSection,
+  Footer,
+  LinedTeamSection,
+  SunriseContainer,
+} from "components";
 import { useSmoothScroll } from "hooks";
 
 export default function Pricing() {
@@ -13,6 +19,8 @@ export default function Pricing() {
     >
       <SunriseContainer>
         <AboutUsSectionContent />
+        <DigitalStudioAndTeamSection />
+        <LinedTeamSection />
         <Footer handleClick={scrollToRef} />
       </SunriseContainer>
     </main>

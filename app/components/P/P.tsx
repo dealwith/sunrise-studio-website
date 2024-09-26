@@ -1,7 +1,5 @@
-import { cn } from "@utils/cn";
 import { FunctionComponent, ReactNode } from "react";
-
-import styles from "./p.module.scss";
+import { cn } from "utils/cn";
 
 type TProps = {
   children: string | ReactNode;
@@ -15,7 +13,7 @@ export const P: FunctionComponent<TProps> = ({
   className: propsClassName,
   ...props
 }) => {
-  const componentClassName = cn(styles.component, propsClassName);
+  const componentClassName = cn("text-base font-normal", propsClassName);
 
   return isText ? (
     <span className={componentClassName} {...props}>

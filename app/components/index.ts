@@ -33,3 +33,5 @@ export * from "./InnovationsSection";
 export * from "./LoadingSpinner";
 export * from "./PricingSection";
 export * from "./AboutUsSectionContent";
+export * from "./DigitalStudioAndTeamSection";
+export * from "./LinedTeamSection";

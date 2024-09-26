@@ -6,7 +6,7 @@ import { ButtonWithLoading, H2, H3, Input, Section, Span } from "components";
 import { IContactUsForm } from "./interfaces/IContactUsForm";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { cn } from "utils/cn";
-import { ContactUsSchema } from "utils/validation/ContactUsSchema";
+import { ContactUsSchema } from "utils";
 import sendEmailService from "services/SendEmailService";
 import { toast } from "react-toastify";
 

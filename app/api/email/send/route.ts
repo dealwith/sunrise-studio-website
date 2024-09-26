@@ -1,4 +1,4 @@
-import { ContactUsSchema } from "utils/validation/ContactUsSchema";
+import { ContactUsSchema } from "utils";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
