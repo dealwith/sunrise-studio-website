@@ -19,7 +19,7 @@ export const WhatWeDoCard: FunctionComponent<TProps> = ({
   const isOddCard = number % 2 !== 0;
   const containerClassName = cn(
     isOddCard ? "bg-white" : "bg-accent",
-    "flex gap-3 lg:gap-6 pl-6 py-8 pr-9 rounded-2xl",
+    "flex gap-3 lg:gap-6 pl-6 py-8 pr-9 rounded-2xl w-full",
   );
   const titleClassName = cn(
     isOddCard ? "text-accent" : "text-white",

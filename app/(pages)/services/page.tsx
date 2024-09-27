@@ -30,7 +30,7 @@ export default function Services() {
         <InnovationsSection />
         <WhoWeWorkWithSection />
         <ContactUsSection />
-        <Footer handleClick={scrollToRef} />
+        <Footer />
       </SunriseContainer>
     </main>
   );

@@ -21,7 +21,7 @@ export default function Pricing() {
         <AboutUsSectionContent />
         <DigitalStudioAndTeamSection />
         <LinedTeamSection />
-        <Footer handleClick={scrollToRef} />
+        <Footer />
       </SunriseContainer>
     </main>
   );
