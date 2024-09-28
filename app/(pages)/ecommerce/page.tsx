@@ -19,7 +19,7 @@ export default function Pricing() {
       <SunriseContainer>
         <PricingSection />
         <ContactUsSection />
-        <Footer handleClick={scrollToRef} />
+        <Footer />
       </SunriseContainer>
     </main>
   );

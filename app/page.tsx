@@ -36,7 +36,7 @@ export default function Home() {
         <OurProjectsSection />
         <WhoWeWorkWithSection />
         <ContactUsSection isMainPage={true} />
-        <Footer isMainPage={true} handleClick={scrollToRef} />
+        <Footer isMainPage={true} />
       </SunriseContainer>
     </main>
   );
