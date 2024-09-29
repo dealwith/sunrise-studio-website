@@ -2,7 +2,7 @@ import { TextSliderItem } from "./TextSliderItem";
 
 export const TextSlider = () => {
   return (
-    <div className="flex gap-8 w-full animate-infinite-scroll">
+    <div className="flex gap-8 animate-infinite-scroll">
       <TextSliderItem
         text="surnise studio"
         className="text-white font-unbounded"

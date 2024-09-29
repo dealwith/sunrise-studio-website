@@ -47,7 +47,7 @@ const config: Config = {
         },
         "infinite-scroll": {
           from: { transform: "translateX(0)" },
-          to: { transform: "translateX(-100%)" },
+          to: { transform: "translateX(calc(-100% - 32px))" },
         },
       },
       screens: {
