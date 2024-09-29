@@ -1,38 +1,38 @@
-import { ArrowButton, H2, P, Section, WhatWeDoCard } from "components";
+import { H2, Section, WhatWeDoCard } from "components";
 
-import styles from "./whatWeDo.module.scss";
+import peopleSrc from "/public/images/people.svg";
+import wrenchHammerSrc from "/public/images/wrenchHammer.svg";
 
 export const WhatWeDoSection = () => {
+  const activities = [
+    {
+      title: "Staffing Solutions",
+      text: "We connect businesses with skilled developers worldwide. Whether you need a dedicated team or project-based expertise, we provide the right talent to support your goals—no matter where you're located.",
+      image: peopleSrc,
+      number: 1,
+    },
+    {
+      title: "New Solutions",
+      text: "We specialize in creating custom web solutions tailored to your needs. From concept to launch, our team of developers builds innovative digital platforms to drive your business forward.",
+      image: wrenchHammerSrc,
+      number: 2,
+    },
+  ];
+
   return (
     <Section>
-      <div id="services" className="flex flex-col gap-[60px]">
+      <div className="flex flex-col gap-[60px]">
         <H2>What we do</H2>
-        <div className="grid grid-cols-1 min-[484px]:grid-cols-2 min-[940px]:grid-cols-4 gap-3 lg:gap-6">
-          <WhatWeDoCard title={"Web3"}>
-            <P className="text-black">
-              Decentralized, blockchain-based financial lending and support for
-              tokenization of assets
-            </P>
-          </WhatWeDoCard>
-          <WhatWeDoCard title={"Finance"}>
-            <P className="text-black">
-              Real-time financial data and visual tools for trading a variety of
-              asset classes
-            </P>
-          </WhatWeDoCard>
-          <WhatWeDoCard title="E-commerce">
-            <P className="text-black">
-              Digital storefronts with integrated content management systems and
-              payment processing solutions
-            </P>
-          </WhatWeDoCard>
-          <WhatWeDoCard className={styles.card}>
-            <a href="#contactUs">
-              <ArrowButton width="14px" height="14px" className={styles.btn}>
-                Much More
-              </ArrowButton>
-            </a>
-          </WhatWeDoCard>
+        <div className="flex gap-3 lg:gap-6 md:flex-row flex-col">
+          {activities.map((activity) => (
+            <WhatWeDoCard
+              key={activity.title}
+              title={activity.title}
+              text={activity.text}
+              image={activity.image}
+              number={activity.number}
+            />
+          ))}
         </div>
       </div>
     </Section>

@@ -23,7 +23,7 @@ export default function Pricing() {
         <DigitalStudioAndTeamSection />
         <LinedTeamSection />
         <TextSliderSection />
-        <Footer handleClick={scrollToRef} />
+        <Footer />
       </SunriseContainer>
     </main>
   );

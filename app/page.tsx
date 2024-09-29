@@ -7,6 +7,7 @@ import {
   OurTeamsExperienceSection,
   SunriseSectionContent,
   WeAreSunriseSection,
+  WhatWeBuildSection,
   WhatWeDoSection,
   WhoWeWorkWithSection,
 } from "components";
@@ -31,10 +32,11 @@ export default function Home() {
         <WeAreSunriseSection />
         <OurTeamsExperienceSection />
         <WhatWeDoSection />
+        <WhatWeBuildSection />
         <OurProjectsSection />
         <WhoWeWorkWithSection />
         <ContactUsSection isMainPage={true} />
-        <Footer isMainPage={true} handleClick={scrollToRef} />
+        <Footer isMainPage={true} />
       </SunriseContainer>
     </main>
   );

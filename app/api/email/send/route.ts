@@ -9,7 +9,7 @@ export async function POST(request: Request) {
 
   try {
     if (result.success) {
-      const { email, name, message } = result.data;
+      const { email, name, message, company, phone } = result.data;
 
       const data = await resend.emails.send({
         from: "Sunrise Studio <office@sunrisestd.com>",
@@ -20,6 +20,8 @@ export async function POST(request: Request) {
               <body>
                   <h1>You have received a new message from ${name}</h1>
                   <p><strong>Email:</strong> ${email}</p>
+                  <p><strong>Company:</strong> ${company}</p>
+                  <p><strong>Phone:</strong> ${phone || "No phone provided."}</p>
                   <p><strong>Message:</strong> ${message || "No message provided."}</p>
               </body>
           </html>

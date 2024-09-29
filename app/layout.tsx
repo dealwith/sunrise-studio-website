@@ -28,6 +28,10 @@ export default function RootLayout({
       <head>
         <title>{globalMetadata.title}</title>
         <meta name="description" content={globalMetadata.description} />
+        <meta
+          name="ahrefs-site-verification"
+          content="69f334fd48b8b1793bbd508338ee489fc5d1236b951709fde3524575b14c6f96"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

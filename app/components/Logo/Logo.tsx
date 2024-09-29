@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { cn } from "utils/cn";
+import { usePathname } from "next/navigation";
 
-import { cn } from "@utils/cn";
-
-import logoSrc from "./img/Logo.svg";
+import DarkLogoSrc from "./img/darkLogo.svg";
+import LightLogoSrc from "./img/lightLogo.svg";
 
 type Props = {
   width?: number;
@@ -11,10 +12,13 @@ type Props = {
 };
 
 export const Logo = ({ width, height, className: propsClassName }: Props) => {
+  const pathname = usePathname();
+  const isDarkLogo = pathname === "/" || pathname === "/services";
+
   return (
     <Image
-      className={cn("bg-black rounded-full p-0.5", propsClassName)}
-      src={logoSrc}
+      className={cn("p-0.5", propsClassName)}
+      src={isDarkLogo ? DarkLogoSrc : LightLogoSrc}
       alt="logo"
       width={width}
       height={height}
