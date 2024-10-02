@@ -4,7 +4,6 @@ import {
   ContactUsSection,
   Footer,
   OurProjectsSection,
-  OurTeamsExperienceSection,
   SunriseSectionContent,
   WeAreSunriseSection,
   WhatWeBuildSection,
@@ -30,7 +29,6 @@ export default function Home() {
       </AuroraBackground>
       <SunriseContainer>
         <WeAreSunriseSection />
-        <OurTeamsExperienceSection />
         <WhatWeDoSection />
         <WhatWeBuildSection />
         <OurProjectsSection />

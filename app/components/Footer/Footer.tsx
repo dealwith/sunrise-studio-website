@@ -51,6 +51,7 @@ export const Footer: FunctionComponent<TProps> = ({ isMainPage }) => {
           src={dottedWorldMapSrc}
           alt="dotted world map"
           className="absolute top-0 right-0 -z-10"
+          style={{ opacity: 0.5 }}
         />
       </div>
     </footer>
