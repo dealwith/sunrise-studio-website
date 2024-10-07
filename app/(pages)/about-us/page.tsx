@@ -6,6 +6,7 @@ import {
   Footer,
   LinedTeamSection,
   SunriseContainer,
+  TextSliderSection,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
@@ -21,6 +22,7 @@ export default function Pricing() {
         <AboutUsSectionContent />
         <DigitalStudioAndTeamSection />
         <LinedTeamSection />
+        <TextSliderSection />
         <Footer />
       </SunriseContainer>
     </main>
