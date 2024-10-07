@@ -34,6 +34,7 @@ const config: Config = {
       },
       animation: {
         aurora: "aurora 60s linear infinite",
+        "infinite-scroll": "infinite-scroll 25s linear infinite",
       },
       keyframes: {
         aurora: {
@@ -43,6 +44,10 @@ const config: Config = {
           to: {
             backgroundPosition: "350% 50%, 350% 50%",
           },
+        },
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 32px))" },
         },
       },
       screens: {

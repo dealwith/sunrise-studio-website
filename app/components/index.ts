@@ -34,3 +34,5 @@ export * from "./PricingSection";
 export * from "./AboutUsSectionContent";
 export * from "./DigitalStudioAndTeamSection";
 export * from "./LinedTeamSection";
+export * from "./TextSlider";
+export * from "./TextSliderSection";
