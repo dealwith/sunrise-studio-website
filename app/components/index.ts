@@ -36,3 +36,4 @@ export * from "./DigitalStudioAndTeamSection";
 export * from "./LinedTeamSection";
 export * from "./TextSlider";
 export * from "./TextSliderSection";
+export * from "./OurTeamSection";
