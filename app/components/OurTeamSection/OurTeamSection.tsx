@@ -23,7 +23,7 @@ export const OurTeamSection = () => {
       />
       <OurTeamCard
         image={thirdImageSrc}
-        name="Julia Kryshyna"
+        name="Julia Mazur"
         role="Head of Design"
       />
       <OurTeamCard
