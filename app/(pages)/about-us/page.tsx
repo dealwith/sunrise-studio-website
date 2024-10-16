@@ -2,15 +2,18 @@
 
 import {
   AboutUsSectionContent,
+  ContactUsSection,
   DigitalStudioAndTeamSection,
   Footer,
   LinedTeamSection,
+  OurTeamSection,
   SunriseContainer,
   TextSliderSection,
+  WhoWeWorkWithSection,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
-export default function Pricing() {
+export default function AboutUs() {
   const { elementRef, scrollToRef } = useSmoothScroll();
 
   return (
@@ -23,6 +26,9 @@ export default function Pricing() {
         <DigitalStudioAndTeamSection />
         <LinedTeamSection />
         <TextSliderSection />
+        <OurTeamSection />
+        <WhoWeWorkWithSection />
+        <ContactUsSection />
         <Footer />
       </SunriseContainer>
     </main>

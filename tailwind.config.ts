@@ -34,7 +34,9 @@ const config: Config = {
       },
       animation: {
         aurora: "aurora 60s linear infinite",
-        "infinite-scroll": "infinite-scroll 25s linear infinite",
+        "first-infinite-scroll": "first-infinite-scroll 10s linear infinite",
+        "second-infinite-scroll": "second-infinite-scroll 8s linear infinite",
+        "third-infinite-scroll": "third-infinite-scroll 15s linear infinite",
       },
       keyframes: {
         aurora: {
@@ -45,7 +47,15 @@ const config: Config = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
-        "infinite-scroll": {
+        "first-infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 32px))" },
+        },
+        "second-infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - 32px))" },
+        },
+        "third-infinite-scroll": {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - 32px))" },
         },

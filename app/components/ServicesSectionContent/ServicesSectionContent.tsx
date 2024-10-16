@@ -2,9 +2,11 @@ import { useContext } from "react";
 import { Chip, MobileNavigation } from "components";
 import { ServicesCard } from "./ServicesCard";
 import { BurgerContext } from "context";
+import { useWindowSize } from "hooks";
 
 export const ServicesSectionContent = () => {
   const { isActiveBurger } = useContext(BurgerContext);
+  const { isLaptopS } = useWindowSize();
 
   return (
     <section className="flex flex-col items-center lg:gap-[120px] gap-[60px] lg:mt-48 sm:mt-44 mt-32 lg:mb-[120px] sm:mb-[100px] mb-[60px]">
@@ -72,7 +74,7 @@ export const ServicesSectionContent = () => {
           </div>
         </>
       )}
-      <MobileNavigation />
+      {isLaptopS && <MobileNavigation />}
     </section>
   );
 };

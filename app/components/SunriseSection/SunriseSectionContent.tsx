@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BurgerContext } from "context";
 import { useContext } from "react";
 import { Button, MobileNavigation } from "components";
+import { useWindowSize } from "hooks";
 
 import cloverSrc from "/public/images/clover.png";
 import starSrc from "/public/images/star.svg";
@@ -11,6 +12,7 @@ import styles from "./sunriseSection.module.scss";
 
 export const SunriseSectionContent = () => {
   const { isActiveBurger } = useContext(BurgerContext);
+  const { isLaptopS } = useWindowSize();
 
   return (
     <section id="home" className={styles.component}>
@@ -40,7 +42,7 @@ export const SunriseSectionContent = () => {
           </Link>
         </div>
       )}
-      <MobileNavigation />
+      {isLaptopS && <MobileNavigation />}
     </section>
   );
 };

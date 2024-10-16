@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BurgerContext } from "context";
 import { useContext } from "react";
 import { Button, MobileNavigation } from "components";
+import { useWindowSize } from "hooks";
 
 import cloverSrc from "/public/images/clover.png";
 import starSrc from "/public/images/star.svg";
@@ -10,6 +11,7 @@ import bubbleSrc from "/public/images/bubble.png";
 
 export const AboutUsSectionContent = () => {
   const { isActiveBurger } = useContext(BurgerContext);
+  const { isLaptopS } = useWindowSize();
 
   return (
     <section className="h-screen flex items-center">
@@ -41,14 +43,15 @@ export const AboutUsSectionContent = () => {
               Contact us
             </Button>
           </Link>
+          <Image
+            src={bubbleSrc}
+            alt="bubble"
+            className="absolute top-0 -right-32 bottom-0 m-auto -z-10"
+          />
         </div>
       )}
-      <Image
-        src={bubbleSrc}
-        alt="bubble"
-        className="absolute top-0 -right-32 bottom-0 m-auto"
-      />
-      <MobileNavigation />
+
+      {isLaptopS && <MobileNavigation />}
     </section>
   );
 };
