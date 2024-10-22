@@ -15,7 +15,7 @@ export const EcommerceSectionContent = () => {
             Your reliable partner in the world of{" "}
             <span className="whitespace-nowrap">e-commerce</span>
           </h1>
-          <P className="text-xl max-w-[551px]">
+          <P className="text-xl max-w-[551px] font-light">
             In today&apos;s world, a successful business is impossible without
             an effective online presence. We specialize in developing
             high-quality e-commerce websites that help your business reach new
