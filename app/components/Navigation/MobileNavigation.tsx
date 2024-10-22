@@ -32,8 +32,11 @@ export const MobileNavigation = () => {
           <li>
             <Link href={ROUTES.SERVICES}>Services</Link>
           </li>
-          <li>
+          {/* <li>
             <Link href="#projects">Projects</Link>
+          </li> */}
+          <li>
+            <Link href={ROUTES.ECOMMERCE}>E-commerce</Link>
           </li>
           <li>
             <Link href="#contactUs">Contact us</Link>
