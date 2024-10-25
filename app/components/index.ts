@@ -37,3 +37,6 @@ export * from "./LinedTeamSection";
 export * from "./TextSlider";
 export * from "./TextSliderSection";
 export * from "./OurTeamSection";
+export * from "./EcommerceOurServicesSection";
+export * from "./CarouselWrapper";
+export * from "./LogoSlider";
