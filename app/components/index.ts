@@ -40,3 +40,4 @@ export * from "./OurTeamSection";
 export * from "./EcommerceOurServicesSection";
 export * from "./CarouselWrapper";
 export * from "./LogoSlider";
+export * from "./EcommerceWhyChooseUsSection";

@@ -8,6 +8,7 @@ import {
   SunriseContainer,
   EcommerceOurServicesSection,
   ServicesBackground,
+  EcommerceWhyChooseUsSection,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
@@ -29,6 +30,7 @@ export default function Ecommerce() {
         </SunriseContainer>
       </ServicesBackground>
       <SunriseContainer>
+        <EcommerceWhyChooseUsSection />
         <ContactUsSection isMainPage={true} />
         <Footer isMainPage={true} />
       </SunriseContainer>
