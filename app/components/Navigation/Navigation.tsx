@@ -10,7 +10,8 @@ export const Navigation = () => {
         <LiWithActiveLink href={ROUTES.HOME}>Home</LiWithActiveLink>
         <LiWithActiveLink href={ROUTES.ABOUT_US}>About us</LiWithActiveLink>
         <LiWithActiveLink href={ROUTES.SERVICES}>Services</LiWithActiveLink>
-        <LiWithActiveLink href={"#projects"}>Projects</LiWithActiveLink>
+        {/* <LiWithActiveLink href={"#projects"}>Projects</LiWithActiveLink> */}
+        <LiWithActiveLink href={ROUTES.ECOMMERCE}>E-commerce</LiWithActiveLink>
       </ul>
     </nav>
   );

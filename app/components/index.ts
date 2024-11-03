@@ -30,7 +30,7 @@ export * from "./Chip";
 export * from "./OurDomainsSection";
 export * from "./InnovationsSection";
 export * from "./LoadingSpinner";
-export * from "./PricingSection";
+export * from "./EcommerceSection";
 export * from "./AboutUsSectionContent";
 export * from "./DigitalStudioAndTeamSection";
 export * from "./LinedTeamSection";
