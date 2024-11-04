@@ -35,13 +35,13 @@ export const Footer: FunctionComponent<TProps> = ({ isMainPage }) => {
             </a>
           </address>
         </div>
-        <div className="flex gap-4 items-center mt-16">
+        <address className="flex gap-4 items-center mt-16">
           <Image src={locationSignSrc} alt="location sign" />
           <div>
-            <P className="font-bold">Ul. Obozowa 20/194</P>
+            <P className="font-bold">Ul. Obozowa 20, 2nd floor</P>
             <P className="font-bold">01-161 Warszawa, Polska</P>
           </div>
-        </div>
+        </address>
         <div className="flex justify-center w-full">
           <P className="text-center">
             © 2024 Sunrise Studio. All rights reserved. Designed in Poland.
