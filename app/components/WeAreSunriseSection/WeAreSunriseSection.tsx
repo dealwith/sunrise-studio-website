@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { H2, P } from "components";
+import { P, UnderlineText } from "components";
 
 import styles from "./weAreSunriseSection.module.scss";
 
-import underlineSrc from "./img/underline.svg";
 import bubbleSrc from "/public/images/bubble.png";
 
 export const WeAreSunriseSection = () => {
@@ -12,14 +11,11 @@ export const WeAreSunriseSection = () => {
       id="aboutUs"
       className="pt-[60px] md:pt-[100px] lg:pt-[70px] h-fit md:h-[400px] lg:h-[520px]"
     >
-      <div className="w-fit">
-        <H2 className="text-accent">We are sunrise studio</H2>
-        <Image
-          src={underlineSrc}
-          alt="underline"
-          className={styles.underline}
-        />
-      </div>
+      <UnderlineText
+        text="We are sunrise studio"
+        isRedText={true}
+        imageClassName="lg:w-fit md:w-[200px] w-[120px]"
+      />
       <div className="flex justify-between">
         <div className={styles.textWrapper}>
           <P className="lg:!text-3xl md:!text-xl">

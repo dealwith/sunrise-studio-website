@@ -19,16 +19,6 @@
   }
 }
 
-.underline {
-  @include mixin.media-w(breakpoints.$laptop) {
-    width: 200px;
-  }
-
-  @include mixin.media-w(breakpoints.$mobile) {
-    width: 120px;
-  }
-}
-
 .image {
   position: absolute;
   top: -120px;
