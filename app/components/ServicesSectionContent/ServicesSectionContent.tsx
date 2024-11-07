@@ -9,7 +9,7 @@ export const ServicesSectionContent = () => {
   const { isLaptopS } = useWindowSize();
 
   return (
-    <section className="flex flex-col items-center lg:gap-[120px] gap-[60px] lg:mt-48 sm:mt-44 mt-32 lg:mb-[120px] sm:mb-[100px] mb-[60px]">
+    <section className="flex flex-col h-screen items-center lg:gap-[120px] gap-[60px] lg:mt-48 sm:mt-44 mt-32 lg:mb-[120px] sm:mb-[100px] mb-[60px]">
       {!isActiveBurger && (
         <>
           <h1 className="text-[32px] sm:text-[44px] md:text-[54px] lg:text-7xl xl:text-[80px] text-black font-unboundedMedium">

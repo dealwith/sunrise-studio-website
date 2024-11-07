@@ -5,7 +5,6 @@ import { useContext } from "react";
 import { Button, MobileNavigation } from "components";
 import { useWindowSize } from "hooks";
 
-import cloverSrc from "/public/images/clover.png";
 import starSrc from "/public/images/star.svg";
 
 import styles from "./sunriseSection.module.scss";
@@ -24,11 +23,6 @@ export const SunriseSectionContent = () => {
             </span>
             <div className={styles.textWrapper}>
               <div className={styles.textBg}>With</div>
-              <Image
-                src={cloverSrc}
-                alt="clover"
-                className={styles.cloverImg}
-              />
             </div>
             <div className="font-unbounded flex justify-end gap-3.5 md:gap-6 items-center">
               <Image src={starSrc} alt="star" className={styles.starImg} />
