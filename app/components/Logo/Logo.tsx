@@ -14,7 +14,10 @@ type Props = {
 export const Logo = ({ width, height, className: propsClassName }: Props) => {
   const pathname = usePathname();
   const isDarkLogo =
-    pathname === "/" || pathname === "/services" || pathname === "/ecommerce";
+    pathname === "/" ||
+    pathname === "/services" ||
+    pathname === "/ecommerce" ||
+    pathname === "/staffing";
 
   return (
     <Image
