@@ -4,6 +4,7 @@ import {
   AuroraBackground,
   ContactUsSection,
   Footer,
+  StaffingGrowingProjectSection,
   StaffingSectionContent,
   SunriseContainer,
 } from "components";
@@ -17,6 +18,7 @@ export default function Staffing() {
         </SunriseContainer>
       </AuroraBackground>
       <SunriseContainer>
+        <StaffingGrowingProjectSection />
         <ContactUsSection isMainPage={true} />
         <Footer isMainPage={true} />
       </SunriseContainer>

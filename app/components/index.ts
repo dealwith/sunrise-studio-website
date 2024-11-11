@@ -44,3 +44,5 @@ export * from "./EcommerceWhyChooseUsSection";
 export * from "./UnderlineText";
 export * from "./StaffingSectionContent";
 export * from "./FeedbackForm";
+export * from "./BubbleImageWrapper";
+export * from "./StaffingGrowingProjectSection";
