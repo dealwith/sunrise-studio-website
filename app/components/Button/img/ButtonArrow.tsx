@@ -1,9 +1,12 @@
+import { COLORS } from "constants/colors";
+
 type Props = {
   width: string;
   height: string;
+  isHovered: boolean;
 };
 
-export const ButtonArrow = ({ width, height }: Props) => {
+export const ButtonArrow = ({ width, height, isHovered }: Props) => {
   return (
     <svg
       width={width}
@@ -14,7 +17,7 @@ export const ButtonArrow = ({ width, height }: Props) => {
     >
       <path
         d="M1 11L11 1M11 1H1M11 1V11"
-        stroke="white"
+        stroke={isHovered ? COLORS.RED : COLORS.WHITE}
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
