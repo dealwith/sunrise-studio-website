@@ -20,7 +20,7 @@ export const UnderlineText: FunctionComponent<TProps> = ({
   const textColor = isRedText ? "text-accent" : "text-white";
 
   return (
-    <div className="w-fit">
+    <div className="w-fit flex flex-col">
       <H2 className={textColor}>{text}</H2>
       <Image src={underlineSrc} alt="underline" className={imageClassName} />
     </div>
