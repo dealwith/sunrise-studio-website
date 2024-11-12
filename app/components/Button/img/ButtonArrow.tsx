@@ -3,7 +3,7 @@ import { COLORS } from "constants/colors";
 type Props = {
   width: string;
   height: string;
-  isHovered: boolean;
+  isHovered?: boolean;
 };
 
 export const ButtonArrow = ({ width, height, isHovered }: Props) => {
