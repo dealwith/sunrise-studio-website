@@ -42,7 +42,6 @@ export const AboutUsSectionContent = () => {
           />
         </div>
       )}
-
       {isLaptopS && <MobileNavigation />}
     </section>
   );

@@ -7,6 +7,7 @@ export const StaffingSectionContent = () => {
         <UnderlineText
           text="Get the best developers, without all the stress"
           isRedText={false}
+          imageClassName="mt-6"
         />
         <div className="w-full py-[60px] px-4 flex flex-col items-center gap-[60px] rounded-2xl bg-primary bg-opacity-50">
           <H2>Get Started</H2>

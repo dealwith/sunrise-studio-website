@@ -98,7 +98,7 @@ export const FeedbackForm: FunctionComponent<TProps> = ({
             <Input
               id="phone"
               type="tel"
-              placeholder="+9 999 9999"
+              placeholder="+1 (555) 123-4567"
               {...register("phone")}
             />
           </div>

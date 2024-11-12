@@ -1,6 +1,7 @@
-import { cn } from "@utils/cn";
+import { cn } from "utils/cn";
 import { FunctionComponent } from "react";
 import { Button } from "./Button";
+import useToggle from "hooks/useToggle";
 
 import styles from "./button.module.scss";
 
@@ -20,10 +21,16 @@ export const ArrowButton: FunctionComponent<TProps> = ({
   height,
 }) => {
   const buttonClassName = cn(styles.arrowBtn, propsClassName);
+  const [isHovered, toggleHover] = useToggle();
 
   return (
-    <Button className={buttonClassName}>
-      {children} <ButtonArrow width={width} height={height} />
+    <Button
+      className={buttonClassName}
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
+    >
+      {children}{" "}
+      <ButtonArrow isHovered={isHovered} width={width} height={height} />
     </Button>
   );
 };
