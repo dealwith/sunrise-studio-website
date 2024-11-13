@@ -1,4 +1,5 @@
-import { FeedbackForm, H2, Section, UnderlineText } from "components";
+import { H2, Section, UnderlineText } from "components";
+import Script from "next/script";
 
 export const StaffingSectionContent = () => {
   return (
@@ -11,10 +12,15 @@ export const StaffingSectionContent = () => {
         />
         <div className="w-full py-[60px] px-4 flex flex-col items-center gap-[60px] rounded-2xl bg-primary bg-opacity-50">
           <H2>Get Started</H2>
-          <FeedbackForm
-            buttonText="Book a call now"
-            buttonClassName="bg-accent hover:bg-white hover:text-accent transition-all"
-            buttonPosition="justify-center"
+          <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/sunrisestudioworkspace?hide_gdpr_banner=1&primary_color=ff7600"
+            style={{ minWidth: "500px", height: "700px" }}
+          />
+          <Script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async
           />
         </div>
       </div>

@@ -22,7 +22,7 @@ export const StaffingCostBenefitsSection = () => {
         }
         isReversed={true}
       >
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col md:gap-10 gap-4">
           <P className="lg:!text-3xl md:!text-xl">
             We provide skilled developers at rates well below $90/hour, reducing
             client costs without compromising quality.

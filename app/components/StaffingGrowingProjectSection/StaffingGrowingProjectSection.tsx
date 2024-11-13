@@ -15,7 +15,7 @@ export const StaffingGrowingProjectSection = () => {
           />
         }
       >
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col md:gap-10 gap-4">
           <P className="lg:!text-3xl md:!text-xl">
             High Costs: Skilled developers cost average $90/hour.
           </P>
