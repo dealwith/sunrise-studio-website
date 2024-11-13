@@ -47,3 +47,4 @@ export * from "./FeedbackForm";
 export * from "./BubbleImageWrapper";
 export * from "./StaffingGrowingProjectSection";
 export * from "./StaffingCostBenefitsSection";
+export * from "./StaffingComplexityHandlingSection";

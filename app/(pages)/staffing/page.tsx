@@ -4,6 +4,7 @@ import {
   AuroraBackground,
   ContactUsSection,
   Footer,
+  StaffingComplexityHandlingSection,
   StaffingCostBenefitsSection,
   StaffingGrowingProjectSection,
   StaffingSectionContent,
@@ -21,6 +22,7 @@ export default function Staffing() {
       <SunriseContainer>
         <StaffingGrowingProjectSection />
         <StaffingCostBenefitsSection />
+        <StaffingComplexityHandlingSection />
         <ContactUsSection isMainPage={true} />
         <Footer isMainPage={true} />
       </SunriseContainer>
