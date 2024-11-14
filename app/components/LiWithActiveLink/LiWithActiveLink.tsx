@@ -16,7 +16,7 @@ export const LiWithActiveLink: FunctionComponent<TProps> = ({
 }) => {
   const pathname = usePathname();
   const activeLinkColor =
-    href === ROUTES.SERVICES ? "text-black" : "text-accent";
+    href === ROUTES.BUILDING ? "text-black" : "text-accent";
 
   return (
     <li
