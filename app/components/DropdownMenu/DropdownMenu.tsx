@@ -29,7 +29,7 @@ export const DropdownMenu = () => {
         Services
       </button>
       {isHovered && (
-        <ul className="absolute flex flex-col gap-3 pt-3">
+        <ul className="absolute flex flex-col gap-2 pt-2">
           {menuItems.map((item) => (
             <LiWithActiveLink key={item.title} href={item.href}>
               {item.title}
