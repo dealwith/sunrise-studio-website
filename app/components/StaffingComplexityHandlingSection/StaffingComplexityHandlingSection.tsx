@@ -1,39 +1,39 @@
 import { useWindowSize } from "hooks";
 import { H2, InnovationCard, Section } from "components";
 
+const complexityHandlingData = [
+  {
+    number: "1",
+    title: "Align",
+    description:
+      "We begin by thoroughly understanding your project's unique needs and objectives, ensuring that we have a clear vision of what you require. This involves in-depth discussions with your team to identify key goals, timelines, and any specific technical skills necessary for success.",
+    className: "",
+  },
+  {
+    number: "2",
+    title: "Match",
+    description:
+      "Our dedicated team searches for and identifies professionals who perfectly fit your project requirements. We leverage our extensive network and rigorous vetting process to find developers with the right skill sets and experience, ensuring an optimal fit for your team.",
+    className: "",
+  },
+  {
+    number: "3",
+    title: "Assign",
+    description:
+      "Once we have identified the ideal candidates, we seamlessly integrate the selected talent into your team. We handle all logistics, including onboarding, to ensure that the new developers are set up for success and can start contributing effectively from day one.",
+    className: "",
+  },
+  {
+    number: "4",
+    title: "Maintain",
+    description:
+      "We continuously monitor the project's progress and the well-being of our developers to ensure ongoing success. This includes regular check-ins with both your team and our developers, addressing any challenges that arise and making adjustments as needed to keep the project on track.",
+    className: "",
+  },
+];
+
 export const StaffingComplexityHandlingSection = () => {
   const { isLaptopS } = useWindowSize();
-
-  const complexityHandlingData = [
-    {
-      number: "1",
-      title: "Align",
-      description:
-        "We begin by thoroughly understanding your project's unique needs and objectives, ensuring that we have a clear vision of what you require. This involves in-depth discussions with your team to identify key goals, timelines, and any specific technical skills necessary for success.",
-      className: "",
-    },
-    {
-      number: "2",
-      title: "Match",
-      description:
-        "Our dedicated team searches for and identifies professionals who perfectly fit your project requirements. We leverage our extensive network and rigorous vetting process to find developers with the right skill sets and experience, ensuring an optimal fit for your team.",
-      className: "",
-    },
-    {
-      number: "3",
-      title: "Assign",
-      description:
-        "Once we have identified the ideal candidates, we seamlessly integrate the selected talent into your team. We handle all logistics, including onboarding, to ensure that the new developers are set up for success and can start contributing effectively from day one.",
-      className: "",
-    },
-    {
-      number: "4",
-      title: "Maintain",
-      description:
-        "We continuously monitor the project's progress and the well-being of our developers to ensure ongoing success. This includes regular check-ins with both your team and our developers, addressing any challenges that arise and making adjustments as needed to keep the project on track.",
-      className: "",
-    },
-  ];
 
   return (
     <Section>
