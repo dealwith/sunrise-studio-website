@@ -1,0 +1,17 @@
+/* DigitalStudioAndTeamSection.module.scss */
+
+.quote-right {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    transform: scaleX(-1) scaleY(-1);  /* Combine the transformations correctly */
+    opacity: 0.4;
+  }
+  
+  .quote-flipped {
+    position: absolute;
+    top: 120px;
+    right:0;
+    opacity: .5;
+  }
+  
