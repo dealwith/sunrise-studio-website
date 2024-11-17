@@ -1,6 +1,7 @@
 import { ROUTES } from "constants/index";
 import { LiWithActiveLink } from "../LiWithActiveLink";
 import useToggle from "hooks/useToggle";
+import { cn } from "@utils/cn";
 
 export const DropdownMenu = () => {
   const [isHovered, toggleHover] = useToggle();
@@ -19,6 +20,22 @@ export const DropdownMenu = () => {
     },
   ];
 
+  const ulClasses = cn(
+    "absolute top-full left-0",
+    "min-w-[200px] rounded-md shadow-lg",
+    "overflow-hidden",
+    isHovered ? "visible" : "invisible",
+  );
+
+  const getItemClasses = (index: number) =>
+    cn(
+      "block w-full px-4 py-2",
+      "hover:bg-gray-100",
+      "transform transition-all duration-300",
+      isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
+      `transition-all duration-300 delay-[${index * 100}ms]`,
+    );
+
   return (
     <div
       className="relative"
@@ -28,15 +45,19 @@ export const DropdownMenu = () => {
       <button className="text-white hover:text-black transition-all">
         Services
       </button>
-      {isHovered && (
-        <ul className="absolute flex flex-col gap-2 pt-2">
-          {menuItems.map((item) => (
-            <LiWithActiveLink key={item.title} href={item.href}>
+      <div className={ulClasses}>
+        <div className="p-2 flex flex-col gap-1">
+          {menuItems.map((item, index) => (
+            <LiWithActiveLink
+              key={item.title}
+              href={item.href}
+              className={getItemClasses(index)}
+            >
               {item.title}
             </LiWithActiveLink>
           ))}
-        </ul>
-      )}
+        </div>
+      </div>
     </div>
   );
 };

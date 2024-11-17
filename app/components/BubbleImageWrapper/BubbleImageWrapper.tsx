@@ -1,33 +1,27 @@
+import { cn } from "@utils/cn";
 import Image, { StaticImageData } from "next/image";
 import { FunctionComponent, ReactNode } from "react";
 
 type TProps = {
   title: ReactNode;
-  children: ReactNode;
+  description: ReactNode;
   imageSrc: StaticImageData;
   isReversed?: boolean;
 };
 
-export const BubbleImageWrapper: FunctionComponent<TProps> = ({
+export const StuffingAdvantages: FunctionComponent<TProps> = ({
   title,
-  children,
   imageSrc,
-  isReversed,
+  description,
 }) => {
-  const containerClassName = `flex md:gap-10 ${isReversed ? "flex-row-reverse" : "flex-row"}`;
+  const containerCN = cn("grid grid-cols-2 grid-rows-2 md:gap-10");
 
   return (
-    <div className={containerClassName}>
-      <div className="flex flex-col gap-10 md:w-1/2 w-full">
-        {title}
-        {children}
-      </div>
-      <div className="relative md:w-1/2">
-        <Image
-          src={imageSrc}
-          alt="bubble"
-          className="absolute left-0 inset-y-[40%]"
-        />
+    <div className={containerCN}>
+      {title}
+      {description}
+      <div className="relative">
+        <Image src={imageSrc} alt="bubble" className="" />
       </div>
     </div>
   );
