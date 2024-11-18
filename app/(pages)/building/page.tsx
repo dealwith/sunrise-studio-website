@@ -12,7 +12,7 @@ import {
 } from "components";
 import { useSmoothScroll } from "hooks";
 
-export default function Services() {
+export default function Building() {
   const { elementRef, scrollToRef } = useSmoothScroll();
 
   return (
