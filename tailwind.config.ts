@@ -20,6 +20,7 @@ const config: Config = {
         black: "#1c1c1e",
       },
       fontFamily: {
+        unboundedLight: "Unbounded-ExtraLight",
         unbounded: "Unbounded-Light",
         unboundedMedium: "Unbounded-Medium",
         unboundedBold: "Unbounded-Bold",

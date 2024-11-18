@@ -1,9 +1,9 @@
 import {
   ArrowButton,
-  BubbleImageWrapper,
-  P,
+  StaffingAdvantages,
   Section,
   UnderlineText,
+  LiWithMarker,
 } from "components";
 
 import employeeSrc from "./img/employee.png";
@@ -11,7 +11,7 @@ import employeeSrc from "./img/employee.png";
 export const StaffingCostBenefitsSection = () => {
   return (
     <Section>
-      <BubbleImageWrapper
+      <StaffingAdvantages
         imageSrc={employeeSrc}
         title={
           <UnderlineText
@@ -21,39 +21,40 @@ export const StaffingCostBenefitsSection = () => {
           />
         }
         isReversed={true}
-      >
-        <div className="flex flex-col gap-10">
-          <P className="lg:!text-3xl md:!text-xl">
-            We provide skilled developers at rates well below $90/hour, reducing
-            client costs without compromising quality.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            Our team handles staffing, enabling non-technical clients to connect
-            with qualified developers confidently.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            We streamline hiring by quickly connecting clients with vetted
-            developers.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            Our flexible staffing solutions allow easy team scaling based on
-            project demands.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            Our contractor model lets businesses adapt to changing project needs
-            without permanent hires.
-          </P>
-          <a href="#contactUs">
-            <ArrowButton
-              className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
-              width="10px"
-              height="10px"
-            >
-              Talk to us
-            </ArrowButton>
-          </a>
-        </div>
-      </BubbleImageWrapper>
+        description={
+          <ul className="flex flex-col lg:gap-10 gap-4">
+            <LiWithMarker
+              marker="✅"
+              text="Skilled developers at rates well below $90/hour."
+            />
+            <LiWithMarker
+              marker="✅"
+              text="We handle staffing, enabling non-technical clients to connect
+              with qualified developers confidently."
+            />
+            <LiWithMarker
+              marker="✅"
+              text="Streamline hiring by quickly connecting clients with developers."
+            />
+            <LiWithMarker marker="✅" text="Scale based on project demands." />
+            <LiWithMarker
+              marker="✅"
+              text="We adapt to changing project needs without permanent hires."
+            />
+            <li>
+              <a href="#contactUs">
+                <ArrowButton
+                  className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
+                  width="10px"
+                  height="10px"
+                >
+                  Talk to us
+                </ArrowButton>
+              </a>
+            </li>
+          </ul>
+        }
+      ></StaffingAdvantages>
     </Section>
   );
 };
