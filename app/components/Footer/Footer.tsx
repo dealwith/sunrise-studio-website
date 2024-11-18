@@ -1,20 +1,18 @@
 import Image from "next/image";
-import { FunctionComponent } from "react";
 import { P } from "components";
 import { cn } from "utils/cn";
+import { usePathname } from "next/navigation";
 
 import emailSrc from "./img/email.svg";
 import locationSignSrc from "./img/locationSign.svg";
 import dottedWorldMapSrc from "./img/dottedWorldMap.png";
 
-type TProps = {
-  isMainPage?: boolean;
-};
-
-export const Footer: FunctionComponent<TProps> = ({ isMainPage }) => {
+export const Footer = () => {
+  const pathname = usePathname();
+  const isDarkBg = pathname === "/about-us" || pathname === "/building";
   const containerClassName = cn(
-    "mt-44 w-full absolute left-0 -z-20",
-    isMainPage ? "bg-secondary" : "bg-black",
+    "mt-44 w-full absolute left-0 z-20",
+    isDarkBg ? "bg-black" : "bg-secondary",
   );
 
   return (
@@ -29,7 +27,7 @@ export const Footer: FunctionComponent<TProps> = ({ isMainPage }) => {
           <address>
             <a
               href="mailto:office@sunrisestd.com"
-              className="not-italic text-base font-bold"
+              className="not-italic text-base font-bold hover:opacity-80 transition-opacity"
             >
               office@sunrisestd.com
             </a>
@@ -37,10 +35,17 @@ export const Footer: FunctionComponent<TProps> = ({ isMainPage }) => {
         </div>
         <address className="flex gap-4 items-center mt-16">
           <Image src={locationSignSrc} alt="location sign" />
-          <div>
-            <P className="font-bold">Ul. Obozowa 20, 2nd floor</P>
-            <P className="font-bold">01-161 Warszawa, Polska</P>
-          </div>
+          <a
+            href="https://maps.google.com/?q=Ul.+Obozowa+20,+01-161+Warszawa,+Polska"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+          >
+            <div>
+              <P className="font-bold not-italic">Ul. Obozowa 20, 2nd floor</P>
+              <P className="font-bold not-italic">01-161 Warszawa, Polska</P>
+            </div>
+          </a>
         </address>
         <div className="flex justify-center w-full">
           <P className="text-center">

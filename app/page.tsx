@@ -2,7 +2,6 @@
 
 import {
   ContactUsSection,
-  Footer,
   OurProjectsSection,
   SunriseSectionContent,
   WeAreSunriseSection,
@@ -34,7 +33,6 @@ export default function Home() {
         <OurProjectsSection />
         <WhoWeWorkWithSection />
         <ContactUsSection isMainPage={true} />
-        <Footer isMainPage={true} />
       </SunriseContainer>
     </main>
   );
