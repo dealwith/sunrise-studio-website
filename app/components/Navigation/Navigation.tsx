@@ -1,4 +1,4 @@
-import { DropdownMenu, LiWithActiveLink } from "components";
+import { NavigationDropdownMenu, LiWithActiveLink } from "components";
 import { ROUTES } from "constants/index";
 
 import styles from "./navigation.module.scss";
@@ -10,7 +10,7 @@ export const Navigation = () => {
         <LiWithActiveLink href={ROUTES.HOME}>Home</LiWithActiveLink>
         <LiWithActiveLink href={ROUTES.ABOUT_US}>About us</LiWithActiveLink>
         {/* <LiWithActiveLink href={"#projects"}>Projects</LiWithActiveLink> */}
-        <DropdownMenu />
+        <NavigationDropdownMenu />
       </ul>
     </nav>
   );

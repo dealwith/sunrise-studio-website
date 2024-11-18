@@ -3,7 +3,7 @@ import { LiWithActiveLink } from "../LiWithActiveLink";
 import useToggle from "hooks/useToggle";
 import { cn } from "@utils/cn";
 
-export const DropdownMenu = () => {
+export const NavigationDropdownMenu = () => {
   const [isHovered, toggleHover] = useToggle();
   const menuItems = [
     {

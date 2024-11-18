@@ -1,8 +1,9 @@
 import {
   ArrowButton,
-  StuffingAdvantages,
+  StaffingAdvantages,
   Section,
   UnderlineText,
+  LiWithMarker,
 } from "components";
 
 import employeeSrc from "./img/employee.png";
@@ -10,7 +11,7 @@ import employeeSrc from "./img/employee.png";
 export const StaffingCostBenefitsSection = () => {
   return (
     <Section>
-      <StuffingAdvantages
+      <StaffingAdvantages
         imageSrc={employeeSrc}
         title={
           <UnderlineText
@@ -21,35 +22,39 @@ export const StaffingCostBenefitsSection = () => {
         }
         isReversed={true}
         description={
-          <ul className="flex flex-col gap-10 col-start-1">
-            <li className="lg:text-3xl md:text-xl">
-              ✅ Skilled developers at rates well below $90/hour
+          <ul className="flex flex-col lg:gap-10 gap-4">
+            <LiWithMarker
+              marker="✅"
+              text="Skilled developers at rates well below $90/hour."
+            />
+            <LiWithMarker
+              marker="✅"
+              text="We handle staffing, enabling non-technical clients to connect
+              with qualified developers confidently."
+            />
+            <LiWithMarker
+              marker="✅"
+              text="Streamline hiring by quickly connecting clients with developers."
+            />
+            <LiWithMarker marker="✅" text="Scale based on project demands." />
+            <LiWithMarker
+              marker="✅"
+              text="We adapt to changing project needs without permanent hires."
+            />
+            <li>
+              <a href="#contactUs">
+                <ArrowButton
+                  className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
+                  width="10px"
+                  height="10px"
+                >
+                  Talk to us
+                </ArrowButton>
+              </a>
             </li>
-            <li className="lg:text-3xl md:text-xl">
-              ✅ We handle staffing, enabling non-technical clients to connect
-              with qualified developers confidently.
-            </li>
-            <li className="lg:text-3xl md:text-xl">
-              ✅ Streamline hiring by quickly connecting clients with developers
-            </li>
-            <li className="lg:text-3xl md:text-xl">
-              ✅ Scale based on project demands.
-            </li>
-            <li className="lg:text-3xl md:text-xl">
-              ✅ We adapt to changing project needs without permanent hires.
-            </li>
-            <a href="#contactUs">
-              <ArrowButton
-                className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
-                width="10px"
-                height="10px"
-              >
-                Talk to us
-              </ArrowButton>
-            </a>
           </ul>
         }
-      ></StuffingAdvantages>
+      ></StaffingAdvantages>
     </Section>
   );
 };
