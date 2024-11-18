@@ -1,11 +1,16 @@
-import { BubbleImageWrapper, P, Section, UnderlineText } from "components";
+import {
+  StaffingAdvantages,
+  Section,
+  UnderlineText,
+  LiWithMarker,
+} from "components";
 
 import employeeSrc from "./img/employee.png";
 
 export const StaffingGrowingProjectSection = () => {
   return (
     <Section>
-      <BubbleImageWrapper
+      <StaffingAdvantages
         imageSrc={employeeSrc}
         title={
           <UnderlineText
@@ -14,27 +19,31 @@ export const StaffingGrowingProjectSection = () => {
             imageClassName="lg:w-fit md:w-[200px] w-[120px] mt-6"
           />
         }
-      >
-        <div className="flex flex-col gap-10">
-          <P className="lg:!text-3xl md:!text-xl">
-            High Costs: Skilled developers cost average $90/hour.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            Staffing Challenges: Non-technical clients struggle to staff
-            development teams.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            Time-Consuming Hiring: Finding the right developers takes time.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            Scaling Issues: Scaling teams for growing demands is tough.
-          </P>
-          <P className="lg:!text-3xl md:!text-xl">
-            Inflexible Staffing: Adapting staffing for fluctuating demands is
-            challenging.
-          </P>
-        </div>
-      </BubbleImageWrapper>
+        description={
+          <ul className="flex flex-col lg:gap-10 gap-4">
+            <LiWithMarker
+              marker="❌"
+              text="Skilled developers cost average $90/hour."
+            />
+            <LiWithMarker
+              marker="❌"
+              text="Non-technical clients struggle to staff development teams."
+            />
+            <LiWithMarker
+              marker="❌"
+              text="Finding the right developers takes time."
+            />
+            <LiWithMarker
+              marker="❌"
+              text="Scaling teams for growing demands is tough."
+            />
+            <LiWithMarker
+              marker="❌"
+              text="Adapting staffing for fluctuating demands is challenging."
+            />
+          </ul>
+        }
+      />
     </Section>
   );
 };

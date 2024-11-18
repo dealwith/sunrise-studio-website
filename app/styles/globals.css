@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Unbounded-ExtraLight";
+  src: url("../fonts//Unbounded-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Unbounded-Light";
   src: url("../fonts//Unbounded-Light.ttf") format("truetype");
 }
