@@ -27,7 +27,7 @@ export const Logo = ({ width, height, className: propsClassName }: Props) => {
     <div className="flex items-center gap-3 min-w-max">
       <Image
         className={cn("p-0.5", propsClassName)}
-        src={isDarkLogo ? DarkLogoSrc : LightLogoSrc}
+        src={DarkLogoSrc}
         alt="logo"
         width={width}
         height={height}

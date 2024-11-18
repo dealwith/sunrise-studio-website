@@ -31,8 +31,8 @@ export const DigitalStudioAndTeamSection = () => {
           <P className="lg:text-xl font-light">
             Founded by a talented team of developers and designers, our goal has
             always been to reduce the barriers to entry for those with ideas. As
-            entrepreneurs ourselves, we’ve experienced the challenges of finding
-            quality, affordable talent to scale our own projects. These
+            entrepreneurs ourselves, we&apos;ve experienced the challenges of
+            finding quality, affordable talent to scale our own projects. These
             hardships shaped our mission to create a solution that bridges the
             gap between vision and execution. We believe that cost and access to
             expertise should never limit innovation, which is why we offer
@@ -43,10 +43,10 @@ export const DigitalStudioAndTeamSection = () => {
             Based in Poland, we leverage our extensive network of skilled
             developers to support others who face similar challenges. Our
             outsourcing studio is built on the principles of collaboration,
-            efficiency, and trust. Whether you're a startup looking to scale or
-            an established company in need of additional expertise, we provide
-            the support you need to achieve your goals. By combining our
-            technical know-how with firsthand experience, we’re uniquely
+            efficiency, and trust. Whether you&apos;re a startup looking to
+            scale or an established company in need of additional expertise, we
+            provide the support you need to achieve your goals. By combining our
+            technical know-how with firsthand experience, we&apos;re uniquely
             positioned to help businesses save time, reduce costs, and build
             meaningful, long-lasting partnerships.
           </P>
