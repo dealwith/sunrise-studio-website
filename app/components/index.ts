@@ -49,3 +49,4 @@ export * from "./StaffingGrowingProjectSection";
 export * from "./StaffingCostBenefitsSection";
 export * from "./NavigationDropdownMenu";
 export * from "./LiWithMarker";
+export * from "./StaffingComplexityHandlingSection";
