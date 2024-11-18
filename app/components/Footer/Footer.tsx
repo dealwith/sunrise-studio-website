@@ -39,12 +39,10 @@ export const Footer = () => {
             href="https://maps.google.com/?q=Ul.+Obozowa+20,+01-161+Warszawa,+Polska"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity not-italic"
           >
-            <div>
-              <P className="font-bold not-italic">Ul. Obozowa 20, 2nd floor</P>
-              <P className="font-bold not-italic">01-161 Warszawa, Polska</P>
-            </div>
+            <P className="font-bold">Ul. Obozowa 20, 2nd floor</P>
+            <P className="font-bold">01-161 Warszawa, Polska</P>
           </a>
         </address>
         <div className="flex justify-center w-full">
