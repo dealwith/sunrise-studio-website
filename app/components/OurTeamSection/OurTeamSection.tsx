@@ -12,7 +12,7 @@ export const OurTeamSection = () => {
     <section className="flex lg:mt-[541px] md:mt-[440px] mt-[272px] gap-6 flex-wrap items-center">
       <div className="w-[calc(50%-12px)]">
         <h2 className="font-unbounded lg:text-5xl md:text-3xl text-2xl uppercase">
-          We are a humble bunch. We are skilled, curious and ambitious.
+          We’re here to turn your ideas into reality, anytime you need us.
         </h2>
       </div>
       <OurTeamCard image={firstImageSrc} name="Gleb Kryshyn" role="CEO" />

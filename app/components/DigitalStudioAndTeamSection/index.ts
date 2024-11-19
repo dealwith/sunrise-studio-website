@@ -1,1 +1,1 @@
-export * from "./DigitalStudioAndTeamSection";
+export * from "./DigitalStudioAndTeamSection.module";
