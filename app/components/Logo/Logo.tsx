@@ -4,7 +4,6 @@ import { P } from "components";
 import { usePathname } from "next/navigation";
 
 import DarkLogoSrc from "./img/darkLogo.svg";
-import LightLogoSrc from "./img/lightLogo.svg";
 
 type Props = {
   width?: number;

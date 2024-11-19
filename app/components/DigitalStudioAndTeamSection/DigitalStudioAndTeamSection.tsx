@@ -1,6 +1,5 @@
 import { P } from "components";
 import Image from "next/image";
-import styles from "./DigitalStudioAndTeamSection.module.scss";
 
 export const DigitalStudioAndTeamSection = () => {
   return (
