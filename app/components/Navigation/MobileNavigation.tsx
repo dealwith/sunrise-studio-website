@@ -30,7 +30,10 @@ export const MobileNavigation = () => {
             <Link href={ROUTES.ABOUT_US}>About us</Link>
           </li>
           <li>
-            <Link href={ROUTES.SERVICES}>Services</Link>
+            <Link href={ROUTES.BUILDING}>Building</Link>
+          </li>
+          <li>
+            <Link href={ROUTES.STAFFING}>Staffing</Link>
           </li>
           {/* <li>
             <Link href="#projects">Projects</Link>

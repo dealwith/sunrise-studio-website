@@ -18,9 +18,7 @@ export const SunriseSectionContent = () => {
       {!isActiveBurger && (
         <div className="w-full flex flex-col items-center gap-40 justify-between">
           <h1 className="text-[32px] sm:text-[44px] md:text-[52px] lg:text-7xl xl:text-[90px] font-light flex flex-col md:gap-8 gap-5 w-full">
-            <span className="text-black font-unbounded">
-              Shaping the Future
-            </span>
+            <span className="font-unbounded">Shaping the Future</span>
             <div className={styles.textWrapper}>
               <div className={styles.textBg}>With</div>
             </div>

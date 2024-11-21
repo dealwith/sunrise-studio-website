@@ -4,11 +4,14 @@ import {
   AuroraBackground,
   ContactUsSection,
   Footer,
+  SunriseContainer,
+} from "components";
+import {
+  StaffingComplexityHandlingSection,
   StaffingCostBenefitsSection,
   StaffingGrowingProjectSection,
   StaffingSectionContent,
-  SunriseContainer,
-} from "components";
+} from "./_components";
 
 export default function Staffing() {
   return (
@@ -21,6 +24,7 @@ export default function Staffing() {
       <SunriseContainer>
         <StaffingGrowingProjectSection />
         <StaffingCostBenefitsSection />
+        <StaffingComplexityHandlingSection />
         <ContactUsSection isMainPage={true} />
         <Footer isMainPage={true} />
       </SunriseContainer>

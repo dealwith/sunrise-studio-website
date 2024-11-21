@@ -19,7 +19,7 @@ export const FooterNavigation: FunctionComponent<TProps> = ({
           <Link href={ROUTES.ABOUT_US}>About us</Link>
         </li>
         <li className={propsClassName}>
-          <Link href={ROUTES.SERVICES}>Services</Link>
+          <Link href={ROUTES.BUILDING}>Building</Link>
         </li>
         <li className={propsClassName}>
           <Link href="#projects">Projects</Link>
