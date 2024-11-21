@@ -4,12 +4,14 @@ import {
   AuroraBackground,
   ContactUsSection,
   Footer,
+  SunriseContainer,
+} from "components";
+import {
   StaffingComplexityHandlingSection,
   StaffingCostBenefitsSection,
   StaffingGrowingProjectSection,
   StaffingSectionContent,
-  SunriseContainer,
-} from "components";
+} from "./_components";
 
 export default function Staffing() {
   return (
