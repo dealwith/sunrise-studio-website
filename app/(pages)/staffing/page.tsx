@@ -16,7 +16,7 @@ import {
 export default function Staffing() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-full">
-      <AuroraBackground>
+      <AuroraBackground className="max-md:h-full">
         <SunriseContainer className="z-10">
           <StaffingSectionContent />
         </SunriseContainer>
