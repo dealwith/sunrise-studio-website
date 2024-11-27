@@ -4,7 +4,6 @@ import { P } from "components";
 import { usePathname } from "next/navigation";
 
 import DarkLogoSrc from "./img/darkLogo.svg";
-import LightLogoSrc from "./img/lightLogo.svg";
 
 type Props = {
   width?: number;
@@ -28,7 +27,7 @@ export const Logo = ({ width, height, className: propsClassName }: Props) => {
     <div className="flex items-center gap-3 min-w-max">
       <Image
         className={cn("p-0.5", propsClassName)}
-        src={isDarkLogo ? DarkLogoSrc : LightLogoSrc}
+        src={DarkLogoSrc}
         alt="logo"
         width={width}
         height={height}

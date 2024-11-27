@@ -1,12 +1,7 @@
-import {
-  ArrowButton,
-  StaffingAdvantages,
-  Section,
-  UnderlineText,
-  LiWithMarker,
-} from "components";
+import { ArrowButton, Section, UnderlineText, LiWithMarker } from "components";
 
 import employeeSrc from "./img/employee.png";
+import { StaffingAdvantages } from "../StaffingAdvantages";
 
 export const StaffingCostBenefitsSection = () => {
   return (
