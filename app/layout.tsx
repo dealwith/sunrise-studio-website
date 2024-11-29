@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { cn } from "utils/cn";
 import { globalMetadata } from "data";
-import { Header } from "components";
+import { Footer, Header } from "components";
 import { BurgerContext } from "context";
 import { ToastContainer } from "react-toastify";
 
@@ -100,6 +100,7 @@ export default function RootLayout({
           draggable
           theme="light"
         />
+        <Footer />
       </body>
     </html>
   );

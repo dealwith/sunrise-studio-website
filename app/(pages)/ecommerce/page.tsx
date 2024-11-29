@@ -2,7 +2,6 @@
 
 import {
   ContactUsSection,
-  Footer,
   EcommerceSectionContent,
   EcommerceSectionBackground,
   SunriseContainer,
@@ -34,7 +33,6 @@ export default function Ecommerce() {
         <SunriseContainer>
           <EcommerceWhyChooseUsSection />
           <ContactUsSection isMainPage={true} />
-          <Footer isMainPage={true} />
         </SunriseContainer>
       </main>
       <GoogleAnalyticsScript />

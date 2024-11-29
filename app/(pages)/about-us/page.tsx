@@ -4,7 +4,6 @@ import {
   AboutUsSectionContent,
   ContactUsSection,
   DigitalStudioAndTeamSection,
-  Footer,
   LinedTeamSection,
   OurTeamSection,
   SunriseContainer,
@@ -31,7 +30,6 @@ export default function AboutUs() {
           <OurTeamSection />
           <WhoWeWorkWithSection />
           <ContactUsSection />
-          <Footer />
         </SunriseContainer>
       </main>
       <GoogleAnalyticsScript />
