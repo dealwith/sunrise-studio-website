@@ -15,8 +15,6 @@ import { useSmoothScroll } from "hooks";
 export default function Building() {
   const { elementRef } = useSmoothScroll();
 
-  console.log("commit");
-
   return (
     <>
       <main
