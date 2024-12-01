@@ -4,17 +4,17 @@ import {
   AboutUsSectionContent,
   ContactUsSection,
   DigitalStudioAndTeamSection,
+  GoogleAnalyticsScript,
   LinedTeamSection,
   OurTeamSection,
   SunriseContainer,
   TextSliderSection,
   WhoWeWorkWithSection,
-  GoogleAnalyticsScript,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
 export default function AboutUs() {
-  const { elementRef, scrollToRef } = useSmoothScroll();
+  const { elementRef } = useSmoothScroll();
 
   return (
     <>

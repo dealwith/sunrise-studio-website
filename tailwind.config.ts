@@ -8,6 +8,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      // custom
+      "laptop-l": "1440px",
+      "laptop-s": "1024px",
+      tablet: "768px",
+      "mobile-l": "640px",
+      "mobile-m": "425px",
+      // default
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       spacing: {
         "30": "30px",
@@ -60,9 +74,6 @@ const config: Config = {
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(calc(-100% - 32px))" },
         },
-      },
-      screens: {
-        mobileM: "425px",
       },
     },
   },

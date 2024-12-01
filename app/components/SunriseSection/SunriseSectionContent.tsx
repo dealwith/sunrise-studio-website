@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
-import { BurgerContext } from "context";
 import { useContext } from "react";
-import { Button, MobileNavigation } from "components";
-import { useWindowSize } from "hooks";
 
-import starSrc from "/public/images/star.svg";
+import { Star } from "@icons/Star";
+import { Button, MobileNavigation } from "components";
+import { BurgerContext } from "context";
+import { useWindowSize } from "hooks";
 
 import styles from "./sunriseSection.module.scss";
 
@@ -23,7 +22,7 @@ export const SunriseSectionContent = () => {
               <div className={styles.textBg}>With</div>
             </div>
             <div className="font-unbounded flex justify-end gap-3.5 md:gap-6 items-center">
-              <Image src={starSrc} alt="star" className={styles.starImg} />
+              <Star alt="star" className={styles.starImg} />
               Digital Innovation
             </div>
           </h1>
