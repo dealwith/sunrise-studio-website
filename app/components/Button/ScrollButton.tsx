@@ -1,12 +1,13 @@
 "use client";
 
-import useToggle from "hooks/useToggle";
-import { Button } from "./Button";
-import { ScrollIcon } from "./img/ScrollIcon";
 import { MouseEventHandler } from "react";
-import { cn } from "@utils/cn";
 
+import { cn } from "@utils/cn";
+import useToggle from "hooks/useToggle";
+
+import { Button } from "./Button";
 import styles from "./button.module.scss";
+import { ScrollIcon } from "./img/ScrollIcon";
 
 type Props = {
   defaultColor: string;

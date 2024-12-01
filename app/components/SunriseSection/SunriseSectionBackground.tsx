@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import styles from "./sunriseSection.module.scss";
 import backgroundSrc from "./img/background.jpg";
+import styles from "./sunriseSection.module.scss";
 
 export const SunriseSectionBackground = () => {
   return (

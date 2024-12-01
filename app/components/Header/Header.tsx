@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { HTMLProps, useContext } from "react";
-import { cn } from "@utils/cn";
 
+import { cn } from "@utils/cn";
 import { Button, Logo, Navigation } from "components";
 import { BurgerContext } from "context";
 import { useWindowSize } from "hooks";

@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { P } from "components";
-import { cn } from "utils/cn";
 import { usePathname } from "next/navigation";
 
+import { P } from "components";
+import { cn } from "utils/cn";
+
+import dottedWorldMapSrc from "./img/dottedWorldMap.png";
 import emailSrc from "./img/email.svg";
 import locationSignSrc from "./img/locationSign.svg";
-import dottedWorldMapSrc from "./img/dottedWorldMap.png";
 
 export const Footer = () => {
   const pathname = usePathname();

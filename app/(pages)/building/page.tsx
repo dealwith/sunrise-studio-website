@@ -2,18 +2,18 @@
 
 import {
   ContactUsSection,
+  GoogleAnalyticsScript,
   InnovationsSection,
   OurDomainsSection,
   ServicesBackground,
   ServicesSectionContent,
   SunriseContainer,
   WhoWeWorkWithSection,
-  GoogleAnalyticsScript,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
 export default function Building() {
-  const { elementRef, scrollToRef } = useSmoothScroll();
+  const { elementRef } = useSmoothScroll();
 
   return (
     <>

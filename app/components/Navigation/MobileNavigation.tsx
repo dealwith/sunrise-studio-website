@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useContext } from "react";
+
+import { ROUTES } from "constants/index";
 import { BurgerContext } from "context";
 import { cn } from "utils/cn";
-import { ROUTES } from "constants/index";
 
 import styles from "./navigation.module.scss";
 

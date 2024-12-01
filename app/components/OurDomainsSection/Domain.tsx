@@ -1,7 +1,8 @@
 import Image, { StaticImageData } from "next/image";
-import { useWindowSize } from "hooks";
-import { ArrowButton, BorderedContainer, H5 } from "components";
 import { FunctionComponent } from "react";
+
+import { ArrowButton, BorderedContainer, H5 } from "components";
+import { useWindowSize } from "hooks";
 
 type TProps = {
   title: string;

@@ -1,6 +1,8 @@
 import { FunctionComponent } from "react";
-import { TextSliderItem } from "./TextSliderItem";
+
 import { cn } from "utils/cn";
+
+import { TextSliderItem } from "./TextSliderItem";
 
 type TProps = {
   className?: string;

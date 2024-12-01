@@ -1,11 +1,13 @@
+import { zodResolver } from "@hookform/resolvers/zod";
 import { FunctionComponent, useTransition } from "react";
 import { useForm } from "react-hook-form";
-import { ButtonWithLoading, Input, Span } from "components";
-import { IContactUsForm } from "./interfaces/IContactUsForm";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { ContactUsSchema, cn } from "utils";
-import sendEmailService from "services/SendEmailService";
 import { toast } from "react-toastify";
+
+import { ButtonWithLoading, Input, Span } from "components";
+import sendEmailService from "services/SendEmailService";
+import { ContactUsSchema, cn } from "utils";
+
+import { IContactUsForm } from "./interfaces/IContactUsForm";
 
 type TProps = {
   buttonClassName: string;

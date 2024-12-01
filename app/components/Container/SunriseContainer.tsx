@@ -1,5 +1,6 @@
-import { cn } from "@utils/cn";
 import { HTMLProps, ReactNode } from "react";
+
+import { cn } from "@utils/cn";
 
 interface SunriseContainerProps extends HTMLProps<HTMLDivElement> {
   children: ReactNode;

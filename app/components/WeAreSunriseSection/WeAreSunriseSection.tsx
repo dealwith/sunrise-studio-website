@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { P, UnderlineText } from "components";
 
 import styles from "./weAreSunriseSection.module.scss";

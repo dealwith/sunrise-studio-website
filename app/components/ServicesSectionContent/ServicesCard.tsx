@@ -1,5 +1,6 @@
-import { H5 } from "components";
 import { FunctionComponent } from "react";
+
+import { H5 } from "components";
 
 type TProps = {
   title: string;

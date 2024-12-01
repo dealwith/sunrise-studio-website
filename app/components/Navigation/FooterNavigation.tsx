@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FunctionComponent } from "react";
+
 import { ROUTES } from "constants/index";
 
 type TProps = {

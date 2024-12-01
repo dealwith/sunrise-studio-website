@@ -1,9 +1,10 @@
 import {
-  ReactNode,
   ButtonHTMLAttributes,
   DetailedHTMLProps,
+  ReactNode,
   forwardRef,
 } from "react";
+
 import { cn } from "utils/cn";
 
 import styles from "./button.module.scss";

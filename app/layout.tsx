@@ -1,21 +1,21 @@
 "use client";
-
+import { Analytics } from "@vercel/analytics/react";
+import Script from "next/script"; // Import Script from next/script
 import { useState } from "react";
-import { cn } from "utils/cn";
-import { globalMetadata } from "data";
-import { Footer, Header } from "components";
-import { BurgerContext } from "context";
 import { ToastContainer } from "react-toastify";
 
-import "@radix-ui/themes/styles.css";
-import { Analytics } from "@vercel/analytics/react";
+import { Footer, Header } from "components";
+import { BurgerContext } from "context";
+import { globalMetadata } from "data";
+import { cn } from "utils/cn";
 
-import { onest } from "./fonts/onest";
+import "@radix-ui/themes/styles.css";
+
 import "./styles/globals.css";
 import "react-toastify/dist/ReactToastify.css";
 
+import { onest } from "./fonts/onest";
 import styles from "./layout.module.scss";
-import Script from "next/script"; // Import Script from next/script
 
 export default function RootLayout({
   children,

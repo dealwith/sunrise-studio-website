@@ -1,8 +1,10 @@
 import { useContext } from "react";
+
 import { Chip, MobileNavigation } from "components";
-import { ServicesCard } from "./ServicesCard";
 import { BurgerContext } from "context";
 import { useWindowSize } from "hooks";
+
+import { ServicesCard } from "./ServicesCard";
 
 export const ServicesSectionContent = () => {
   const { isActiveBurger } = useContext(BurgerContext);

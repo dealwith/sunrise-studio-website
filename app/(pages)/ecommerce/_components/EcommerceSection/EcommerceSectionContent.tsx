@@ -1,7 +1,8 @@
-import { BurgerContext } from "context";
 import { useContext } from "react";
-import { useWindowSize } from "hooks";
+
 import { MobileNavigation, P } from "components";
+import { BurgerContext } from "context";
+import { useWindowSize } from "hooks";
 
 export const EcommerceSectionContent = () => {
   const { isActiveBurger } = useContext(BurgerContext);

@@ -1,5 +1,5 @@
-import { useWindowSize } from "hooks";
 import { H2, InnovationCard, Section } from "components";
+import { useWindowSize } from "hooks";
 
 const complexityHandlingData = [
   {

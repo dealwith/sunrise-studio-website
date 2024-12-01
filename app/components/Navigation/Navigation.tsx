@@ -1,4 +1,4 @@
-import { NavigationDropdownMenu, LiWithActiveLink } from "components";
+import { LiWithActiveLink, NavigationDropdownMenu } from "components";
 import { ROUTES } from "constants/index";
 
 import styles from "./navigation.module.scss";

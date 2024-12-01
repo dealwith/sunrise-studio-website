@@ -1,7 +1,8 @@
-import { cn } from "utils/cn";
 import Image, { StaticImageData } from "next/image";
 import { FunctionComponent, ReactNode } from "react";
+
 import { useWindowSize } from "hooks";
+import { cn } from "utils/cn";
 
 type TProps = {
   title: ReactNode;

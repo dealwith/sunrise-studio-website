@@ -2,13 +2,13 @@
 
 import {
   ContactUsSection,
-  EcommerceSectionContent,
-  EcommerceSectionBackground,
-  SunriseContainer,
   EcommerceOurServicesSection,
-  ServicesBackground,
+  EcommerceSectionBackground,
+  EcommerceSectionContent,
   EcommerceWhyChooseUsSection,
   GoogleAnalyticsScript,
+  ServicesBackground,
+  SunriseContainer,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
