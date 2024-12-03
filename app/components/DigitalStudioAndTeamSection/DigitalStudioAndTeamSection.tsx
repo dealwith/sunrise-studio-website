@@ -6,28 +6,13 @@ export const DigitalStudioAndTeamSection = () => {
   return (
     <section className="w-full flex flex-col items-center">
       <div className="flex md:flex-row flex-col md:gap-8 gap-6 lg:mb-40 md:mb-24 mb-14">
-        <h2 className="w-full lg:text-4xl md:text-3xl text-2xl font-unbounded relative">
+        <h2 className="w-full lg:text-4xl md:text-3xl text-2xl font-unbounded">
           <Image
             src="/images/quote.png"
             alt="Quote"
             style={{
-              position: "absolute",
-              top: "-50px",
-              left: "0",
               transform: "scaleX(-1) scaleY(-1)",
               opacity: 0.4,
-            }}
-            width={50}
-            height={50}
-          />
-          <Image
-            src="/images/quote.png"
-            alt="Flipped Quote"
-            style={{
-              position: "absolute",
-              top: "120px",
-              right: "0",
-              opacity: 0.5,
             }}
             width={50}
             height={50}
@@ -35,7 +20,21 @@ export const DigitalStudioAndTeamSection = () => {
           Our mission needs to be simple: to make scaling a project as easy as
           having the idea in the first place.
           <div className="flex justify-start items-center mt-4">
-            <small>-Gleb Kryshyn</small>
+            <small className="flex justify-between w-full relative">
+              -Gleb Kryshyn
+              <Image
+                src="/images/quote.png"
+                alt="Flipped Quote"
+                style={{
+                  position: "absolute",
+                  bottom: "0",
+                  right: "0",
+                  opacity: 0.5,
+                }}
+                width={50}
+                height={50}
+              />
+            </small>
           </div>
         </h2>
 

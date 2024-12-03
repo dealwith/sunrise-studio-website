@@ -19,7 +19,7 @@ export const Logo = ({ width, height, className: propsClassName }: Props) => {
   const isDarkLogo =
     pathname === "/" ||
     pathname === "/services" ||
-    pathname === "/ecommerce" ||
+    pathname === "/building" ||
     pathname === "/staffing";
   const textClassName = cn(
     "font-unboundedBold lg:text-xl text-sm whitespace-nowrap",
