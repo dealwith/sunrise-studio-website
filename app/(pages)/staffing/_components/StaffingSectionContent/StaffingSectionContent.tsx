@@ -3,7 +3,7 @@ import { CalendlyWidget, Section, UnderlineText } from "components";
 export const StaffingSectionContent = () => {
   return (
     <Section>
-      <div className="flex md:gap-8 gap-4 items-center md:flex-row flex-col">
+      <div className="flex md:gap-8 gap-4 items-center md:flex-row flex-col max-md:py-[60px]">
         <UnderlineText
           text="Get the best developers, without all the stress"
           isRedText={false}
