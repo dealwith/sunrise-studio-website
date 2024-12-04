@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+
 import { H2, P, Section, WhatWeBuildCard } from "components";
 import { useWindowSize } from "hooks";
 
 import firstCardLineSrc from "./img/firstCardLine.png";
+import fourthCardLineSrc from "./img/fourthCardLine.png";
 import secondCardLineSrc from "./img/secondCardLine.png";
 import thirdCardLineSrc from "./img/thirdCardLine.png";
-import fourthCardLineSrc from "./img/fourthCardLine.png";
 
 export const EcommerceWhyChooseUsSection = () => {
   const advantages = [

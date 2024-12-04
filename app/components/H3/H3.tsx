@@ -1,5 +1,7 @@
-import { cn } from "@utils/cn";
 import { FunctionComponent } from "react";
+
+import { cn } from "@utils/cn";
+
 import { unbounded } from "../../fonts/unbounded";
 
 import styles from "./h3.module.scss";

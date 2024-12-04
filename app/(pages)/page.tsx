@@ -2,18 +2,18 @@
 
 import {
   ContactUsSection,
-  Footer,
+  GoogleAnalyticsScript,
   OurProjectsSection,
   SunriseSectionContent,
   WeAreSunriseSection,
   WhatWeBuildSection,
   WhatWeDoSection,
   WhoWeWorkWithSection,
-  GoogleAnalyticsScript,
 } from "components";
+import { useSmoothScroll } from "hooks";
+
 import { AuroraBackground } from "../components/Background/AuroraBackground";
 import { SunriseContainer } from "../components/Container/SunriseContainer";
-import { useSmoothScroll } from "hooks";
 
 export default function Home() {
   const { elementRef, scrollToRef } = useSmoothScroll();
@@ -36,7 +36,6 @@ export default function Home() {
           <OurProjectsSection />
           <WhoWeWorkWithSection />
           <ContactUsSection isMainPage={true} />
-          <Footer isMainPage={true} />
         </SunriseContainer>
       </main>
       <GoogleAnalyticsScript />

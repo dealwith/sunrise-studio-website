@@ -1,21 +1,22 @@
 import { useState } from "react";
+
 import {
   CarouselWrapper,
   H2,
-  Section,
-  ScrollButton,
   LogoSlider,
+  ScrollButton,
+  Section,
 } from "components";
-import { EcommerceOurServicesCard } from "./EcommerceOurServicesCard";
-import { useWindowSize } from "hooks";
 import { COLORS } from "constants/index";
+import { useWindowSize } from "hooks";
 
+import { EcommerceOurServicesCard } from "./EcommerceOurServicesCard";
 import arrowsSrc from "./img/arrows.svg";
-import clockSrc from "./img/clock.svg";
-import tabSrc from "./img/tab.svg";
-import settingsSrc from "./img/settings.svg";
-import searchSrc from "./img/search.svg";
 import cardSrc from "./img/card.svg";
+import clockSrc from "./img/clock.svg";
+import searchSrc from "./img/search.svg";
+import settingsSrc from "./img/settings.svg";
+import tabSrc from "./img/tab.svg";
 
 export const EcommerceOurServicesSection = () => {
   const services = [

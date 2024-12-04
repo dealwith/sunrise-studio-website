@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FunctionComponent } from "react";
+
 import { H2 } from "components";
 import { cn } from "utils/cn";
 

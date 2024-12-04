@@ -1,11 +1,10 @@
-import { OurTeamCard } from "./OurTeamCard";
-
-import firstImageSrc from "./img/firstImage.jpg";
-import secondImageSrc from "./img/secondImage.jpg";
-import thirdImageSrc from "./img/thirdImage.jpg";
-import fourthImageSrc from "./img/fourthImage.jpg";
 import fifthImageSrc from "./img/fifthImage.jpg";
+import firstImageSrc from "./img/firstImage.jpg";
+import fourthImageSrc from "./img/fourthImage.jpg";
+import secondImageSrc from "./img/secondImage.jpg";
 import sixthImageSrc from "./img/sixthImage.jpg";
+import thirdImageSrc from "./img/thirdImage.jpg";
+import { OurTeamCard } from "./OurTeamCard";
 
 export const OurTeamSection = () => {
   return (

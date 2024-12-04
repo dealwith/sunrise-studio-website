@@ -1,5 +1,6 @@
-import { cn } from "@utils/cn";
 import { FunctionComponent, ReactNode } from "react";
+
+import { cn } from "@utils/cn";
 
 import styles from "./section.module.scss";
 

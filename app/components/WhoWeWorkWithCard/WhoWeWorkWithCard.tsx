@@ -1,5 +1,6 @@
-import { FunctionComponent } from "react";
 import * as Avatar from "@radix-ui/react-avatar";
+import { FunctionComponent } from "react";
+
 import { H3, P } from "components";
 
 import { ButtonArrow } from "../Button/img/ButtonArrow";

@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
-import { P } from "components";
 import { FunctionComponent, ReactNode } from "react";
+
+import { P } from "components";
 import { cn } from "utils/cn";
 
 type TProps = {

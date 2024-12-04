@@ -1,8 +1,9 @@
-import { cn } from "@utils/cn";
-import { ChangeHandler } from "react-hook-form";
-import { onest } from "../../fonts/onest";
-
 import { DetailedHTMLProps, InputHTMLAttributes, forwardRef } from "react";
+import { ChangeHandler } from "react-hook-form";
+
+import { cn } from "@utils/cn";
+
+import { onest } from "../../fonts/onest";
 
 import styles from "./input.module.scss";
 

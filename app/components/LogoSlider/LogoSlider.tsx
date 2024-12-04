@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import stripeSrc from "./img/stripe.svg";
 import klarnaSrc from "./img/klarna.svg";
 import paypalSrc from "./img/paypal.svg";
 import razorpay from "./img/razorpay.svg";
+import stripeSrc from "./img/stripe.svg";
 
 export const LogoSlider = () => {
   return (

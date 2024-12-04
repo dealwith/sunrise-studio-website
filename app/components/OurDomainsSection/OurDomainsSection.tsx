@@ -1,12 +1,13 @@
 import { useState } from "react";
+
 import { Button } from "components";
 import { cn } from "utils/cn";
-import { Domain } from "./Domain";
 
-import web3DomainSrc from "./images/web3Domain.png";
-import corporateDomainSrc from "./images/corporateDomain.png";
+import { Domain } from "./Domain";
 import bitcoinsDomainSrc from "./images/bitcoinsDomain.png";
+import corporateDomainSrc from "./images/corporateDomain.png";
 import ecommerceDomainSrc from "./images/ecommerceDomain.png";
+import web3DomainSrc from "./images/web3Domain.png";
 
 export const OurDomainsSection = () => {
   const [activeFilter, setActiveFilter] = useState("all");

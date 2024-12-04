@@ -1,9 +1,12 @@
 import Image from "next/image";
-import { cn } from "utils/cn";
-import { P } from "components";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { P } from "components";
+import { cn } from "utils/cn";
+
 import DarkLogoSrc from "./img/darkLogo.svg";
+import LightLogoSrc from "./img/lightLogo.svg";
 
 type Props = {
   width?: number;
@@ -24,15 +27,15 @@ export const Logo = ({ width, height, className: propsClassName }: Props) => {
   );
 
   return (
-    <div className="flex items-center gap-3 min-w-max">
+    <Link href={"/"} className="flex items-center gap-3 min-w-max">
       <Image
         className={cn("p-0.5", propsClassName)}
-        src={DarkLogoSrc}
+        src={isDarkLogo ? DarkLogoSrc : LightLogoSrc}
         alt="logo"
         width={width}
         height={height}
       />
       <P className={textClassName}>sunrise studio</P>
-    </div>
+    </Link>
   );
 };

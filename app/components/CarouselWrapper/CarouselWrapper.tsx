@@ -1,5 +1,5 @@
+import { AnimatePresence, motion } from "framer-motion";
 import { FunctionComponent, ReactNode } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 type TProps = {
   direction: number;

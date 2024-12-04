@@ -1,8 +1,9 @@
-import { cn } from "utils/cn";
 import Link from "next/link";
-import { FunctionComponent } from "react";
 import { usePathname } from "next/navigation";
+import { FunctionComponent } from "react";
+
 import { ROUTES } from "constants/index";
+import { cn } from "utils/cn";
 
 type TProps = {
   children: string;

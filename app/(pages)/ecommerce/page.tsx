@@ -2,14 +2,13 @@
 
 import {
   ContactUsSection,
-  Footer,
-  EcommerceSectionContent,
-  EcommerceSectionBackground,
-  SunriseContainer,
   EcommerceOurServicesSection,
-  ServicesBackground,
+  EcommerceSectionBackground,
+  EcommerceSectionContent,
   EcommerceWhyChooseUsSection,
   GoogleAnalyticsScript,
+  ServicesBackground,
+  SunriseContainer,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
@@ -34,7 +33,6 @@ export default function Ecommerce() {
         <SunriseContainer>
           <EcommerceWhyChooseUsSection />
           <ContactUsSection isMainPage={true} />
-          <Footer isMainPage={true} />
         </SunriseContainer>
       </main>
       <GoogleAnalyticsScript />

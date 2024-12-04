@@ -1,7 +1,8 @@
-import { Section, UnderlineText, LiWithMarker } from "components";
+import { LiWithMarker, Section, UnderlineText } from "components";
+
+import { StaffingAdvantages } from "../StaffingAdvantages";
 
 import employeeSrc from "./img/employee.png";
-import { StaffingAdvantages } from "../StaffingAdvantages";
 
 export const StaffingGrowingProjectSection = () => {
   return (

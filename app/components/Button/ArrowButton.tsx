@@ -1,10 +1,10 @@
-import { cn } from "utils/cn";
 import { FunctionComponent } from "react";
-import { Button } from "./Button";
+
 import useToggle from "hooks/useToggle";
+import { cn } from "utils/cn";
 
+import { Button } from "./Button";
 import styles from "./button.module.scss";
-
 import { ButtonArrow } from "./img/ButtonArrow";
 
 type TProps = {

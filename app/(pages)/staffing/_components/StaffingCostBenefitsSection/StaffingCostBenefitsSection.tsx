@@ -1,7 +1,8 @@
-import { ArrowButton, Section, UnderlineText, LiWithMarker } from "components";
+import { ArrowButton, LiWithMarker, Section, UnderlineText } from "components";
+
+import { StaffingAdvantages } from "../StaffingAdvantages";
 
 import employeeSrc from "./img/employee.png";
-import { StaffingAdvantages } from "../StaffingAdvantages";
 
 export const StaffingCostBenefitsSection = () => {
   return (
@@ -36,20 +37,20 @@ export const StaffingCostBenefitsSection = () => {
               marker="✅"
               text="We adapt to changing project needs without permanent hires."
             />
-            <li>
-              <a href="#contactUs">
-                <ArrowButton
-                  className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
-                  width="10px"
-                  height="10px"
-                >
-                  Talk to us
-                </ArrowButton>
-              </a>
-            </li>
           </ul>
         }
-      ></StaffingAdvantages>
+        button={
+          <a href="#contactUs">
+            <ArrowButton
+              className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
+              width="10px"
+              height="10px"
+            >
+              Talk to us
+            </ArrowButton>
+          </a>
+        }
+      />
     </Section>
   );
 };

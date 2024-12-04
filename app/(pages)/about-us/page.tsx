@@ -4,18 +4,17 @@ import {
   AboutUsSectionContent,
   ContactUsSection,
   DigitalStudioAndTeamSection,
-  Footer,
+  GoogleAnalyticsScript,
   LinedTeamSection,
   OurTeamSection,
   SunriseContainer,
   TextSliderSection,
   WhoWeWorkWithSection,
-  GoogleAnalyticsScript,
 } from "components";
 import { useSmoothScroll } from "hooks";
 
 export default function AboutUs() {
-  const { elementRef, scrollToRef } = useSmoothScroll();
+  const { elementRef } = useSmoothScroll();
 
   return (
     <>
@@ -31,7 +30,6 @@ export default function AboutUs() {
           <OurTeamSection />
           <WhoWeWorkWithSection />
           <ContactUsSection />
-          <Footer />
         </SunriseContainer>
       </main>
       <GoogleAnalyticsScript />

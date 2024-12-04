@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { FunctionComponent } from "react";
+
 import { P } from "components";
 import { cn } from "utils/cn";
 
