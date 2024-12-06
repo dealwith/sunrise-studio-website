@@ -4,7 +4,6 @@ import {
   AboutUsSectionContent,
   ContactUsSection,
   DigitalStudioAndTeamSection,
-  GoogleAnalyticsScript,
   LinedTeamSection,
   OurTeamSection,
   SunriseContainer,
@@ -32,7 +31,6 @@ export default function AboutUs() {
           <ContactUsSection />
         </SunriseContainer>
       </main>
-      <GoogleAnalyticsScript />
     </>
   );
 }

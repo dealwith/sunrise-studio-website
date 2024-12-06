@@ -3,7 +3,6 @@
 import {
   AuroraBackground,
   ContactUsSection,
-  GoogleAnalyticsScript,
   SunriseContainer,
 } from "components";
 
@@ -30,7 +29,6 @@ export default function Staffing() {
           <ContactUsSection isMainPage={true} />
         </SunriseContainer>
       </main>
-      <GoogleAnalyticsScript />
     </>
   );
 }
