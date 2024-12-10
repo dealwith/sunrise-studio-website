@@ -6,7 +6,6 @@ import {
   EcommerceSectionBackground,
   EcommerceSectionContent,
   EcommerceWhyChooseUsSection,
-  GoogleAnalyticsScript,
   ServicesBackground,
   SunriseContainer,
 } from "components";
@@ -35,7 +34,6 @@ export default function Ecommerce() {
           <ContactUsSection isMainPage={true} />
         </SunriseContainer>
       </main>
-      <GoogleAnalyticsScript />
     </>
   );
 }

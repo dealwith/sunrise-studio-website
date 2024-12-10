@@ -2,7 +2,6 @@
 
 import {
   ContactUsSection,
-  GoogleAnalyticsScript,
   InnovationsSection,
   OurDomainsSection,
   ServicesBackground,
@@ -33,7 +32,6 @@ export default function Building() {
           <ContactUsSection />
         </SunriseContainer>
       </main>
-      <GoogleAnalyticsScript />
     </>
   );
 }
