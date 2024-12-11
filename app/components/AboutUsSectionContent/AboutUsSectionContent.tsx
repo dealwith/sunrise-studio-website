@@ -2,10 +2,10 @@ import Link from "next/link";
 import { useContext } from "react";
 
 import { Star } from "@icons/Star";
-import { cn } from "@utils/cn";
 import { Button, MobileNavigation } from "components";
 import { BurgerContext } from "context";
 import { useWindowSize } from "hooks";
+import { cn } from "utils/cn";
 
 export const AboutUsSectionContent = () => {
   const { isActiveBurger } = useContext(BurgerContext);
@@ -21,7 +21,13 @@ export const AboutUsSectionContent = () => {
       {!isActiveBurger && (
         <div className="w-full flex flex-col items-center justify-center gap-40 z-10">
           <h1 className={headingClass}>
-            We are <Star />
+            <span className="flex items-center lg:gap-3.5 md:gap-9 gap-3.5 laptop-l:flex-row md:flex-col">
+              We are{" "}
+              <Star
+                alt="star"
+                className="md:w-[116px] md:h-[78px] w-[58px] h-[39px]"
+              />
+            </span>
             <span className="flex justify-end items-center lg:gap-2 gap-3.5 text-accent">
               Sunrise studio
             </span>
