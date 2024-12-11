@@ -2,7 +2,6 @@
 
 import {
   ContactUsSection,
-  GoogleAnalyticsScript,
   OurProjectsSection,
   SunriseSectionContent,
   WeAreSunriseSection,
@@ -38,7 +37,6 @@ export default function Home() {
           <ContactUsSection isMainPage={true} />
         </SunriseContainer>
       </main>
-      <GoogleAnalyticsScript />
     </>
   );
 }
