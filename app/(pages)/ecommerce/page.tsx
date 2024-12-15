@@ -2,14 +2,18 @@
 
 import {
   ContactUsSection,
-  EcommerceOurServicesSection,
-  EcommerceSectionBackground,
-  EcommerceSectionContent,
-  EcommerceWhyChooseUsSection,
   ServicesBackground,
   SunriseContainer,
 } from "components";
 import { useSmoothScroll } from "hooks";
+
+import {
+  EcommerceOurServicesSection,
+  EcommercePricingPlansSection,
+  EcommerceSectionBackground,
+  EcommerceSectionContent,
+  EcommerceWhyChooseUsSection,
+} from "./_components";
 
 export default function Ecommerce() {
   const { elementRef, scrollToRef } = useSmoothScroll();
@@ -31,6 +35,7 @@ export default function Ecommerce() {
         </ServicesBackground>
         <SunriseContainer>
           <EcommerceWhyChooseUsSection />
+          <EcommercePricingPlansSection />
           <ContactUsSection isMainPage={true} />
         </SunriseContainer>
       </main>
