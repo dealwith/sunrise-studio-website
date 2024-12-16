@@ -1,10 +1,28 @@
+import { FunctionComponent } from "react";
+
 import { ToggleButton } from "components";
 
-export const EcommercePricingPeriodToggle = () => {
+type TProps = {
+  activePeriod: string;
+  setActivePeriod: (period: string) => void;
+};
+
+export const EcommercePricingPeriodToggle: FunctionComponent<TProps> = ({
+  activePeriod,
+  setActivePeriod,
+}) => {
   return (
-    <div>
-      <ToggleButton text="Monthly" activeText="Monthly" />
-      <ToggleButton text="Yearly" activeText="Monthly" />
+    <div className="flex p-1 bg-black rounded-xl w-full max-w-[354px]">
+      <ToggleButton
+        text="Monthly"
+        activePeriod={activePeriod}
+        setActivePeriod={setActivePeriod}
+      />
+      <ToggleButton
+        text="Yearly"
+        activePeriod={activePeriod}
+        setActivePeriod={setActivePeriod}
+      />
     </div>
   );
 };
