@@ -15,7 +15,7 @@ export const EcommerceChip: FunctionComponent<TProps> = ({ text }) => {
     <div
       onMouseEnter={toggleHover}
       onMouseLeave={toggleHover}
-      className="hover:cursor-pointer text-white hover:text-accent duration-300 flex gap-2 md:text-2xl text-sm unbounded py-3.5 px-7 whitespace-nowrap rounded-full bg-accent hover:bg-white items-center"
+      className="hover:cursor-pointer text-white hover:text-accent duration-300 flex gap-2 md:text-2xl text-sm font-unbounded py-3.5 px-7 whitespace-nowrap rounded-full bg-accent hover:bg-white items-center"
     >
       <CheckIcon isHovered={isHovered} />
       <p>{text}</p>
