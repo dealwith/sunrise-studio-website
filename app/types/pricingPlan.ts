@@ -1,51 +1,38 @@
+export type PlanFeatures = {
+  header: string;
+  [key: string]: string;
+};
+
+export type PlanFeatureGroups = {
+  coreMedusaFeatures: PlanFeatures;
+  cloudInfrastructure: PlanFeatures;
+  integrationsAPIs: PlanFeatures;
+  supportServices: PlanFeatures;
+  additionalFeatures: PlanFeatures;
+};
+
+export type Plan = {
+  id: string;
+  name: string;
+  monthlyPrice?: number;
+  yearlyPrice?: number;
+  customPricing?: boolean;
+  features: PlanFeatureGroups;
+};
+
 export type PricingPlanProps = {
-  planName: string;
+  planName?: string;
   activePlan: string;
   setActivePlan: (plan: string) => void;
   activePeriod: string;
-  plan: {
-    name: string;
-    monthlyPrice?: number;
-    yearlyPrice?: number;
-    customPricing?: boolean;
-    features: {
-      coreMedusaFeatures: {
-        header: string;
-        setup: string;
-        productsLimit: string;
-        themes: string;
-        gateways: string;
-        regions: string;
-        orderManagement: string;
-      };
-      cloudInfrastructure: {
-        header: string;
-        resources: string;
-        scalability: string;
-        backups: string;
-      };
-      integrationsAPIs: {
-        header: string;
-        apiAccess: string;
-        integrations: string;
-      };
-      supportServices: {
-        header: string;
-        support: string;
-        onboarding: string;
-        updates: string;
-      };
-      additionalFeatures: {
-        header: string;
-        analytics: string;
-        seo: string;
-        marketplace: string;
-      };
-    };
-  };
+  plan?: Plan;
+};
+
+export type PricingPlansProps = PricingPlanProps & {
+  plans: Plan[];
 };
 
 export type FeatureSection = {
-  features: PricingPlanProps["plan"]["features"][keyof PricingPlanProps["plan"]["features"]];
-  keys: string[];
+  features: PlanFeatures;
+  keys: Array<keyof PlanFeatures>;
 };

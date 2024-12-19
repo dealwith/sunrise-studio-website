@@ -1,11 +1,15 @@
 import { useState } from "react";
 
+import { useWindowSize } from "hooks";
+
 import { EcommercePricingPeriodToggle } from "./EcommercePricingPeriodToggle";
 import { EcommercePricingPlansCard } from "./EcommercePricingPlansCard";
 import { EcommercePricingPlansHeader } from "./EcommercePricingPlansHeader";
+import { EcommercePricingPlansMobile } from "./EcommercePricingPlansMobile";
 
-const pricingPlans = {
-  starter: {
+const pricingPlans = [
+  {
+    id: "starter",
     name: "Starter",
     monthlyPrice: 99,
     yearlyPrice: 990,
@@ -44,7 +48,8 @@ const pricingPlans = {
       },
     },
   },
-  growth: {
+  {
+    id: "growth",
     name: "Growth",
     monthlyPrice: 299,
     yearlyPrice: 2990,
@@ -83,7 +88,8 @@ const pricingPlans = {
       },
     },
   },
-  enterprise: {
+  {
+    id: "enterprise",
     name: "Enterprise",
     customPricing: true,
     features: {
@@ -121,9 +127,10 @@ const pricingPlans = {
       },
     },
   },
-};
+];
 
 export const EcommercePricingPlans = () => {
+  const { isLaptopL } = useWindowSize();
   const [activePeriod, setActivePeriod] = useState("Monthly");
   const [activePlan, setActivePlan] = useState("Starter");
 
@@ -133,30 +140,28 @@ export const EcommercePricingPlans = () => {
         activePeriod={activePeriod}
         setActivePeriod={setActivePeriod}
       />
-      <div className="flex">
-        <EcommercePricingPlansHeader />
-        <EcommercePricingPlansCard
-          planName="Starter"
+      {isLaptopL ? (
+        <div className="flex">
+          <EcommercePricingPlansHeader />
+          {pricingPlans.map((plan) => (
+            <EcommercePricingPlansCard
+              key={plan.id}
+              planName={plan.name}
+              activePlan={activePlan}
+              setActivePlan={setActivePlan}
+              activePeriod={activePeriod}
+              plan={plan}
+            />
+          ))}
+        </div>
+      ) : (
+        <EcommercePricingPlansMobile
           activePlan={activePlan}
           setActivePlan={setActivePlan}
           activePeriod={activePeriod}
-          plan={pricingPlans.starter}
+          plans={pricingPlans}
         />
-        <EcommercePricingPlansCard
-          planName="Growth"
-          activePlan={activePlan}
-          setActivePlan={setActivePlan}
-          activePeriod={activePeriod}
-          plan={pricingPlans.growth}
-        />
-        <EcommercePricingPlansCard
-          planName="Enterprise"
-          activePlan={activePlan}
-          setActivePlan={setActivePlan}
-          activePeriod={activePeriod}
-          plan={pricingPlans.enterprise}
-        />
-      </div>
+      )}
     </div>
   );
 };

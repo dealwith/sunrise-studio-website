@@ -1,34 +1,6 @@
-export const EcommercePricingPlansHeader = () => {
-  const featureHeaders = {
-    coreMedusaFeatures: {
-      title: "Core Medusa Features",
-      headers: [
-        "Setup",
-        "Products/SKUs limit",
-        "Storefront themes",
-        "Payment gateways",
-        "Regions/Currencies",
-        "Order management",
-      ],
-    },
-    cloudInfrastructure: {
-      title: "Cloud Infrastructure",
-      headers: ["Resources", "Scalability", "Backups"],
-    },
-    integrationsAPIs: {
-      title: "Integrations & APIs",
-      headers: ["API access", "Third-party integrations"],
-    },
-    supportServices: {
-      title: "Support & Services",
-      headers: ["Customer support", "Onboarding", "Updates & maintenance"],
-    },
-    additionalFeatures: {
-      title: "Additional Features",
-      headers: ["Analytics", "SEO tools", "Marketplace extensions"],
-    },
-  };
+import { featureHeaders } from "../../_data/featureHeaders";
 
+export const EcommercePricingPlansHeader = () => {
   return (
     <div className="flex flex-col mt-[196px] w-full">
       <h3 className="text-2xl text-accent font-bold">Feature</h3>
