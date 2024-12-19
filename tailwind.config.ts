@@ -38,6 +38,7 @@ const config: Config = {
         unbounded: "Unbounded-Light",
         unboundedMedium: "Unbounded-Medium",
         unboundedBold: "Unbounded-Bold",
+        onest: "Onest-Regular",
       },
       colors: {
         accent: "#E95848",
