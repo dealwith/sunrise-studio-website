@@ -1,7 +1,8 @@
 import { FormEvent, FunctionComponent } from "react";
 
-import { ToggleButton } from "components";
 import { ToggleButtonProps } from "types";
+
+import { ToggleButton } from ".//ToggleButton";
 
 export const EcommercePricingPeriodToggle: FunctionComponent = () => {
   const periodOptions: ToggleButtonProps[] = [
