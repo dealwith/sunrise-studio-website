@@ -1,22 +1,21 @@
 import { FunctionComponent } from "react";
+import { useFormContext } from "react-hook-form";
 
 import { Button } from "components";
 import { cn } from "utils/cn";
 
+import { IPricingPlanForm } from "../../_interfaces/IPricingPlanForm";
+
 type TProps = {
   text: string;
-  activePlan: string;
-  setActivePlan: (period: string) => void;
 };
 
-export const CardTab: FunctionComponent<TProps> = ({
-  text,
-  activePlan,
-  setActivePlan,
-}) => {
+export const CardTab: FunctionComponent<TProps> = ({ text }) => {
+  const { watch, setValue } = useFormContext<IPricingPlanForm>();
+  const activePlan = watch("plan");
   const isActive = text === activePlan;
   const handleClick = () => {
-    setActivePlan(text);
+    setValue("plan", text);
   };
 
   return (

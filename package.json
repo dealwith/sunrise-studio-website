@@ -10,6 +10,7 @@
     "format": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@contentsquare/tag-sdk": "^1.1.0",
     "@hookform/resolvers": "^3.3.4",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/themes": "^2.0.1",

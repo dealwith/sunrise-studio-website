@@ -1,3 +1,10 @@
+export type Period = "monthly" | "yearly";
+
+export type ToggleButtonProps = {
+  label: string;
+  value: Period;
+};
+
 export type PlanFeatures = {
   header: string;
   [key: string]: string;
@@ -22,9 +29,6 @@ export type Plan = {
 
 export type PricingPlanProps = {
   planName?: string;
-  activePlan: string;
-  setActivePlan: (plan: string) => void;
-  activePeriod: string;
   plan?: Plan;
 };
 

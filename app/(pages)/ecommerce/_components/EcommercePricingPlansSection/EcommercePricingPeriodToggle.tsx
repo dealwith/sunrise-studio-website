@@ -1,28 +1,27 @@
-import { FunctionComponent } from "react";
+import { FormEvent, FunctionComponent } from "react";
 
-import { ToggleButton } from "components";
+import { ToggleButtonProps } from "types";
 
-type TProps = {
-  activePeriod: string;
-  setActivePeriod: (period: string) => void;
-};
+import { ToggleButton } from ".//ToggleButton";
 
-export const EcommercePricingPeriodToggle: FunctionComponent<TProps> = ({
-  activePeriod,
-  setActivePeriod,
-}) => {
+export const EcommercePricingPeriodToggle: FunctionComponent = () => {
+  const periodOptions: ToggleButtonProps[] = [
+    { label: "Monthly", value: "monthly" },
+    { label: "Yearly", value: "yearly" },
+  ];
+  const handleFormSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
+
   return (
-    <div className="flex p-1 bg-black rounded-xl w-full max-w-[354px]">
-      <ToggleButton
-        text="Monthly"
-        activePeriod={activePeriod}
-        setActivePeriod={setActivePeriod}
-      />
-      <ToggleButton
-        text="Yearly"
-        activePeriod={activePeriod}
-        setActivePeriod={setActivePeriod}
-      />
-    </div>
+    <form
+      onSubmit={handleFormSubmit}
+      method="POST"
+      className="flex p-1 bg-black rounded-xl w-full max-w-[354px]"
+    >
+      {periodOptions.map(({ label, value }) => (
+        <ToggleButton key={value} label={label} value={value} />
+      ))}
+    </form>
   );
 };

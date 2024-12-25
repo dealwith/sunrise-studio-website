@@ -1,33 +1,31 @@
 import { FunctionComponent } from "react";
+import { useFormContext } from "react-hook-form";
 
 import { Button } from "components";
 import { PricingPlanProps } from "types";
 import { cn } from "utils/cn";
 
 import { featureSections } from "../../_data/featureSections";
+import { IPricingPlanForm } from "../../_interfaces/IPricingPlanForm";
+import {
+  getFeatureSections,
+  getPlanPricing,
+} from "../../_utils/getfilteredPricingPlan";
 
 export const EcommercePricingPlansCard: FunctionComponent<PricingPlanProps> = ({
   planName,
-  activePlan,
-  setActivePlan,
-  activePeriod,
   plan,
 }) => {
-  if (!plan) {
-    return null;
-  }
-
-  const mappedFeatureSections = featureSections.map((section) => ({
-    features: plan.features[section.features as keyof typeof plan.features],
-    keys: section.keys,
-  }));
+  const { register, watch, setValue } = useFormContext<IPricingPlanForm>();
+  const inputPlan = register("plan");
+  const activePlan = watch(inputPlan.name);
+  const activePeriod = watch("period");
+  const mappedFeatureSections = getFeatureSections(plan, featureSections);
   const isActive = planName === activePlan;
-  const isYearly = activePeriod === "Yearly" && plan.yearlyPrice;
-  const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice;
-  const period = isYearly ? "/Year" : "/Month";
+  const { price, period } = getPlanPricing(plan, activePeriod);
   const handleClick = () => {
     if (planName) {
-      setActivePlan(planName);
+      setValue("plan", planName);
     }
   };
   const buttonClassName = cn(
@@ -67,7 +65,7 @@ export const EcommercePricingPlansCard: FunctionComponent<PricingPlanProps> = ({
         {mappedFeatureSections.map((section, sectionIndex) => (
           <div key={sectionIndex}>
             <ul>
-              {section.keys.map((key) => (
+              {section.keys.map((key: string) => (
                 <li
                   key={key}
                   className="px-4 lg:px-7 flex items-center md:h-20 h-16 md:text-base text-sm border-b"

@@ -1,54 +1,44 @@
 import { FunctionComponent } from "react";
+import { useFormContext } from "react-hook-form";
 
 import { Button } from "components";
 import { Plan, PricingPlansProps } from "types";
 
 import { featureHeaders } from "../../_data/featureHeaders";
 import { featureSections } from "../../_data/featureSections";
+import { IPricingPlanForm } from "../../_interfaces/IPricingPlanForm";
+import {
+  getFeatureSections,
+  getPlanPricing,
+} from "../../_utils/getfilteredPricingPlan";
 
 import { CardTab } from "./CardTab";
 
 export const EcommercePricingPlansMobile: FunctionComponent<
   PricingPlansProps
-> = ({ activePlan, setActivePlan, activePeriod, plans }) => {
+> = ({ plans }) => {
+  const { register, watch, setValue } = useFormContext<IPricingPlanForm>();
+  const inputPlan = register("plan");
+  const activePlan = watch(inputPlan.name);
+  const activePeriod = watch("period");
   const filteredPlan = plans.find((plan: Plan) => plan.name === activePlan);
-
-  if (!filteredPlan) {
-    return null;
-  }
-
-  const isYearly = activePeriod === "Yearly" && filteredPlan.yearlyPrice;
-  const price = isYearly ? filteredPlan.yearlyPrice : filteredPlan.monthlyPrice;
-  const period = isYearly ? "/Year" : "/Month";
-  const mappedFeatureSections = featureSections.map((section) => ({
-    features:
-      filteredPlan.features[
-        section.features as keyof typeof filteredPlan.features
-      ],
-    keys: section.keys,
-  }));
+  const mappedFeatureSections = getFeatureSections(
+    filteredPlan,
+    featureSections,
+  );
+  const { price, period } = getPlanPricing(filteredPlan, activePeriod);
   const handleClick = () => {
-    console.log(activePlan);
+    if (filteredPlan) {
+      setValue("plan", filteredPlan.name);
+    }
   };
 
   return (
     <div className="w-full bg-black rounded-2xl">
       <div className="flex w-full">
-        <CardTab
-          text="Starter"
-          activePlan={activePlan}
-          setActivePlan={setActivePlan}
-        />
-        <CardTab
-          text="Growth"
-          activePlan={activePlan}
-          setActivePlan={setActivePlan}
-        />
-        <CardTab
-          text="Enterprise"
-          activePlan={activePlan}
-          setActivePlan={setActivePlan}
-        />
+        <CardTab text="Starter" />
+        <CardTab text="Growth" />
+        <CardTab text="Enterprise" />
       </div>
       <div className="flex flex-col gap-7 md:px-7 px-4 py-7 bg-accent">
         <h3 className="text-xl font-unboundedBold">{activePlan}</h3>
@@ -94,7 +84,7 @@ export const EcommercePricingPlansMobile: FunctionComponent<
           {mappedFeatureSections.map((section, sectionIndex) => (
             <div key={sectionIndex}>
               <ul>
-                {section.keys.map((key) => (
+                {section.keys.map((key: string) => (
                   <li
                     key={key}
                     className="px-4 lg:px-7 flex items-center md:h-20 h-16 md:text-base text-sm border-b"
