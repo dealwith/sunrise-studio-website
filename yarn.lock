@@ -21,6 +21,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@contentsquare/tag-sdk@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@contentsquare/tag-sdk@npm:1.1.0"
+  checksum: 10/665479b0e1144f26c74c2aae8c51cf0f434566c4a7be20592e254ef48224d1fa3d07db3260c03fc99272f7ec54daf9a1d6389a15c272adee061170b4019f3f01
+  languageName: node
+  linkType: hard
+
 "@emnapi/runtime@npm:^0.44.0":
   version: 0.44.0
   resolution: "@emnapi/runtime@npm:0.44.0"
@@ -6136,6 +6143,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sunrise-studio-website@workspace:."
   dependencies:
+    "@contentsquare/tag-sdk": "npm:^1.1.0"
     "@hookform/resolvers": "npm:^3.3.4"
     "@radix-ui/react-avatar": "npm:^1.0.4"
     "@radix-ui/themes": "npm:^2.0.1"

@@ -1,7 +1,8 @@
 "use client";
+import { injectContentsquareScript } from "@contentsquare/tag-sdk";
 import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
 
 import { Footer, Header } from "components";
@@ -23,6 +24,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [isActiveBurger, setIsActiveBurger] = useState(false);
+
+  useEffect(() => {
+    injectContentsquareScript({
+      siteId: "5250777",
+      async: true, // Optional: Set to false to wait for script execution until after document parsing.
+      defer: false, // Optional: Set to true to defer script execution after document parsing.
+    });
+  }, []);
 
   return (
     <html lang="en">
