@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: "Onest-Regular";
+  src: url("../fonts/Onest-Regular.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "Unbounded-ExtraLight";
   src: url("../fonts//Unbounded-ExtraLight.ttf") format("truetype");
 }
