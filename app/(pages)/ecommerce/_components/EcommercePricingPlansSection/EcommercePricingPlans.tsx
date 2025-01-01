@@ -1,5 +1,4 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 import { useWindowSize } from "hooks";
@@ -136,7 +135,6 @@ const pricingPlans = [
 
 export const EcommercePricingPlans = () => {
   const { isLaptopL } = useWindowSize();
-  const [activePlan, setActivePlan] = useState("Starter");
   const methods = useForm<IPricingPlanForm>({
     defaultValues: {
       period: "monthly",
