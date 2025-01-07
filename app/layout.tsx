@@ -24,6 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [isActiveBurger, setIsActiveBurger] = useState(false);
+  const production = process.env.NODE_ENV === "production";
 
   useEffect(() => {
     injectContentsquareScript({
@@ -37,17 +38,20 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>{globalMetadata.title}</title>
-        <Script
-          src={"https://www.googletagmanager.com/gtag/js?id=G-FN1MWWZZ0Y"}
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
+        {production && (
+          <>
+            <Script
+              src={"https://www.googletagmanager.com/gtag/js?id=G-FN1MWWZZ0Y"}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
           gtag('config', 'G-FN1MWWZZ0Y');`}
-        </Script>
+            </Script>
+          </>
+        )}
         <meta name="description" content={globalMetadata.description} />
         <meta
           name="ahrefs-site-verification"
