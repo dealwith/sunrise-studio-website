@@ -1,7 +1,8 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, useContext } from "react";
 import { useFormContext } from "react-hook-form";
 
 import { Button } from "components";
+import { PricingContext } from "context";
 import { Plan, PricingPlansProps } from "types";
 
 import { featureHeaders } from "../../_data/featureHeaders";
@@ -16,7 +17,8 @@ import { CardTab } from "./CardTab";
 
 export const EcommercePricingPlansMobile: FunctionComponent<
   PricingPlansProps
-> = ({ plans }) => {
+> = ({ plans, handleScroll }) => {
+  const { setSelectedPlan } = useContext(PricingContext);
   const { register, watch, setValue } = useFormContext<IPricingPlanForm>();
   const inputPlan = register("plan");
   const activePlan = watch(inputPlan.name);
@@ -28,8 +30,10 @@ export const EcommercePricingPlansMobile: FunctionComponent<
   );
   const { price, period } = getPlanPricing(filteredPlan, activePeriod);
   const handleClick = () => {
+    handleScroll();
     if (filteredPlan) {
       setValue("plan", filteredPlan.name);
+      setSelectedPlan({ period: activePeriod, plan: activePlan });
     }
   };
 

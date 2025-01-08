@@ -30,6 +30,7 @@ export type Plan = {
 export type PricingPlanProps = {
   planName?: string;
   plan?: Plan;
+  handleScroll: () => void;
 };
 
 export type PricingPlansProps = PricingPlanProps & {
@@ -39,4 +40,9 @@ export type PricingPlansProps = PricingPlanProps & {
 export type FeatureSection = {
   features: PlanFeatures;
   keys: Array<keyof PlanFeatures>;
+};
+
+export type PricingSelectedPlan = {
+  period?: Period;
+  plan?: string;
 };

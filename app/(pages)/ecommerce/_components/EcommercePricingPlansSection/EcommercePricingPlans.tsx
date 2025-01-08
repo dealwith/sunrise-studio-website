@@ -1,4 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { FunctionComponent } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 import { useWindowSize } from "hooks";
@@ -10,6 +11,10 @@ import { EcommercePricingPeriodToggle } from "./EcommercePricingPeriodToggle";
 import { EcommercePricingPlansCard } from "./EcommercePricingPlansCard";
 import { EcommercePricingPlansHeader } from "./EcommercePricingPlansHeader";
 import { EcommercePricingPlansMobile } from "./EcommercePricingPlansMobile";
+
+type TProps = {
+  handleScroll: () => void;
+};
 
 const pricingPlans = [
   {
@@ -133,7 +138,9 @@ const pricingPlans = [
   },
 ];
 
-export const EcommercePricingPlans = () => {
+export const EcommercePricingPlans: FunctionComponent<TProps> = ({
+  handleScroll,
+}) => {
   const { isLaptopL } = useWindowSize();
   const methods = useForm<IPricingPlanForm>({
     defaultValues: {
@@ -155,11 +162,15 @@ export const EcommercePricingPlans = () => {
                 key={plan.id}
                 planName={plan.name}
                 plan={plan}
+                handleScroll={handleScroll}
               />
             ))}
           </div>
         ) : (
-          <EcommercePricingPlansMobile plans={pricingPlans} />
+          <EcommercePricingPlansMobile
+            plans={pricingPlans}
+            handleScroll={handleScroll}
+          />
         )}
       </div>
     </FormProvider>
