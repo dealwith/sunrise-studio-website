@@ -45,15 +45,17 @@ export const StaffingCostBenefitsSection = () => {
           </ul>
         }
         button={
-          <a href="#contactUs">
-            <ArrowButton
-              className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
-              width="10px"
-              height="10px"
-            >
-              Talk to us
-            </ArrowButton>
-          </a>
+          <div className="w-full flex md:justify-start justify-center mt-5">
+            <a href="#contactUs">
+              <ArrowButton
+                className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
+                width="10px"
+                height="10px"
+              >
+                Talk to us
+              </ArrowButton>
+            </a>
+          </div>
         }
       />
     </Section>
