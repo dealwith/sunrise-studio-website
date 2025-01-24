@@ -76,16 +76,11 @@ export const OurTeamSection = () => {
         </div>
       </div>
       <Slider ref={slider} {...settings} className="w-full">
-        <OurTeamCard image={firstImageSrc} name="Gleb Kryshyn" role="CEO" />
+        <OurTeamCard image={firstImageSrc} name="Gleb Krishin" role="CEO" />
         <OurTeamCard
           image={secondImageSrc}
           name="Nicholas Jones"
           role="co-Founder"
-        />
-        <OurTeamCard
-          image={thirdImageSrc}
-          name="Julia Mazur"
-          role="Head of Design"
         />
         <OurTeamCard
           image={fourthImageSrc}
@@ -96,6 +91,11 @@ export const OurTeamSection = () => {
           image={fifthImageSrc}
           name="Oleksandr Andriichuk"
           role="Software Engineer"
+        />
+        <OurTeamCard
+          image={thirdImageSrc}
+          name="Julia Mazur"
+          role="Head of Design"
         />
         <OurTeamCard
           image={sixthImageSrc}

@@ -13,7 +13,6 @@ export const EcommercePricingPlansShowMore: FunctionComponent<TProps> = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const { isLaptopL } = useWindowSize();
-  const text = isOpen ? "Show less" : "Show more";
   const activeContainerShadow = isLaptopL && !isOpen;
   const handleClick = () => {
     setIsOpen((prev) => !prev);
@@ -34,7 +33,7 @@ export const EcommercePricingPlansShowMore: FunctionComponent<TProps> = ({
         onClick={handleClick}
         className="bg-accent hover:bg-white hover:text-accent transition-all"
       >
-        {text}
+        {isOpen ? "Show less" : "Show more"}
       </Button>
     </div>
   );

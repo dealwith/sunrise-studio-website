@@ -1,4 +1,4 @@
-export type Period = "monthly" | "yearly";
+export type Period = "monthly" | "yearly" | "";
 
 export type ToggleButtonProps = {
   label: string;
@@ -34,7 +34,7 @@ export type PricingPlanProps = {
 };
 
 export type PricingPlansProps = PricingPlanProps & {
-  plans: Plan[];
+  plans: readonly Plan[];
 };
 
 export type FeatureSection = {

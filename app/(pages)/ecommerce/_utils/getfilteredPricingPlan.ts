@@ -1,10 +1,10 @@
-import { Plan } from "types";
+import { Plan, PlanFeatureGroups } from "types";
 
 export const getPlanPricing = (filteredPlan?: Plan, activePeriod?: string) => {
   if (!filteredPlan) {
     return {
-      price: null,
-      period: null,
+      price: "",
+      period: "",
     };
   }
 
@@ -18,18 +18,18 @@ export const getPlanPricing = (filteredPlan?: Plan, activePeriod?: string) => {
 };
 
 export const getFeatureSections = (
-  filteredPlan: Plan | undefined,
-  featureSections: any[] = [],
+  filteredPlan?: Plan,
+  featureSections: Array<{
+    features: keyof PlanFeatureGroups;
+    keys: string[];
+  }> = [],
 ) => {
   if (!filteredPlan || !featureSections) {
     return [];
   }
 
   return featureSections.map((section) => ({
-    features:
-      filteredPlan.features[
-        section.features as keyof typeof filteredPlan.features
-      ],
+    features: filteredPlan.features[section.features],
     keys: section.keys,
   }));
 };

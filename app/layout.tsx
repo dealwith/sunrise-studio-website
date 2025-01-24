@@ -24,21 +24,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [isActiveBurger, setIsActiveBurger] = useState(false);
-  const production = process.env.NODE_ENV === "production";
+  const isProduction = process.env.NODE_ENV === "production";
 
   useEffect(() => {
-    injectContentsquareScript({
-      siteId: "5250777",
-      async: true, // Optional: Set to false to wait for script execution until after document parsing.
-      defer: false, // Optional: Set to true to defer script execution after document parsing.
-    });
+    if (process.env.NODE_ENV === "production") {
+      injectContentsquareScript({
+        siteId: "5250777",
+        async: true, // Optional: Set to false to wait for script execution until after document parsing.
+        defer: false, // Optional: Set to true to defer script execution after document parsing.
+      });
+    }
   }, []);
 
   return (
     <html lang="en">
       <head>
         <title>{globalMetadata.title}</title>
-        {production && (
+        {isProduction && (
           <>
             <Script
               src={"https://www.googletagmanager.com/gtag/js?id=G-FN1MWWZZ0Y"}

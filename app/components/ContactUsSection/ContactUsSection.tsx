@@ -11,14 +11,12 @@ type TProps = {
 
 export const ContactUsSection = forwardRef<HTMLDivElement, TProps>(
   ({ isMainPage }, ref) => {
-    const buttonBgColor = isMainPage ? "bg-accent" : "bg-black";
-    const containerBgColor = isMainPage ? "bg-black" : "bg-accent";
     const containerClassName = cn(
       "py-[60px] px-4 flex flex-col items-center gap-[60px] rounded-2xl",
-      containerBgColor,
+      isMainPage ? "bg-black" : "bg-accent",
     );
     const buttonClassName = cn(
-      buttonBgColor,
+      isMainPage ? "bg-accent" : "bg-black",
       "hover:bg-white hover:text-accent transition-all",
     );
 

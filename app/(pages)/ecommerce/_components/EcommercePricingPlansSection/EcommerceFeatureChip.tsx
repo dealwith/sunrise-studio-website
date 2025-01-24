@@ -8,7 +8,7 @@ type TProps = {
   text: string;
 };
 
-export const EcommerceChip: FunctionComponent<TProps> = ({ text }) => {
+export const EcommerceFeatureChip: FunctionComponent<TProps> = ({ text }) => {
   const [isHovered, toggleHover] = useToggle();
 
   return (
