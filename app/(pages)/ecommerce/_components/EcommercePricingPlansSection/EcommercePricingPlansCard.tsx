@@ -11,7 +11,7 @@ import { IPricingPlanForm } from "../../_interfaces/IPricingPlanForm";
 import {
   getFeatureSections,
   getPlanPricing,
-} from "../../_utils/getFilteredPricingPlan";
+} from "../../_utils/getfilteredPricingPlan";
 
 export const EcommercePricingPlansCard: FunctionComponent<PricingPlanProps> = ({
   planName,
