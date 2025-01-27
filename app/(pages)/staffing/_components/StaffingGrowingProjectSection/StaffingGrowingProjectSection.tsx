@@ -1,4 +1,4 @@
-import { LiWithMarker, Section, UnderlineText } from "components";
+import { LiWithMarker, Section, UnderlineTextMedium } from "components";
 
 import { StaffingAdvantages } from "../StaffingAdvantages";
 
@@ -10,7 +10,7 @@ export const StaffingGrowingProjectSection = () => {
       <StaffingAdvantages
         imageSrc={employeeSrc}
         title={
-          <UnderlineText
+          <UnderlineTextMedium
             text="Growing your project can be very complex, and time consuming"
             isRedText={true}
             imageClassName="lg:w-fit md:w-[200px] w-[120px] mt-6"
