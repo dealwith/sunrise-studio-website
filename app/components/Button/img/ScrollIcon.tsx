@@ -19,6 +19,7 @@ export const ScrollIcon = ({ isHovered, defaultColor, hoverColor }: Props) => {
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
+        style={{ transition: "fill 0.3s ease" }}
       />
     </svg>
   );

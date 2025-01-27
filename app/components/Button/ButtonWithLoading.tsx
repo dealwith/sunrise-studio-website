@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
 
-import { Button } from "components";
-import { LoadingSpinner } from "components";
+import { Button, LoadingSpinner } from "components";
 
 type TProps = {
   handleClick?: () => void;
