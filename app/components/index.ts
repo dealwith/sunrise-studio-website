@@ -39,6 +39,7 @@ export * from "./OurTeamSection";
 export * from "./CarouselWrapper";
 export * from "./LogoSlider";
 export * from "./UnderlineText";
+export * from "./UnderlineTextMedium";
 export * from "./FeedbackForm";
 export * from "./NavigationDropdownMenu";
 export * from "./LiWithMarker";
