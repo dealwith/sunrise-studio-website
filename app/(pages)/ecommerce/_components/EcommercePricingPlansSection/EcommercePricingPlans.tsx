@@ -142,6 +142,7 @@ export const EcommercePricingPlans: FunctionComponent<TProps> = ({
   handleScroll,
 }) => {
   const { isLaptopL } = useWindowSize();
+
   const methods = useForm<IPricingPlanForm>({
     defaultValues: {
       period: "monthly",

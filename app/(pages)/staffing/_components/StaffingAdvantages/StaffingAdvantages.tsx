@@ -38,7 +38,11 @@ export const StaffingAdvantages: FunctionComponent<TProps> = ({
         {description} {!isLaptopS && button}
       </div>
       <div className={imageContainerCN}>
-        <Image src={imageSrc} alt="bubble" />
+        <Image
+          src={imageSrc}
+          alt="bubble"
+          className="md:-mt-[100px] lg:-mt-[100px]"
+        />
         {isLaptopS && button}
       </div>
     </div>

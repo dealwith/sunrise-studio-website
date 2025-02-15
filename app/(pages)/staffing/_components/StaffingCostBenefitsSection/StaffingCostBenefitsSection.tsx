@@ -1,4 +1,9 @@
-import { ArrowButton, LiWithMarker, Section, UnderlineText } from "components";
+import {
+  ArrowButton,
+  LiWithMarker,
+  Section,
+  UnderlineTextMedium,
+} from "components";
 
 import { StaffingAdvantages } from "../StaffingAdvantages";
 
@@ -10,7 +15,7 @@ export const StaffingCostBenefitsSection = () => {
       <StaffingAdvantages
         imageSrc={employeeSrc}
         title={
-          <UnderlineText
+          <UnderlineTextMedium
             text="Sunrise Studio saves you on expensive staffing costs and project headaches"
             isRedText={true}
             imageClassName="lg:w-fit md:w-[200px] w-[120px] mt-6 self-end"
@@ -40,15 +45,17 @@ export const StaffingCostBenefitsSection = () => {
           </ul>
         }
         button={
-          <a href="#contactUs">
-            <ArrowButton
-              className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
-              width="10px"
-              height="10px"
-            >
-              Talk to us
-            </ArrowButton>
-          </a>
+          <div className="w-full flex md:justify-start justify-center mt-5">
+            <a href="#contactUs">
+              <ArrowButton
+                className="bg-accent whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
+                width="10px"
+                height="10px"
+              >
+                Talk to us
+              </ArrowButton>
+            </a>
+          </div>
         }
       />
     </Section>
