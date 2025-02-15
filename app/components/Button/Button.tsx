@@ -25,7 +25,7 @@ export const Button = forwardRef<HTMLButtonElement, Props>(
   ({ children, size, className: propsClassName, variant, ...props }, ref) => {
     const buttonSize = cn({
       [styles.sizeL]: size === "l",
-      ["rounded-2xl py-3 px-11 w-full mobileM:w-fit flex justify-center"]:
+      ["rounded-2xl py-3 px-11 w-full sm:w-fit flex justify-center"]:
         size === "m",
       [styles.sizeNone]: size === "none",
     });

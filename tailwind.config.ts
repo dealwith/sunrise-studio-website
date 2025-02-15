@@ -12,6 +12,7 @@ const config: Config = {
       // custom
       "laptop-l": "1440px",
       "laptop-s": "1024px",
+      "laptop-m": "940px",
       tablet: "768px",
       "mobile-l": "640px",
       "mobile-m": "425px",

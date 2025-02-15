@@ -2,6 +2,7 @@ import { H2, P, Section } from "components";
 
 import { EcommerceChip } from "./EcommerceChip";
 import { EcommercePricingPlans } from "./EcommercePricingPlans";
+import { EcommercePricingPlansShowMore } from "./EcommercePricingPlansShowMore";
 
 export const EcommercePricingPlansSection = () => {
   return (
@@ -25,7 +26,9 @@ export const EcommercePricingPlansSection = () => {
           <EcommerceChip text="DDoS protection" />
           <EcommerceChip text="Automatic Medusa core updates" />
         </div>
-        <EcommercePricingPlans />
+        <EcommercePricingPlansShowMore>
+          <EcommercePricingPlans />
+        </EcommercePricingPlansShowMore>
       </div>
     </Section>
   );
