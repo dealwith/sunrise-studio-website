@@ -135,6 +135,7 @@ const pricingPlans = [
 
 export const EcommercePricingPlans = () => {
   const { isLaptopL } = useWindowSize();
+
   const methods = useForm<IPricingPlanForm>({
     defaultValues: {
       period: "monthly",

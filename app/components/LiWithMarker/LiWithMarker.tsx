@@ -7,7 +7,7 @@ type TProps = {
 
 export const LiWithMarker: FunctionComponent<TProps> = ({ marker, text }) => {
   return (
-    <li className="lg:text-3xl md:text-xl text-base font-normal">
+    <li className="lg:text-2xl md:text-xl text-base font-normal">
       {marker} {text}
     </li>
   );
