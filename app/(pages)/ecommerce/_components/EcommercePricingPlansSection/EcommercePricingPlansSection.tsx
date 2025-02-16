@@ -1,10 +1,18 @@
+import { FunctionComponent } from "react";
+
 import { H2, P, Section } from "components";
 
 import { EcommerceChip } from "./EcommerceChip";
 import { EcommercePricingPlans } from "./EcommercePricingPlans";
 import { EcommercePricingPlansShowMore } from "./EcommercePricingPlansShowMore";
 
-export const EcommercePricingPlansSection = () => {
+type TProps = {
+  handleScroll: () => void;
+};
+
+export const EcommercePricingPlansSection: FunctionComponent<TProps> = ({
+  handleScroll,
+}) => {
   return (
     <Section className="gap-[60px]">
       <div className="flex flex-col items-center gap-6">
@@ -27,7 +35,7 @@ export const EcommercePricingPlansSection = () => {
           <EcommerceChip text="Automatic Medusa core updates" />
         </div>
         <EcommercePricingPlansShowMore>
-          <EcommercePricingPlans />
+          <EcommercePricingPlans handleScroll={handleScroll} />
         </EcommercePricingPlansShowMore>
       </div>
     </Section>
