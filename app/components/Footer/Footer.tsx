@@ -7,6 +7,7 @@ import { cn } from "utils/cn";
 import dottedWorldMapSrc from "./img/dottedWorldMap.png";
 import emailSrc from "./img/email.svg";
 import locationSignSrc from "./img/locationSign.svg";
+import phoneSrc from "./img/phone-circle-fill.svg";
 
 export const Footer = () => {
   const pathname = usePathname();
@@ -18,7 +19,7 @@ export const Footer = () => {
 
   return (
     <footer className={containerClassName}>
-      <div className="flex flex-col md:items-start items-center gap-8 justify-between max-w-[1440px] mx-auto pt-[60px] pb-4 px-4 md:px-10">
+      <div className="flex flex-col md:items-start items-center gap-5 justify-between max-w-[1440px] mx-auto pt-[60px] pb-4 px-4 md:px-10">
         <h4 className="max-w-[560px] md:text-2xl text-lg md:text-start text-center">
           Write us to schedule a call to discuss your project and learn more
           about sunrise studio
@@ -31,6 +32,17 @@ export const Footer = () => {
               className="not-italic text-base font-bold hover:opacity-80 transition-opacity"
             >
               office@sunrisestd.com
+            </a>
+          </address>
+        </div>
+        <div className="flex gap-2 items-center">
+          <Image src={phoneSrc} alt="phone" />
+          <address>
+            <a
+              href="mailto:office@sunrisestd.com"
+              className="not-italic text-base font-bold hover:opacity-80 transition-opacity"
+            >
+              (+1) 850-417-7745
             </a>
           </address>
         </div>
