@@ -39,7 +39,7 @@ export const Footer = () => {
           <Image src={phoneSrc} alt="phone" />
           <address>
             <a
-              href="mailto:office@sunrisestd.com"
+              href="tel:+18504177745"
               className="not-italic text-base font-bold hover:opacity-80 transition-opacity"
             >
               (+1) 850-417-7745
