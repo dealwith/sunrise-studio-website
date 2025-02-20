@@ -1,5 +1,5 @@
-declare module 'react-slick' {
-  import { Component } from 'react';
+declare module "react-slick" {
+  import { Component } from "react";
 
   export interface ResponsiveSetting {
     breakpoint: number;
@@ -23,7 +23,7 @@ declare module 'react-slick' {
 
   export default class Slider extends Component<Settings> {
     slickNext(): void;
-    slickPrev(): void; 
-    slickGoTo(slide: number, dontAnimate?: boolean): void; 
+    slickPrev(): void;
+    slickGoTo(slide: number, dontAnimate?: boolean): void;
   }
 }
