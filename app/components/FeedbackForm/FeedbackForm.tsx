@@ -1,9 +1,10 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { FunctionComponent, useTransition } from "react";
+import { FunctionComponent, useContext, useEffect, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 import { ButtonWithLoading, Input, Span } from "components";
+import { PricingContext } from "context";
 import sendEmailService from "services/SendEmailService";
 import { ContactUsSchema, cn } from "utils";
 
@@ -22,11 +23,21 @@ export const FeedbackForm: FunctionComponent<TProps> = ({
 }) => {
   const buttonPositionClassName = cn(buttonPosition, "flex mt-3.5");
   const [isPending, startTransition] = useTransition();
+  const { selectedPlan } = useContext(PricingContext);
+  const {
+    register,
+    setValue,
+    handleSubmit: validateBeforeSubmit,
+  } = useForm<IContactUsForm>({
+    resolver: zodResolver(ContactUsSchema),
+  });
 
-  const { register, handleSubmit: validateBeforeSubmit } =
-    useForm<IContactUsForm>({
-      resolver: zodResolver(ContactUsSchema),
-    });
+  useEffect(() => {
+    if (selectedPlan.plan) {
+      const message = `Interested in ${selectedPlan.plan.toUpperCase()} PLAN (${selectedPlan.period}). Let's discuss the features and implementation for my e-commerce project! 🚀`;
+      setValue("message", message);
+    }
+  }, [selectedPlan]);
 
   const handleSubmit = async (data: IContactUsForm) => {
     startTransition(async () => {
