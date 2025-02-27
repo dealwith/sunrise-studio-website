@@ -118,4 +118,4 @@ export const pricingPlans = [
       },
     },
   },
-];
+] as const;

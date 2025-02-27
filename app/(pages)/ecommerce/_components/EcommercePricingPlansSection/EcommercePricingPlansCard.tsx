@@ -75,7 +75,7 @@ export const EcommercePricingPlansCard: FunctionComponent<PricingPlanProps> = ({
                   key={key}
                   className="px-4 lg:px-7 flex items-center md:h-20 h-16 md:text-base text-sm border-b"
                 >
-                  {section.features[key as keyof typeof section.features]}
+                  {section.features[key]}
                 </li>
               ))}
             </ul>

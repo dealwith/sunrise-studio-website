@@ -22,8 +22,8 @@ import {
 export default function Ecommerce() {
   const { elementRef, scrollToRef } = useSmoothScroll();
   const [selectedPlan, setSelectedPlan] = useState<PricingSelectedPlan>({
-    period: undefined,
-    plan: undefined,
+    period: "",
+    plan: "",
   });
 
   return (

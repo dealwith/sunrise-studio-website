@@ -1,4 +1,9 @@
-export const featureSections = [
+import { PlanFeatureGroups } from "types";
+
+export const featureSections: Array<{
+  features: keyof PlanFeatureGroups;
+  keys: string[];
+}> = [
   {
     features: "coreMedusaFeatures",
     keys: [

@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 
 import { H2, P, Section } from "components";
 
-import { EcommerceChip } from "./EcommerceChip";
+import { EcommerceFeatureChip } from "./EcommerceFeatureChip";
 import { EcommercePricingPlans } from "./EcommercePricingPlans";
 import { EcommercePricingPlansShowMore } from "./EcommercePricingPlansShowMore";
 
@@ -29,10 +29,10 @@ export const EcommercePricingPlansSection: FunctionComponent<TProps> = ({
           All plans include
         </h3>
         <div className="lg:w-4/5 flex md:gap-5 gap-3 flex-wrap items-center justify-center">
-          <EcommerceChip text="99.9% uptime SLA" />
-          <EcommerceChip text="SSL certificate" />
-          <EcommerceChip text="DDoS protection" />
-          <EcommerceChip text="Automatic Medusa core updates" />
+          <EcommerceFeatureChip text="99.9% uptime SLA" />
+          <EcommerceFeatureChip text="SSL certificate" />
+          <EcommerceFeatureChip text="DDoS protection" />
+          <EcommerceFeatureChip text="Automatic Medusa core updates" />
         </div>
         <EcommercePricingPlansShowMore>
           <EcommercePricingPlans handleScroll={handleScroll} />
