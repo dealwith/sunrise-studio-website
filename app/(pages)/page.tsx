@@ -2,7 +2,7 @@
 
 import {
   ContactUsSection,
-  OurProjectsSection,
+  FAQSection,
   SunriseSectionContent,
   WeAreSunriseSection,
   WhatWeBuildSection,
@@ -24,7 +24,7 @@ export default function Home() {
         className="flex min-h-screen flex-col items-center justify-between w-full"
       >
         <AuroraBackground>
-          <SunriseContainer className="z-10">
+          <SunriseContainer className="z-10 h-screen flex">
             <SunriseSectionContent />
           </SunriseContainer>
         </AuroraBackground>
@@ -32,7 +32,7 @@ export default function Home() {
           <WeAreSunriseSection />
           <WhatWeDoSection />
           <WhatWeBuildSection />
-          <OurProjectsSection />
+          <FAQSection />
           <WhoWeWorkWithSection />
           <ContactUsSection isMainPage={true} />
         </SunriseContainer>

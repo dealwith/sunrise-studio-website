@@ -13,7 +13,7 @@ export const WeAreSunriseSection = () => {
       className="pt-[60px] md:pt-[100px] lg:pt-[70px] h-fit md:h-[400px] lg:h-[520px]"
     >
       <UnderlineText
-        text="We are sunrise studio"
+        text="Scale Your Projects"
         isRedText={true}
         imageClassName="lg:w-fit md:w-[200px] w-[120px]"
       />
