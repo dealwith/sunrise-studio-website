@@ -45,7 +45,7 @@ export const AccordionCard: FunctionComponent<TProps> = ({
       className="hover:cursor-pointer flex flex-col py-6 md:px-14 px-6 bg-white text-black rounded-2xl"
       onClick={handleClick}
     >
-      <div className="flex flex-col gap-2">
+      <div>
         <h4 className="text-2xl">
           {isActive ? "-" : "+"} {title}
         </h4>
@@ -53,7 +53,7 @@ export const AccordionCard: FunctionComponent<TProps> = ({
           ref={contentRef}
           className="overflow-hidden transition-all duration-300 ease-in-out max-h-0"
         >
-          <P className="pt-2">{description}</P>
+          <P className="pt-2 mt-2">{description}</P>
         </div>
       </div>
     </div>
