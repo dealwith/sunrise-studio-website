@@ -42,7 +42,6 @@ export const AuroraBackground = ({
               "[mask-image:radial-gradient(ellipse_at_center, black_10%, transparent_70%)]",
           )}
         ></div>
-        <div className="absolute bg-secondary lg:h-72 h-64 w-full bottom-0"></div>
       </div>
       {children}
     </div>

@@ -44,3 +44,4 @@ export * from "./LiWithMarker";
 export * from "./CalendlyWidget";
 export * from "./FAQSection";
 export * from "./Accordion";
+export * from "./EmpoweringSection";

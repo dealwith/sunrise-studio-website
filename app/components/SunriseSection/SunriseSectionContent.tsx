@@ -1,8 +1,7 @@
-import Link from "next/link";
 import { useContext } from "react";
 
 import { Star } from "@icons/Star";
-import { ArrowButton, MobileNavigation, P } from "components";
+import { MobileNavigation } from "components";
 import { BurgerContext } from "context";
 import { useWindowSize } from "hooks";
 
@@ -15,7 +14,7 @@ export const SunriseSectionContent = () => {
   return (
     <section id="home" className={styles.component}>
       {!isActiveBurger && (
-        <div className="w-full flex flex-col justify-between h-full">
+        <div className="w-full flex flex-col justify-between">
           <div></div>
           <div className="w-full flex flex-col items-center gap-40 justify-between">
             <h1 className="text-[32px] sm:text-[44px] md:text-[52px] lg:text-7xl xl:text-[90px] font-light flex flex-col md:gap-8 gap-5 w-full">
@@ -28,23 +27,6 @@ export const SunriseSectionContent = () => {
                 Staffing Solutions
               </div>
             </h1>
-          </div>
-          <div className="flex flex-col sm:items-start items-center gap-30 pt-14 pb-9 relative z-10">
-            <P className="lg:!text-3xl md:!text-xl">
-              Empowering Your Growth with Poland’s Finest Talent – Scale Faster,
-              Innovate 10x More. From our team to yours, we deliver top-tier
-              developers and flexible solutions to drive your digital projects
-              to success.
-            </P>
-            <Link className="max-w-[400px] w-full sm:w-fit" href="#contactUs">
-              <ArrowButton
-                width="14px"
-                height="14px"
-                className="sm:w-fit w-full px-11 flex justify-center bg-primary whitespace-nowrap text-white hover:bg-white hover:text-accent transition-all"
-              >
-                Talk to us
-              </ArrowButton>
-            </Link>
           </div>
         </div>
       )}

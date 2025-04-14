@@ -2,7 +2,9 @@
 
 import {
   ContactUsSection,
+  EmpoweringSection,
   FAQSection,
+  OrangeBackground,
   SunriseSectionContent,
   WeAreSunriseSection,
   WhatWeBuildSection,
@@ -28,6 +30,11 @@ export default function Home() {
             <SunriseSectionContent />
           </SunriseContainer>
         </AuroraBackground>
+        <OrangeBackground>
+          <SunriseContainer>
+            <EmpoweringSection />
+          </SunriseContainer>
+        </OrangeBackground>
         <SunriseContainer>
           <WeAreSunriseSection />
           <WhatWeDoSection />
