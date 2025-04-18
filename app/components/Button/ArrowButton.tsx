@@ -4,7 +4,6 @@ import useToggle from "hooks/useToggle";
 import { cn } from "utils/cn";
 
 import { Button } from "./Button";
-import styles from "./button.module.scss";
 import { ButtonArrow } from "./img/ButtonArrow";
 
 type TProps = {
@@ -20,7 +19,10 @@ export const ArrowButton: FunctionComponent<TProps> = ({
   width,
   height,
 }) => {
-  const buttonClassName = cn(styles.arrowBtn, propsClassName);
+  const buttonClassName = cn(
+    "rounded-2xl w-fit py-3 px-7 gap-3",
+    propsClassName,
+  );
   const [isHovered, toggleHover] = useToggle();
 
   return (

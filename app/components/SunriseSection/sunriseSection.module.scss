@@ -5,9 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 108px);
+  height: calc(100vh - 88px);
   width: 100%;
   position: relative;
+  align-self: flex-end;
 }
 
 .background {
@@ -78,8 +79,4 @@
   @include mixin.media-w(breakpoints.$mobile) {
     height: 68px;
   }
-}
-
-.link {
-  @include mixin.maxWidth(400px);
 }
